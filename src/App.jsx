@@ -1,12 +1,32 @@
 import './App.css';
 import { useState, useEffect } from 'react';
 import portfolioData from './data/portfolioData';
+import translations from './data/translations';
 
 export default function App() {
   const [hoveredProject, setHoveredProject] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [scrollProgress, setScrollProgress] = useState(0);
   const [projectImageIndexes, setProjectImageIndexes] = useState({});
+  
+  // Estados para o modal de imagem
+  const [modalImage, setModalImage] = useState(null);
+  const [modalImages, setModalImages] = useState([]);
+  const [modalCurrentIndex, setModalCurrentIndex] = useState(0);
+  const [modalInfo, setModalInfo] = useState({ title: '', description: '' });
+  
+  // Estados para tema e idioma
+  const [isDarkMode, setIsDarkMode] = useState(() => {
+    const saved = localStorage.getItem('theme');
+    return saved === 'dark';
+  });
+  const [language, setLanguage] = useState(() => {
+    const saved = localStorage.getItem('language');
+    return saved || 'pt';
+  });
+
+  // Get translations
+  const t = translations[language];
 
   // Destructure portfolio data
   const { 
@@ -62,6 +82,76 @@ export default function App() {
     return project.images[index];
   };
 
+  // Função para abrir modal de imagem
+  const openImageModal = (image, images = null, currentIndex = 0, info = {}) => {
+    setModalImage(image);
+    setModalImages(images || [image]);
+    setModalCurrentIndex(currentIndex);
+    setModalInfo(info);
+    document.body.style.overflow = 'hidden'; // Previne scroll do body
+  };
+
+  // Função para fechar modal
+  const closeImageModal = () => {
+    setModalImage(null);
+    setModalImages([]);
+    setModalCurrentIndex(0);
+    setModalInfo({ title: '', description: '' });
+    document.body.style.overflow = 'auto';
+  };
+
+  // Navegar para próxima imagem no modal
+  const modalNextImage = (e) => {
+    e?.stopPropagation();
+    if (modalImages.length <= 1) return;
+    const newIndex = (modalCurrentIndex + 1) % modalImages.length;
+    setModalCurrentIndex(newIndex);
+    setModalImage(modalImages[newIndex]);
+  };
+
+  // Navegar para imagem anterior no modal
+  const modalPrevImage = (e) => {
+    e?.stopPropagation();
+    if (modalImages.length <= 1) return;
+    const newIndex = modalCurrentIndex <= 0 ? modalImages.length - 1 : modalCurrentIndex - 1;
+    setModalCurrentIndex(newIndex);
+    setModalImage(modalImages[newIndex]);
+  };
+
+  // Teclas de atalho para navegação
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (!modalImage) return;
+      
+      if (e.key === 'Escape') {
+        closeImageModal();
+      } else if (e.key === 'ArrowRight') {
+        modalNextImage();
+      } else if (e.key === 'ArrowLeft') {
+        modalPrevImage();
+      }
+    };
+
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [modalImage, modalCurrentIndex, modalImages]);
+
+  // Aplicar tema escuro
+  useEffect(() => {
+    if (isDarkMode) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      localStorage.setItem('theme', 'dark');
+    } else {
+      document.documentElement.removeAttribute('data-theme');
+      localStorage.setItem('theme', 'light');
+    }
+  }, [isDarkMode]);
+
+  // Salvar idioma
+  useEffect(() => {
+    localStorage.setItem('language', language);
+  }, [language]);
+
   useEffect(() => {
     // Simulate initial load
     const timer = setTimeout(() => {
@@ -101,7 +191,7 @@ export default function App() {
       <div className="loader">
         <div className="loader-content">
           <div className="loader-bar"></div>
-          <p className="loader-text">{personalInfo.displayName}</p>
+          <p className="loader-text">{t.common.loading}...</p>
         </div>
       </div>
     );
@@ -117,46 +207,60 @@ export default function App() {
         ></div>
       </div>
 
-      {/* MAIN NAVIGATION HEADER */}
-      <nav className="main-header">
-        <div className="header-content">
-          <a href="#hero" className="header-logo">{personalInfo.displayName}</a>
-          <div className="header-nav">
-            <a href="#projects" className="header-nav-item"><span className="header-nav-number">01</span> Experiências</a>
-            <a href="#about" className="header-nav-item"><span className="header-nav-number">02</span> Sobre</a>
-            <a href="#portfolio" className="header-nav-item"><span className="header-nav-number">03</span> Projetos</a>
-            <a href="#services" className="header-nav-item"><span className="header-nav-number">04</span> Serviços</a>
-            <a href="#certificates" className="header-nav-item"><span className="header-nav-number">05</span> Certificados</a>
-            <a href="#awards" className="header-nav-item"><span className="header-nav-number">06</span> Formação</a>
-            <a href="#contact" className="header-nav-item"><span className="header-nav-number">07</span> Contato</a>
-          </div>
-          <button className="mobile-menu-toggle" aria-label="Menu">
-            <span></span>
-            <span></span>
-            <span></span>
+      {/* Theme & Language Controls */}
+      <div className="top-controls">
+        {/* Language Toggle */}
+        <div className="control-group">
+          <label className="control-label" aria-label="Idioma">
+            <span className="control-icon">🌐</span>
+          </label>
+          <button 
+            className={`language-toggle ${language === 'en' ? 'active' : ''}`}
+            onClick={() => setLanguage(language === 'pt' ? 'en' : 'pt')}
+            aria-label="Alternar idioma"
+          >
+            <span className="lang-option" data-active={language === 'pt'}>PT</span>
+            <span className="lang-option" data-active={language === 'en'}>EN</span>
+            <div className="toggle-slider"></div>
           </button>
         </div>
-      </nav>
+
+        {/* Theme Toggle */}
+        <div className="control-group">
+          <label className="control-label" aria-label="Tema">
+            <span className="control-icon">{isDarkMode ? '🌙' : '☀️'}</span>
+          </label>
+          <button 
+            className={`theme-toggle ${isDarkMode ? 'dark' : 'light'}`}
+            onClick={() => setIsDarkMode(!isDarkMode)}
+            aria-label="Alternar tema"
+          >
+            <div className="toggle-track">
+              <div className="toggle-thumb"></div>
+            </div>
+          </button>
+        </div>
+      </div>
 
       {/* HERO / HEADER */}
       <header className="hero" id="hero">
         <div className="hero-content">
-          <h1 className="hero-title">{personalInfo.displayName}</h1>
-          <p className="hero-subtitle">{personalInfo.subtitle}</p>
-          <p className="hero-description">{personalInfo.bio}</p>
+          <h1 className="hero-title">{t.hero.title}</h1>
+          <p className="hero-subtitle">{t.hero.subtitle}</p>
+          <p className="hero-description">{t.hero.bio}</p>
           
           <div className="hero-meta">
             <div className="meta-item">
-              <span className="meta-label">Localização</span>
+              <span className="meta-label">{t.hero.location}</span>
               <span className="meta-value">{personalInfo.location.displayText}</span>
             </div>
             <div className="meta-item">
-              <span className="meta-label">Email</span>
+              <span className="meta-label">{t.hero.email}</span>
               <a href={`mailto:${contactInfo.email}`} className="meta-link">{contactInfo.email}</a>
             </div>
             <div className="meta-item">
-              <span className="meta-label">Status</span>
-              <span className="meta-value available">{personalInfo.availability.statusPT}</span>
+              <span className="meta-label">{t.hero.status}</span>
+              <span className="meta-value available">{t.hero.available}</span>
             </div>
           </div>
         </div>
@@ -165,7 +269,7 @@ export default function App() {
       {/* PROJECTS SECTION */}
       <section id="projects" className="section projects-section">
         <div className="section-header">
-          <h2>Experiências Profissionais</h2>
+          <h2>{t.projects.title}</h2>
         </div>
         
         <div className="projects-list">
@@ -191,26 +295,26 @@ export default function App() {
       {/* ABOUT SECTION */}
       <section id="about" className="section about-section">
         <div className="section-header">
-          <h2>Sobre Mim</h2>
+          <h2>{t.about.title}</h2>
         </div>
         
         <div className="about-content">
           <p className="about-text">
-            {personalInfo.bio}
+            {t.about.description}
           </p>
           
           <div className="about-stats">
             <div className="stat">
               <span className="stat-number">{stats.experience.years}</span>
-              <span className="stat-label">{stats.experience.label}</span>
+              <span className="stat-label">{t.about.stats.experience}</span>
             </div>
             <div className="stat">
               <span className="stat-number">{stats.projects.count}</span>
-              <span className="stat-label">{stats.projects.label}</span>
+              <span className="stat-label">{t.about.stats.projects}</span>
             </div>
             <div className="stat">
               <span className="stat-number">{stats.clients.count}</span>
-              <span className="stat-label">{stats.clients.label}</span>
+              <span className="stat-label">{t.about.stats.technologies}</span>
             </div>
           </div>
         </div>
@@ -219,15 +323,15 @@ export default function App() {
       {/* PORTFOLIO SECTION - DEVELOPMENT & DESIGN PROJECTS */}
       <section id="portfolio" className="section portfolio-projects-section">
         <div className="section-header">
-          <h2>Portfólio de Projetos</h2>
-          <p className="section-description">Seleção de projetos em desenvolvimento web e design gráfico</p>
+          <h2>{t.portfolio.title}</h2>
+          <p className="section-description">{t.portfolio.description}</p>
         </div>
 
         {/* Development Projects */}
         <div className="projects-subsection">
           <h3 className="subsection-title">
             <span className="subsection-icon">💻</span>
-            Projetos de Desenvolvimento
+            {t.portfolio.development}
           </h3>
           <div className="projects-list-minimal">
             {developmentProjects.map((project, index) => (
@@ -247,7 +351,15 @@ export default function App() {
                   </div>
                 </div>
                 {project.image && (
-                  <div className="project-list-image">
+                  <div 
+                    className="project-list-image"
+                    onClick={() => openImageModal(
+                      getCurrentImage(project),
+                      project.images || [project.image],
+                      projectImageIndexes[project.id] || 0,
+                      { title: project.nameShort, description: project.description }
+                    )}
+                  >
                     <img src={getCurrentImage(project)} alt={project.name} />
                     {project.images && project.images.length > 1 && (
                       <>
@@ -281,7 +393,7 @@ export default function App() {
         <div className="projects-subsection">
           <h3 className="subsection-title">
             <span className="subsection-icon">🎨</span>
-            Projetos de Design Gráfico
+            {t.portfolio.design}
           </h3>
           <div className="projects-list-minimal">
             {designProjects.map((project, index) => (
@@ -301,7 +413,15 @@ export default function App() {
                   </div>
                 </div>
                 {project.image && (
-                  <div className="project-list-image">
+                  <div 
+                    className="project-list-image"
+                    onClick={() => openImageModal(
+                      getCurrentImage(project),
+                      project.images || [project.image],
+                      projectImageIndexes[project.id] || 0,
+                      { title: project.nameShort, description: project.description }
+                    )}
+                  >
                     <img src={getCurrentImage(project)} alt={project.name} />
                     {project.images && project.images.length > 1 && (
                       <>
@@ -335,30 +455,37 @@ export default function App() {
       {/* SERVICES SECTION */}
       <section id="services" className="section services-section">
         <div className="section-header">
-          <h2>Serviços & Competências</h2>
+          <h2>{t.services.title}</h2>
         </div>
         
         <div className="services-grid">
           <div className="services-column">
-            <h3 className="services-title">Serviços Oferecidos</h3>
+            <h3 className="services-title">{t.services.development.title}</h3>
             <ul className="services-list">
-              {portfolioServices.map((service, index) => (
+              {t.services.development.items.map((item, index) => (
                 <li key={index} className="service-item">
                   <span className="service-dot"></span>
-                  {service.name}
+                  {item}
                 </li>
               ))}
             </ul>
           </div>
           
           <div className="services-column">
-            <h3 className="services-title">Disponibilidade</h3>
+            <h3 className="services-title">{t.services.design.title}</h3>
+            <ul className="services-list">
+              {t.services.design.items.map((item, index) => (
+                <li key={index} className="service-item">
+                  <span className="service-dot"></span>
+                  {item}
+                </li>
+              ))}
+            </ul>
             <div className="availability-box">
-              <p className="availability-status">{personalInfo.availability.statusPT}</p>
-              <p className="availability-timeline">Dezembro 2025 — Remoto & Flexível</p>
+              <p className="availability-status">{t.services.availability.status}</p>
+              <p className="availability-timeline">{t.services.availability.timeline}</p>
               <p className="availability-note">
-                Ideal para projetos de 3-6 meses com possibilidade de colaboração contínua. 
-                Especializado em soluções híbridas (Desenvolvimento + Design).
+                {t.services.availability.note}
               </p>
             </div>
           </div>
@@ -368,20 +495,28 @@ export default function App() {
       {/* CERTIFICATES SECTION */}
       <section id="certificates" className="section certificates-section">
         <div className="section-header">
-          <h2>Certificados & Qualificações</h2>
+          <h2>{t.certificates.title}</h2>
         </div>
         
         <div className="certificates-grid">
           {certificates.map((certificate) => (
             <div key={certificate.id} className="certificate-card">
-              <div className="certificate-image-wrapper">
+              <div 
+                className="certificate-image-wrapper"
+                onClick={() => openImageModal(
+                  certificate.image,
+                  [certificate.image],
+                  0,
+                  { title: certificate.name, description: `${certificate.issuer} - ${certificate.date}` }
+                )}
+              >
                 <img 
                   src={certificate.image} 
                   alt={certificate.name}
                   className="certificate-image"
                 />
                 <div className="certificate-overlay">
-                  <span className="certificate-view">Ver Certificado</span>
+                  <span className="certificate-view">{t.certificates.view}</span>
                 </div>
               </div>
               <div className="certificate-info">
@@ -389,7 +524,7 @@ export default function App() {
                 <p className="certificate-issuer">{certificate.issuer}</p>
                 <div className="certificate-meta">
                   <span className="certificate-date">{certificate.date}</span>
-                  <span className="certificate-id">ID: {certificate.credentialId}</span>
+                  <span className="certificate-id">{t.certificates.id}: {certificate.credentialId}</span>
                 </div>
               </div>
             </div>
@@ -400,7 +535,7 @@ export default function App() {
       {/* AWARDS SECTION */}
       <section id="awards" className="section awards-section">
         <div className="section-header">
-          <h2>Formação Acadêmica</h2>
+          <h2>{t.awards.title}</h2>
         </div>
         
         <div className="awards-list">
@@ -418,12 +553,12 @@ export default function App() {
       {/* CONTACT SECTION */}
       <section id="contact" className="section contact-section">
         <div className="section-header">
-          <h2>Entre em Contato</h2>
+          <h2>{t.contact.title}</h2>
         </div>
         
         <div className="contact-content">
-          <p className="contact-text">Vamos criar algo excepcional juntos.</p>
-          <a href={`mailto:${contactInfo.email}`} className="contact-button">Enviar Email</a>
+          <p className="contact-text">{t.contact.description}</p>
+          <a href={`mailto:${contactInfo.email}`} className="contact-button">{t.contact.cta}</a>
         </div>
       </section>
 
@@ -431,7 +566,7 @@ export default function App() {
       <footer className="footer">
         <div className="footer-content">
           <div className="footer-column">
-            <h4>Redes Sociais</h4>
+            <h4>{t.contact.footer.social}</h4>
             <ul className="social-links">
               <li><a href={contactInfo.social.linkedin.url} target="_blank" rel="noopener noreferrer" className="social-link"><span className="link-number">01</span> LinkedIn</a></li>
               <li><a href={contactInfo.social.github.url} target="_blank" rel="noopener noreferrer" className="social-link"><span className="link-number">02</span> GitHub</a></li>
@@ -441,22 +576,74 @@ export default function App() {
           </div>
           
           <div className="footer-column">
-            <h4>Links Rápidos</h4>
+            <h4>{t.contact.footer.navigation}</h4>
             <ul className="footer-links">
-              <li><a href="#projects" className="footer-link">Experiências</a></li>
-              <li><a href="#about" className="footer-link">Sobre</a></li>
-              <li><a href="#portfolio" className="footer-link">Projetos</a></li>
-              <li><a href="#services" className="footer-link">Serviços</a></li>
-              <li><a href="#certificates" className="footer-link">Certificados</a></li>
-              <li><a href="#awards" className="footer-link">Formação</a></li>
+              <li><a href="#projects" className="footer-link">{t.nav.projects}</a></li>
+              <li><a href="#about" className="footer-link">{t.nav.about}</a></li>
+              <li><a href="#portfolio" className="footer-link">{t.nav.portfolio}</a></li>
+              <li><a href="#services" className="footer-link">{t.nav.services}</a></li>
+              <li><a href="#certificates" className="footer-link">{t.nav.certificates}</a></li>
+              <li><a href="#awards" className="footer-link">{t.nav.awards}</a></li>
             </ul>
           </div>
           
           <div className="footer-column">
-            <p className="copyright">&copy; 2025 {personalInfo.fullName}. Todos os direitos reservados.</p>
+            <p className="copyright">{t.contact.footer.copyright}</p>
           </div>
         </div>
       </footer>
+
+      {/* IMAGE MODAL */}
+      {modalImage && (
+        <div className="image-modal-overlay" onClick={closeImageModal}>
+          <button 
+            className="modal-close-btn"
+            onClick={closeImageModal}
+            aria-label={t.common.close}
+          >
+            ×
+          </button>
+
+          {modalInfo.title && (
+            <div className="modal-info">
+              <h3 className="modal-info-title">{modalInfo.title}</h3>
+              {modalInfo.description && (
+                <p className="modal-info-description">{modalInfo.description}</p>
+              )}
+            </div>
+          )}
+
+          <div className="image-modal-content" onClick={(e) => e.stopPropagation()}>
+            <img 
+              src={modalImage} 
+              alt={modalInfo.title || 'Imagem expandida'}
+              className="image-modal-image"
+            />
+          </div>
+
+          {modalImages.length > 1 && (
+            <>
+              <button 
+                className="modal-nav-btn modal-prev-btn"
+                onClick={modalPrevImage}
+                aria-label={t.common.previous}
+              >
+                ‹
+              </button>
+              <button 
+                className="modal-nav-btn modal-next-btn"
+                onClick={modalNextImage}
+                aria-label={t.common.next}
+              >
+                ›
+              </button>
+              <div className="modal-counter">
+                {modalCurrentIndex + 1} / {modalImages.length}
+              </div>
+            </>
+          )}
+        </div>
+      )}
     </div>
   );
 }
