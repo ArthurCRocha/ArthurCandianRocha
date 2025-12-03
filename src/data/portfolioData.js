@@ -277,11 +277,11 @@ export const projects = [
     descriptionEN: "System for demonstrating course completion work, with an intuitive interface and robust features for digital marketing",
     technologies: ["javaScript", "HTML", "CSS3", "UI/UX Design"],
     images: [
-      "/src/assets/imagens/projetos de programação/tcc/Captura de tela 2025-11-28 122811.png",
-      "/src/assets/imagens/projetos de programação/tcc/Captura de tela 2025-11-28 122847.png",
-      "/src/assets/imagens/projetos de programação/tcc/Captura de tela 2025-11-28 122903.png"
+      "/assets/imagens/ttccfotos/tcc/Captura de tela 2025-11-28 122811.png",
+      "/assets/imagens/ttccfotos/tcc/Captura de tela 2025-11-28 122847.png",
+      "/assets/imagens/ttccfotos/tcc/Captura de tela 2025-11-28 122903.png"
     ],
-    image: "/src/assets/imagens/projetos de programação/tcc/Captura de tela 2025-11-28 122811.png",
+    image: "/assets/imagens/ttccfotos/tcc/Captura de tela 2025-11-28 122811.png",
     featured: true,
     link: null
   },
@@ -297,12 +297,11 @@ export const projects = [
     descriptionEN: "Activity aimed at applying knowledge in JavaScript development by creating a complete web application.",
     technologies: ["JavaScript", "HTML5", "CSS3", "Frontend Development"],
     images: [
-      "/src/assets/imagens/projetos de programação/1761608192885.jfif",
-      "/src/assets/imagens/projetos de programação/1761608242366.jfif",
-      "/src/assets/imagens/projetos de programação/1761608262232.jfif",
-      "/src/assets/imagens/projetos de programação/1761608272565.jfif"
+      "/assets/imagens/ttccfotos/tcc/Captura de tela 2025-11-28 122811.png",
+      "/assets/imagens/ttccfotos/tcc/Captura de tela 2025-11-28 122847.png",
+      "/assets/imagens/ttccfotos/tcc/Captura de tela 2025-11-28 122903.png"
     ],
-    image: "/src/assets/imagens/projetos de programação/1761608192885.jfif",
+    image: "/assets/imagens/ttccfotos/tcc/Captura de tela 2025-11-28 122811.png",
     featured: true,
     link: null
   },
@@ -317,7 +316,7 @@ export const projects = [
     description: "Desenvolvimento de artes em geral para trabalhos freelance.",
     descriptionEN: "",
     technologies: ["Canva", "Figma"],
-    image: "/src/assets/imagens/projetos de design/7_Lobo.png",
+    image: "/assets/imagens/projetos de design/projetos-if/7_Lobo.png",
     featured: true,
     link: null
   },
@@ -333,14 +332,14 @@ export const projects = [
     descriptionEN: " Digital ebook created for course completion project, focused on sleep hygiene with attractive and informative design.",
     technologies: ["Canva","Figma"],
     images: [
-      "/src/assets/imagens/projetos de design/higiene do sono/Título_page-0001.jpg",
-      "/src/assets/imagens/projetos de design/higiene do sono/Título_page-0002.jpg",
-      "/src/assets/imagens/projetos de design/higiene do sono/Título_page-0003.jpg",
-      "/src/assets/imagens/projetos de design/higiene do sono/Título_page-0004.jpg",
-      "/src/assets/imagens/projetos de design/higiene do sono/Título_page-0005.jpg",
-      "/src/assets/imagens/projetos de design/higiene do sono/Título_page-0006.jpg"
+      "/assets/imagens/projetos de design/higiene do sono/Título_page-0001.jpg",
+      "/assets/imagens/projetos de design/higiene do sono/Título_page-0002.jpg",
+      "/assets/imagens/projetos de design/higiene do sono/Título_page-0003.jpg",
+      "/assets/imagens/projetos de design/higiene do sono/Título_page-0004.jpg",
+      "/assets/imagens/projetos de design/higiene do sono/Título_page-0005.jpg",
+      "/assets/imagens/projetos de design/higiene do sono/Título_page-0006.jpg"
     ],
-    image: "/src/assets/imagens/projetos de design/higiene do sono/Título_page-0001.jpg",
+    image: "/assets/imagens/projetos de design/higiene do sono/Título_page-0001.jpg",
     featured: true,
     link: null
   },
@@ -356,19 +355,18 @@ export const projects = [
     descriptionEN: "Projects developed during internship at Rio Pomba City Hall, including informative posts, digital campaigns and certificates.",
     technologies: ["Canva", "Photoshop"],
     images: [
-      "/src/assets/imagens/projetos de design/agro-tech-posts/1.png",
-      "/src/assets/imagens/projetos de design/agro-tech-posts/2.png",
-      "/src/assets/imagens/projetos de design/tech-posts/1.png",
-      "/src/assets/imagens/projetos de design/tech-posts/2.png",
-      "/src/assets/imagens/projetos de design/tech-posts/3.png",
-      "/src/assets/imagens/projetos de design/tech-posts/4.png",
-      "/src/assets/imagens/projetos de design/orcamento-instagram/1.png",
-      "/src/assets/imagens/projetos de design/certificados/1.png",
-      "/src/assets/imagens/projetos de design/certificados/2.png",
-      "/src/assets/imagens/projetos de design/certificados/3.png",
-      "/src/assets/imagens/projetos de design/certificados/4.png"
+      "/assets/imagens/projetos de design/agro-tech-posts/1.png",
+      "/assets/imagens/projetos de design/agro-tech-posts/2.png",
+      "/assets/imagens/projetos de design/agro-tech-posts/3.png",
+      "/assets/imagens/projetos de design/agro-tech-posts/4.png",
+      "/assets/imagens/projetos de design/tech-posts/1.png",
+      "/assets/imagens/projetos de design/tech-posts/2.png",
+      "/assets/imagens/projetos de design/certificados/1.png",
+      "/assets/imagens/projetos de design/certificados/2.png",
+      "/assets/imagens/projetos de design/certificados/3.png",
+      "/assets/imagens/projetos de design/certificados/4.png"
     ],
-    image: "/src/assets/imagens/projetos de design/agro-tech-posts/1.png",
+    image: "/assets/imagens/projetos de design/agro-tech-posts/1.png",
     featured: true,
     link: null
   },
@@ -384,11 +382,11 @@ export const projects = [
     descriptionEN: "Set of artworks developed during internship at IF Sudeste MG Communication Office, including social media posts, event promotional materials, institutional campaigns and official communications.",
     technologies: ["Canva", "Photoshop", "Illustrator"],
     images: [
-      "/src/assets/imagens/projetos de design/projetos-if/6_APROVADOS.png",
-      "/src/assets/imagens/projetos de design/projetos-if/8_sábado letivo Zootecnia 1.png",
-      "/src/assets/imagens/projetos de design/projetos-if/2_Redação.png"
+      "/assets/imagens/projetos de design/projetos-if/6_APROVADOS.png",
+      "/assets/imagens/projetos de design/projetos-if/8_sábado letivo Zootecnia 1.png",
+      "/assets/imagens/projetos de design/projetos-if/2_Redação.png"
     ],
-    image: "/src/assets/imagens/projetos de design/projetos-if/6_APROVADOS.png",
+    image: "/assets/imagens/projetos de design/projetos-if/6_APROVADOS.png",
     featured: true,
     link: null
   },
@@ -414,7 +412,7 @@ export const certificates = [
     issuer: "GitHub",
     date: "2024",
     category: "Development",
-    image: "/src/assets/certificados/GithubCertificate/BBPWC7UD_page-0001.jpg",
+    image: "/assets/certificados/GithubCertificate/BBPWC7UD_page-0001.jpg",
     credentialId: "BBPWC7UD",
     description: "Certificação em Git e GitHub"
   },
@@ -425,7 +423,7 @@ export const certificates = [
     issuer: "Instituição",
     date: "2024",
     category: "Professional",
-    image: "/src/assets/certificados/NPLEAT9F/NPLEAT9F_page-0001.jpg",
+    image: "/assets/certificados/NPLEAT9F/NPLEAT9F_page-0001.jpg",
     credentialId: "NPLEAT9F",
     description: "Certificado profissional"
   },
@@ -436,7 +434,7 @@ export const certificates = [
     issuer: "Instituição",
     date: "2024",
     category: "Technical",
-    image: "/src/assets/certificados/4KHYPEUV/4KHYPEUV_page-0001.jpg",
+    image: "/assets/certificados/4KHYPEUV/4KHYPEUV_page-0001.jpg",
     credentialId: "4KHYPEUV",
     description: "Certificado técnico"
   }
