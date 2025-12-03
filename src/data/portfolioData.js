@@ -384,11 +384,11 @@ export const projects = [
     descriptionEN: "Set of artworks developed during internship at IF Sudeste MG Communication Office, including social media posts, event promotional materials, institutional campaigns and official communications.",
     technologies: ["Canva", "Photoshop", "Illustrator"],
     images: [
-      "/src/assets/imagens/projetos de design/6_APROVADOS.png",
-      "/src/assets/imagens/projetos de design/8_sábado letivo Zootecnia 1.png",
-      "/src/assets/imagens/projetos de design/2_Redação.png"
+      "/src/assets/imagens/projetos de design/projetos-if/6_APROVADOS.png",
+      "/src/assets/imagens/projetos de design/projetos-if/8_sábado letivo Zootecnia 1.png",
+      "/src/assets/imagens/projetos de design/projetos-if/2_Redação.png"
     ],
-    image: "/src/assets/imagens/projetos de design/6_APROVADOS.png",
+    image: "/src/assets/imagens/projetos de design/projetos-if/6_APROVADOS.png",
     featured: true,
     link: null
   },
