@@ -3,6 +3,17 @@
 // ===================================
 import { resolveImage } from '../assets/imageIndex.js';
 
+// Base path para imagens - ajusta automaticamente para produção
+const BASE_PATH = import.meta.env.BASE_URL || '/';
+
+// Helper function melhorada
+const getImagePath = (path) => {
+  // Remove barra inicial se existir
+  const cleanPath = path.startsWith('/') ? path.slice(1) : path;
+  // Combina base path com o caminho da imagem
+  return `${BASE_PATH}${cleanPath}`;
+};
+
 export const personalInfo = {
   fullName: "Arthur Candian Rocha",
   displayName: "Arthur Rocha",
@@ -278,11 +289,11 @@ export const projects = [
     descriptionEN: "System for demonstrating course completion work, with an intuitive interface and robust features for digital marketing",
     technologies: ["javaScript", "HTML", "CSS3", "UI/UX Design"],
     images: [
-      resolveImage("imagens/ttccfotos/tcc/Captura de tela 2025-11-28 122811.png"),
-      resolveImage("imagens/ttccfotos/tcc/Captura de tela 2025-11-28 122847.png"),
-      resolveImage("imagens/ttccfotos/tcc/Captura de tela 2025-11-28 122903.png")
+      getImagePath("/assets/imagens/ttccfotos/tcc/Captura de tela 2025-11-28 122811.png"),
+      getImagePath("/assets/imagens/ttccfotos/tcc/Captura de tela 2025-11-28 122847.png"),
+      getImagePath("/assets/imagens/ttccfotos/tcc/Captura de tela 2025-11-28 122903.png")
     ],
-    image: resolveImage("imagens/ttccfotos/tcc/Captura de tela 2025-11-28 122811.png"),
+    image: getImagePath("/assets/imagens/ttccfotos/tcc/Captura de tela 2025-11-28 122811.png"),
     featured: true,
     link: null
   },
@@ -345,7 +356,7 @@ export const projects = [
     description: "Desenvolvimento de artes em geral para trabalhos freelance.",
     descriptionEN: "",
     technologies: ["Canva", "Figma"],
-    image: resolveImage("imagens/projetos de design/projetos-if/7_Lobo.png"),
+    image: getImagePath("/assets/imagens/projetos de design/projetos-if/7_Lobo.png"),
     featured: true,
     link: null
   },
@@ -361,14 +372,14 @@ export const projects = [
     descriptionEN: " Digital ebook created for course completion project, focused on sleep hygiene with attractive and informative design.",
     technologies: ["Canva","Figma"],
     images: [
-      resolveImage("imagens/projetos de design/higiene do sono/Título_page-0001.jpg"),
-      resolveImage("imagens/projetos de design/higiene do sono/Título_page-0002.jpg"),
-      resolveImage("imagens/projetos de design/higiene do sono/Título_page-0003.jpg"),
-      resolveImage("imagens/projetos de design/higiene do sono/Título_page-0004.jpg"),
-      resolveImage("imagens/projetos de design/higiene do sono/Título_page-0005.jpg"),
-      resolveImage("imagens/projetos de design/higiene do sono/Título_page-0006.jpg")
+      getImagePath("/assets/imagens/projetos de design/higiene do sono/Título_page-0001.jpg"),
+      getImagePath("/assets/imagens/projetos de design/higiene do sono/Título_page-0002.jpg"),
+      getImagePath("/assets/imagens/projetos de design/higiene do sono/Título_page-0003.jpg"),
+      getImagePath("/assets/imagens/projetos de design/higiene do sono/Título_page-0004.jpg"),
+      getImagePath("/assets/imagens/projetos de design/higiene do sono/Título_page-0005.jpg"),
+      getImagePath("/assets/imagens/projetos de design/higiene do sono/Título_page-0006.jpg")
     ],
-    image: resolveImage("imagens/projetos de design/higiene do sono/Título_page-0001.jpg"),
+    image: getImagePath("/assets/imagens/projetos de design/higiene do sono/Título_page-0001.jpg"),
     featured: true,
     link: null
   },
@@ -386,16 +397,18 @@ export const projects = [
     // tech-posts/3-4.png e orcamento-instagram/1.png não existem mais no
     // repositório — removidos da lista pra não quebrar o carrossel.
     images: [
-      resolveImage("imagens/projetos de design/agro-tech-posts/1.png"),
-      resolveImage("imagens/projetos de design/agro-tech-posts/2.png"),
-      resolveImage("imagens/projetos de design/tech-posts/1.png"),
-      resolveImage("imagens/projetos de design/tech-posts/2.png"),
-      resolveImage("imagens/projetos de design/certificados/1.png"),
-      resolveImage("imagens/projetos de design/certificados/2.png"),
-      resolveImage("imagens/projetos de design/certificados/3.png"),
-      resolveImage("imagens/projetos de design/certificados/4.png")
+      getImagePath("/assets/imagens/projetos de design/agro-tech-posts/1.png"),
+      getImagePath("/assets/imagens/projetos de design/agro-tech-posts/2.png"),
+      getImagePath("/assets/imagens/projetos de design/agro-tech-posts/3.png"),
+      getImagePath("/assets/imagens/projetos de design/agro-tech-posts/4.png"),
+      getImagePath("/assets/imagens/projetos de design/tech-posts/1.png"),
+      getImagePath("/assets/imagens/projetos de design/tech-posts/2.png"),
+      getImagePath("/assets/imagens/projetos de design/certificados/1.png"),
+      getImagePath("/assets/imagens/projetos de design/certificados/2.png"),
+      getImagePath("/assets/imagens/projetos de design/certificados/3.png"),
+      getImagePath("/assets/imagens/projetos de design/certificados/4.png")
     ],
-    image: resolveImage("imagens/projetos de design/agro-tech-posts/1.png"),
+    image: getImagePath("/assets/imagens/projetos de design/agro-tech-posts/1.png"),
     featured: true,
     link: null
   },
@@ -411,16 +424,15 @@ export const projects = [
     descriptionEN: "Set of artworks developed during internship at IF Sudeste MG Communication Office, including social media posts, event promotional materials, institutional campaigns and official communications.",
     technologies: ["Canva", "Photoshop", "Illustrator"],
     images: [
-      resolveImage("imagens/projetos de design/projetos-if/6_APROVADOS.png"),
-      resolveImage("imagens/projetos de design/projetos-if/8_sábado letivo Zootecnia 1.png"),
-      resolveImage("imagens/projetos de design/projetos-if/2_Redação.png")
+      getImagePath("/assets/imagens/projetos de design/projetos-if/6_APROVADOS.png"),
+      getImagePath("/assets/imagens/projetos de design/projetos-if/8_sábado letivo Zootecnia 1.png"),
+      getImagePath("/assets/imagens/projetos de design/projetos-if/2_Redação.png")
     ],
-    image: resolveImage("imagens/projetos de design/projetos-if/6_APROVADOS.png"),
+    image: getImagePath("/assets/imagens/projetos de design/projetos-if/6_APROVADOS.png"),
     featured: true,
     link: null
   },
 ];
-//fim da parte de projetos
 
 export const awards = [
   {
@@ -451,7 +463,7 @@ export const certificates = [
     issuer: "GitHub",
     date: "2024",
     category: "Development",
-    image: resolveImage("certificados/GithubCertificate/BBPWC7UD_page-0001.jpg"),
+    image: getImagePath("/assets/certificados/GithubCertificate/BBPWC7UD_page-0001.jpg"),
     credentialId: "BBPWC7UD",
     description: "Certificação em Git e GitHub"
   },
@@ -462,7 +474,7 @@ export const certificates = [
     issuer: "Instituição",
     date: "2024",
     category: "Professional",
-    image: resolveImage("certificados/NPLEAT9F/NPLEAT9F_page-0001.jpg"),
+    image: getImagePath("/assets/certificados/NPLEAT9F/NPLEAT9F_page-0001.jpg"),
     credentialId: "NPLEAT9F",
     description: "Certificado profissional"
   },
@@ -473,7 +485,7 @@ export const certificates = [
     issuer: "Instituição",
     date: "2024",
     category: "Technical",
-    image: resolveImage("certificados/4KHYPEUV/4KHYPEUV_page-0001.jpg"),
+    image: getImagePath("/assets/certificados/4KHYPEUV/4KHYPEUV_page-0001.jpg"),
     credentialId: "4KHYPEUV",
     description: "Certificado técnico"
   }
