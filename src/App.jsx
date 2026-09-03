@@ -3,6 +3,9 @@ import { useState, useEffect } from 'react';
 import portfolioData from './data/portfolioData';
 import translations from './data/translations';
 import SakuraCanvas from './components/SakuraCanvas';
+import ShaderBackground from './components/ShaderBackground';
+import RevealText from './components/RevealText';
+import useParallax from './hooks/useParallax';
 
 export default function App() {
   const [hoveredProject, setHoveredProject] = useState(null);
@@ -17,6 +20,11 @@ export default function App() {
   const [modalCurrentIndex, setModalCurrentIndex] = useState(0);
   const [modalInfo, setModalInfo] = useState({ title: '', description: '' });
   const [openFaqIndex, setOpenFaqIndex] = useState(null);
+
+  // Camadas de parallax: velocidades diferentes criam sensação de profundidade
+  const heroSealParallaxRef = useParallax(0.12);
+  const heroContentParallaxRef = useParallax(-0.04);
+  const aboutShaderParallaxRef = useParallax(0.08);
 
   // Estados para tema e idioma
   const [isDarkMode, setIsDarkMode] = useState(() => {
@@ -276,8 +284,8 @@ export default function App() {
       {/* HERO / HEADER */}
       <header className="hero" id="hero">
         <SakuraCanvas />
-        <span className="hero-seal" aria-hidden="true">AR</span>
-        <div className="hero-content">
+        <span ref={heroSealParallaxRef} className="hero-seal" aria-hidden="true">AR</span>
+        <div ref={heroContentParallaxRef} className="hero-content">
           <h1 className="hero-title">{t.hero.title}</h1>
           <p className="hero-subtitle">{t.hero.subtitle}</p>
           <p className="hero-description">{t.hero.bio}</p>
@@ -306,7 +314,7 @@ export default function App() {
       {/* PROJECTS SECTION */}
       <section id="projects" className="section projects-section">
         <div className="section-header">
-          <h2>{t.projects.title}</h2>
+          <RevealText as="h2" text={t.projects.title} />
         </div>
         
         <div className="projects-list">
@@ -331,10 +339,13 @@ export default function App() {
 
       {/* ABOUT SECTION */}
       <section id="about" className="section about-section">
-        <div className="section-header">
-          <h2>{t.about.title}</h2>
+        <div ref={aboutShaderParallaxRef} className="about-shader-layer">
+          <ShaderBackground />
         </div>
-        
+        <div className="section-header">
+          <RevealText as="h2" text={t.about.title} />
+        </div>
+
         <div className="about-content">
           <p className="about-text">
             {t.about.description}
@@ -350,7 +361,7 @@ export default function App() {
               <span className="stat-label">{t.about.stats.projects}</span>
             </div>
             <div className="stat">
-              <span className="stat-number">{stats.clients.count}</span>
+              <span className="stat-number">{stats.technologies.count}</span>
               <span className="stat-label">{t.about.stats.technologies}</span>
             </div>
           </div>
@@ -360,7 +371,7 @@ export default function App() {
       {/* PORTFOLIO SECTION - DEVELOPMENT & DESIGN PROJECTS */}
       <section id="portfolio" className="section portfolio-projects-section">
         <div className="section-header">
-          <h2>{t.portfolio.title}</h2>
+          <RevealText as="h2" text={t.portfolio.title} />
           <p className="section-description">{t.portfolio.description}</p>
         </div>
 
@@ -512,7 +523,7 @@ export default function App() {
       {/* SERVICES SECTION */}
       <section id="services" className="section services-section">
         <div className="section-header">
-          <h2>{t.services.title}</h2>
+          <RevealText as="h2" text={t.services.title} />
         </div>
         
         <div className="services-grid">
@@ -552,7 +563,7 @@ export default function App() {
       {/* SKILLS SECTION */}
       <section id="skills" className="section services-section">
         <div className="section-header">
-          <h2>Competências Técnicas</h2>
+          <RevealText as="h2" text="Competências Técnicas" />
         </div>
 
         <div className="services-grid">
@@ -586,7 +597,7 @@ export default function App() {
       {/* CERTIFICATES SECTION */}
       <section id="certificates" className="section certificates-section">
         <div className="section-header">
-          <h2>{t.certificates.title}</h2>
+          <RevealText as="h2" text={t.certificates.title} />
         </div>
         
         <div className="certificates-grid">
@@ -626,7 +637,7 @@ export default function App() {
       {/* AWARDS / EDUCATION SECTION */}
       <section id="awards" className="section awards-section">
         <div className="section-header">
-          <h2>{t.awards.title}</h2>
+          <RevealText as="h2" text={t.awards.title} />
         </div>
 
         <div className="awards-list">
@@ -659,7 +670,7 @@ export default function App() {
       {/* FAQ SECTION */}
       <section id="faq" className="section faq-section">
         <div className="section-header">
-          <h2>{t.faq.title}</h2>
+          <RevealText as="h2" text={t.faq.title} />
           <p className="section-description">{t.faq.description}</p>
         </div>
 
@@ -686,7 +697,7 @@ export default function App() {
       {/* CONTACT SECTION */}
       <section id="contact" className="section contact-section">
         <div className="section-header">
-          <h2>{t.contact.title}</h2>
+          <RevealText as="h2" text={t.contact.title} />
         </div>
         
         <div className="contact-content">

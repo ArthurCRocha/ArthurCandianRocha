@@ -692,17 +692,12 @@ export const stats = {
     labelEN: "Years Experience"
   },
   projects: {
-    count: "40+",
+    count: "12+",
     label: "Projetos Concluídos",
     labelEN: "Projects Completed"
   },
-  clients: {
-    count: "15+",
-    label: "Clientes Atendidos",
-    labelEN: "Clients Served"
-  },
   technologies: {
-    count: "20+",
+    count: "30+",
     label: "Tecnologias Dominadas",
     labelEN: "Technologies Mastered"
   }
