@@ -1,6 +1,7 @@
 // ===================================
 // PORTFOLIO DATA - Arthur Candian Rocha
 // ===================================
+import { resolveImage } from '../assets/imageIndex.js';
 
 export const personalInfo = {
   fullName: "Arthur Candian Rocha",
@@ -277,11 +278,11 @@ export const projects = [
     descriptionEN: "System for demonstrating course completion work, with an intuitive interface and robust features for digital marketing",
     technologies: ["javaScript", "HTML", "CSS3", "UI/UX Design"],
     images: [
-      "/src/assets/imagens/projetos de programação/tcc/Captura de tela 2025-11-28 122811.png",
-      "/src/assets/imagens/projetos de programação/tcc/Captura de tela 2025-11-28 122847.png",
-      "/src/assets/imagens/projetos de programação/tcc/Captura de tela 2025-11-28 122903.png"
+      resolveImage("imagens/ttccfotos/tcc/Captura de tela 2025-11-28 122811.png"),
+      resolveImage("imagens/ttccfotos/tcc/Captura de tela 2025-11-28 122847.png"),
+      resolveImage("imagens/ttccfotos/tcc/Captura de tela 2025-11-28 122903.png")
     ],
-    image: "/src/assets/imagens/projetos de programação/tcc/Captura de tela 2025-11-28 122811.png",
+    image: resolveImage("imagens/ttccfotos/tcc/Captura de tela 2025-11-28 122811.png"),
     featured: true,
     link: null
   },
@@ -296,13 +297,40 @@ export const projects = [
     description: "Atividade com finalidade de aplicar conhecimentos em desenvolvimento em javaScript, criando uma aplicação web completa.",
     descriptionEN: "Activity aimed at applying knowledge in JavaScript development by creating a complete web application.",
     technologies: ["JavaScript", "HTML5", "CSS3", "Frontend Development"],
-    images: [
-      "/src/assets/imagens/projetos de programação/1761608192885.jfif",
-      "/src/assets/imagens/projetos de programação/1761608242366.jfif",
-      "/src/assets/imagens/projetos de programação/1761608262232.jfif",
-      "/src/assets/imagens/projetos de programação/1761608272565.jfif"
-    ],
-    image: "/src/assets/imagens/projetos de programação/1761608192885.jfif",
+    // As imagens originais deste projeto (4 .jfif) não existem mais no
+    // repositório — sem elas pra reimportar, o card aparece só com texto.
+    images: null,
+    image: null,
+    featured: true,
+    link: null
+  },
+  {
+    id: 3,
+    name: "Prodisel — Plataforma de Gestão",
+    nameShort: "Prodisel",
+    category: "Full Stack Development",
+    categoryEN: "Full Stack Development",
+    year: "2026",
+    type: "development",
+    description: "Liderei o desenvolvimento da Fase 1 do Prodisel, uma plataforma web para digitalizar um processo operacional que hoje depende de planilhas e controle manual. Arquitetura web-first com API mockada na fase inicial, permitindo iterar sobre a experiência antes de travar contratos de integração. Entreguei o MVP completo, com todos os módulos mapeados e uma demo funcional para validação de negócio.",
+    descriptionEN: "Led the development of Prodisel's Phase 1, a web platform to digitize an operational process that currently relies on spreadsheets and manual control. Web-first architecture with a mocked API in the initial phase, delivering a complete MVP with a working demo for business validation.",
+    technologies: ["React", "JavaScript", "API Mockada", "UI/UX Design"],
+    image: null,
+    featured: true,
+    link: null
+  },
+  {
+    id: 4,
+    name: "Padronizador de Currículos com IA",
+    nameShort: "Padronizador de Currículos",
+    category: "Automation & AI",
+    categoryEN: "Automation & AI",
+    year: "2026",
+    type: "development",
+    description: "Desenvolvi uma ferramenta em Node.js que automatiza a padronização de currículos para uma consultoria de recrutamento. O pipeline extrai texto de PDF/DOCX, usa o Gemini com saída estruturada validada por schema (Zod) para interpretar o conteúdo, e gera o documento final no template oficial da empresa. Processamento em lote resiliente a falhas e suíte de testes que roda sem depender de chave de API.",
+    descriptionEN: "Built a Node.js tool that automates résumé standardization for a recruitment firm. The pipeline extracts text from PDF/DOCX, uses Gemini with schema-validated structured output (Zod) to parse content, and renders the final document in the company's official template.",
+    technologies: ["Node.js", "Gemini API", "Zod", "docxtemplater"],
+    image: null,
     featured: true,
     link: null
   },
@@ -317,7 +345,7 @@ export const projects = [
     description: "Desenvolvimento de artes em geral para trabalhos freelance.",
     descriptionEN: "",
     technologies: ["Canva", "Figma"],
-    image: "/src/assets/imagens/projetos de design/7_Lobo.png",
+    image: resolveImage("imagens/projetos de design/projetos-if/7_Lobo.png"),
     featured: true,
     link: null
   },
@@ -333,14 +361,14 @@ export const projects = [
     descriptionEN: " Digital ebook created for course completion project, focused on sleep hygiene with attractive and informative design.",
     technologies: ["Canva","Figma"],
     images: [
-      "/src/assets/imagens/projetos de design/higiene do sono/Título_page-0001.jpg",
-      "/src/assets/imagens/projetos de design/higiene do sono/Título_page-0002.jpg",
-      "/src/assets/imagens/projetos de design/higiene do sono/Título_page-0003.jpg",
-      "/src/assets/imagens/projetos de design/higiene do sono/Título_page-0004.jpg",
-      "/src/assets/imagens/projetos de design/higiene do sono/Título_page-0005.jpg",
-      "/src/assets/imagens/projetos de design/higiene do sono/Título_page-0006.jpg"
+      resolveImage("imagens/projetos de design/higiene do sono/Título_page-0001.jpg"),
+      resolveImage("imagens/projetos de design/higiene do sono/Título_page-0002.jpg"),
+      resolveImage("imagens/projetos de design/higiene do sono/Título_page-0003.jpg"),
+      resolveImage("imagens/projetos de design/higiene do sono/Título_page-0004.jpg"),
+      resolveImage("imagens/projetos de design/higiene do sono/Título_page-0005.jpg"),
+      resolveImage("imagens/projetos de design/higiene do sono/Título_page-0006.jpg")
     ],
-    image: "/src/assets/imagens/projetos de design/higiene do sono/Título_page-0001.jpg",
+    image: resolveImage("imagens/projetos de design/higiene do sono/Título_page-0001.jpg"),
     featured: true,
     link: null
   },
@@ -355,20 +383,19 @@ export const projects = [
     description: "Projetos desenvolvidos durante estágio na Prefeitura de Rio Pomba, incluindo posts informativos, campanhas digitais e certificados.",
     descriptionEN: "Projects developed during internship at Rio Pomba City Hall, including informative posts, digital campaigns and certificates.",
     technologies: ["Canva", "Photoshop"],
+    // tech-posts/3-4.png e orcamento-instagram/1.png não existem mais no
+    // repositório — removidos da lista pra não quebrar o carrossel.
     images: [
-      "/src/assets/imagens/projetos de design/agro-tech-posts/1.png",
-      "/src/assets/imagens/projetos de design/agro-tech-posts/2.png",
-      "/src/assets/imagens/projetos de design/tech-posts/1.png",
-      "/src/assets/imagens/projetos de design/tech-posts/2.png",
-      "/src/assets/imagens/projetos de design/tech-posts/3.png",
-      "/src/assets/imagens/projetos de design/tech-posts/4.png",
-      "/src/assets/imagens/projetos de design/orcamento-instagram/1.png",
-      "/src/assets/imagens/projetos de design/certificados/1.png",
-      "/src/assets/imagens/projetos de design/certificados/2.png",
-      "/src/assets/imagens/projetos de design/certificados/3.png",
-      "/src/assets/imagens/projetos de design/certificados/4.png"
+      resolveImage("imagens/projetos de design/agro-tech-posts/1.png"),
+      resolveImage("imagens/projetos de design/agro-tech-posts/2.png"),
+      resolveImage("imagens/projetos de design/tech-posts/1.png"),
+      resolveImage("imagens/projetos de design/tech-posts/2.png"),
+      resolveImage("imagens/projetos de design/certificados/1.png"),
+      resolveImage("imagens/projetos de design/certificados/2.png"),
+      resolveImage("imagens/projetos de design/certificados/3.png"),
+      resolveImage("imagens/projetos de design/certificados/4.png")
     ],
-    image: "/src/assets/imagens/projetos de design/agro-tech-posts/1.png",
+    image: resolveImage("imagens/projetos de design/agro-tech-posts/1.png"),
     featured: true,
     link: null
   },
@@ -384,11 +411,11 @@ export const projects = [
     descriptionEN: "Set of artworks developed during internship at IF Sudeste MG Communication Office, including social media posts, event promotional materials, institutional campaigns and official communications.",
     technologies: ["Canva", "Photoshop", "Illustrator"],
     images: [
-      "/src/assets/imagens/projetos de design/projetos-if/6_APROVADOS.png",
-      "/src/assets/imagens/projetos de design/projetos-if/8_sábado letivo Zootecnia 1.png",
-      "/src/assets/imagens/projetos de design/projetos-if/2_Redação.png"
+      resolveImage("imagens/projetos de design/projetos-if/6_APROVADOS.png"),
+      resolveImage("imagens/projetos de design/projetos-if/8_sábado letivo Zootecnia 1.png"),
+      resolveImage("imagens/projetos de design/projetos-if/2_Redação.png")
     ],
-    image: "/src/assets/imagens/projetos de design/projetos-if/6_APROVADOS.png",
+    image: resolveImage("imagens/projetos de design/projetos-if/6_APROVADOS.png"),
     featured: true,
     link: null
   },
@@ -403,8 +430,18 @@ export const awards = [
     category: "IF Sudeste MG",
     year: "2020-2026",
     description: "Bacharelado em Ciência da Computação"
+  },
+  {
+    id: 2,
+    name: "Formação Híbrida",
+    nameEN: "Hybrid Background",
+    category: "Dev + Design",
+    year: "2023-2025",
+    description: "Atuação combinada em desenvolvimento de software e design gráfico"
   }
 ];
+
+export const resumePdf = new URL('../assets/pdfs/Título.pdf', import.meta.url).href;
 
 export const certificates = [
   {
@@ -414,7 +451,7 @@ export const certificates = [
     issuer: "GitHub",
     date: "2024",
     category: "Development",
-    image: "/src/assets/certificados/GithubCertificate/BBPWC7UD_page-0001.jpg",
+    image: resolveImage("certificados/GithubCertificate/BBPWC7UD_page-0001.jpg"),
     credentialId: "BBPWC7UD",
     description: "Certificação em Git e GitHub"
   },
@@ -425,7 +462,7 @@ export const certificates = [
     issuer: "Instituição",
     date: "2024",
     category: "Professional",
-    image: "/src/assets/certificados/NPLEAT9F/NPLEAT9F_page-0001.jpg",
+    image: resolveImage("certificados/NPLEAT9F/NPLEAT9F_page-0001.jpg"),
     credentialId: "NPLEAT9F",
     description: "Certificado profissional"
   },
@@ -436,7 +473,7 @@ export const certificates = [
     issuer: "Instituição",
     date: "2024",
     category: "Technical",
-    image: "/src/assets/certificados/4KHYPEUV/4KHYPEUV_page-0001.jpg",
+    image: resolveImage("certificados/4KHYPEUV/4KHYPEUV_page-0001.jpg"),
     credentialId: "4KHYPEUV",
     description: "Certificado técnico"
   }
@@ -579,6 +616,7 @@ export default {
   education,
   projects,
   awards,
+  resumePdf,
   certificates,
   services,
   stats,

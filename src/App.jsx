@@ -1,22 +1,29 @@
 import './App.css';
 import { useState, useEffect } from 'react';
 import portfolioData from './data/portfolioData';
+import SakuraCanvas from './components/SakuraCanvas';
 
 export default function App() {
   const [hoveredProject, setHoveredProject] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [scrollProgress, setScrollProgress] = useState(0);
   const [projectImageIndexes, setProjectImageIndexes] = useState({});
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   // Destructure portfolio data
-  const { 
-    personalInfo, 
-    contactInfo, 
-    experience, 
+  const {
+    personalInfo,
+    contactInfo,
+    experience,
     services: portfolioServices,
     certificates,
     stats,
-    helpers 
+    hardSkills,
+    softSkills,
+    education,
+    awards,
+    resumePdf,
+    helpers
   } = portfolioData;
 
   // Get projects by type
@@ -91,11 +98,6 @@ export default function App() {
     year: exp.year || exp.duration.split(' - ')[0]
   }));
 
-  const awards = [
-    { name: 'IF Sudeste MG', category: 'Ciência da Computação', year: '2020-2026' },
-    { name: 'Formação Híbrida', category: 'Dev + Design', year: '2023-2025' },
-  ];
-
   if (isLoading) {
     return (
       <div className="loader">
@@ -121,16 +123,22 @@ export default function App() {
       <nav className="main-header">
         <div className="header-content">
           <a href="#hero" className="header-logo">{personalInfo.displayName}</a>
-          <div className="header-nav">
-            <a href="#projects" className="header-nav-item"><span className="header-nav-number">01</span> Experiências</a>
-            <a href="#about" className="header-nav-item"><span className="header-nav-number">02</span> Sobre</a>
-            <a href="#portfolio" className="header-nav-item"><span className="header-nav-number">03</span> Projetos</a>
-            <a href="#services" className="header-nav-item"><span className="header-nav-number">04</span> Serviços</a>
-            <a href="#certificates" className="header-nav-item"><span className="header-nav-number">05</span> Certificados</a>
-            <a href="#awards" className="header-nav-item"><span className="header-nav-number">06</span> Formação</a>
-            <a href="#contact" className="header-nav-item"><span className="header-nav-number">07</span> Contato</a>
+          <div className={`header-nav ${mobileMenuOpen ? 'open' : ''}`}>
+            <a href="#projects" className="header-nav-item" onClick={() => setMobileMenuOpen(false)}><span className="header-nav-number">01</span> Experiências</a>
+            <a href="#about" className="header-nav-item" onClick={() => setMobileMenuOpen(false)}><span className="header-nav-number">02</span> Sobre</a>
+            <a href="#portfolio" className="header-nav-item" onClick={() => setMobileMenuOpen(false)}><span className="header-nav-number">03</span> Projetos</a>
+            <a href="#services" className="header-nav-item" onClick={() => setMobileMenuOpen(false)}><span className="header-nav-number">04</span> Serviços</a>
+            <a href="#skills" className="header-nav-item" onClick={() => setMobileMenuOpen(false)}><span className="header-nav-number">05</span> Competências</a>
+            <a href="#certificates" className="header-nav-item" onClick={() => setMobileMenuOpen(false)}><span className="header-nav-number">06</span> Certificados</a>
+            <a href="#awards" className="header-nav-item" onClick={() => setMobileMenuOpen(false)}><span className="header-nav-number">07</span> Formação</a>
+            <a href="#contact" className="header-nav-item" onClick={() => setMobileMenuOpen(false)}><span className="header-nav-number">08</span> Contato</a>
           </div>
-          <button className="mobile-menu-toggle" aria-label="Menu">
+          <button
+            className="mobile-menu-toggle"
+            aria-label="Menu"
+            aria-expanded={mobileMenuOpen}
+            onClick={() => setMobileMenuOpen((open) => !open)}
+          >
             <span></span>
             <span></span>
             <span></span>
@@ -140,6 +148,8 @@ export default function App() {
 
       {/* HERO / HEADER */}
       <header className="hero" id="hero">
+        <SakuraCanvas />
+        <span className="hero-seal" aria-hidden="true">AR</span>
         <div className="hero-content">
           <h1 className="hero-title">{personalInfo.displayName}</h1>
           <p className="hero-subtitle">{personalInfo.subtitle}</p>
@@ -157,6 +167,10 @@ export default function App() {
             <div className="meta-item">
               <span className="meta-label">Status</span>
               <span className="meta-value available">{personalInfo.availability.statusPT}</span>
+            </div>
+            <div className="meta-item">
+              <span className="meta-label">Currículo</span>
+              <a href={resumePdf} target="_blank" rel="noopener noreferrer" className="meta-link">Baixar PDF</a>
             </div>
           </div>
         </div>
@@ -365,6 +379,40 @@ export default function App() {
         </div>
       </section>
 
+      {/* SKILLS SECTION */}
+      <section id="skills" className="section services-section">
+        <div className="section-header">
+          <h2>Competências Técnicas</h2>
+        </div>
+
+        <div className="services-grid">
+          {Object.values(hardSkills).map((group) => (
+            <div className="services-column" key={group.category}>
+              <h3 className="services-title">{group.category}</h3>
+              <div className="project-list-tech">
+                {group.skills.map((skill) => (
+                  <span key={skill.name} className="tech-tag">
+                    {skill.icon} {skill.name}
+                  </span>
+                ))}
+              </div>
+            </div>
+          ))}
+
+          <div className="services-column">
+            <h3 className="services-title">Soft Skills</h3>
+            <ul className="services-list">
+              {softSkills.map((skill) => (
+                <li key={skill.name} className="service-item">
+                  <span className="service-dot"></span>
+                  {skill.icon} {skill.name}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
       {/* CERTIFICATES SECTION */}
       <section id="certificates" className="section certificates-section">
         <div className="section-header">
@@ -397,15 +445,30 @@ export default function App() {
         </div>
       </section>
 
-      {/* AWARDS SECTION */}
+      {/* AWARDS / EDUCATION SECTION */}
       <section id="awards" className="section awards-section">
         <div className="section-header">
           <h2>Formação Acadêmica</h2>
         </div>
-        
+
         <div className="awards-list">
-          {awards.map((award, index) => (
-            <div key={index} className="award-item">
+          {education.map((edu) => (
+            <div key={edu.id} className="award-item">
+              <div className="award-name">{edu.degree}</div>
+              <div className="award-separator">—</div>
+              <div className="award-category">{edu.institutionShort}</div>
+              <div className="award-year">{edu.duration}</div>
+            </div>
+          ))}
+        </div>
+
+        <div className="section-header" style={{ marginTop: 'var(--spacing-2xl)' }}>
+          <h3 className="subsection-title">Reconhecimentos</h3>
+        </div>
+
+        <div className="awards-list">
+          {awards.map((award) => (
+            <div key={award.id} className="award-item">
               <div className="award-name">{award.name}</div>
               <div className="award-separator">—</div>
               <div className="award-category">{award.category}</div>
@@ -447,6 +510,7 @@ export default function App() {
               <li><a href="#about" className="footer-link">Sobre</a></li>
               <li><a href="#portfolio" className="footer-link">Projetos</a></li>
               <li><a href="#services" className="footer-link">Serviços</a></li>
+              <li><a href="#skills" className="footer-link">Competências</a></li>
               <li><a href="#certificates" className="footer-link">Certificados</a></li>
               <li><a href="#awards" className="footer-link">Formação</a></li>
             </ul>
