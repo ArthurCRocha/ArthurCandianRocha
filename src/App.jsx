@@ -2,12 +2,14 @@ import './App.css';
 import { useState, useEffect } from 'react';
 import portfolioData from './data/portfolioData';
 import translations from './data/translations';
+import SakuraCanvas from './components/SakuraCanvas';
 
 export default function App() {
   const [hoveredProject, setHoveredProject] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [scrollProgress, setScrollProgress] = useState(0);
   const [projectImageIndexes, setProjectImageIndexes] = useState({});
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   
   // Estados para o modal de imagem
   const [modalImage, setModalImage] = useState(null);
@@ -207,40 +209,67 @@ export default function App() {
         ></div>
       </div>
 
-      {/* Theme & Language Controls */}
-      <div className="top-controls">
-        {/* Language Toggle */}
-        <div className="control-group">
-          <label className="control-label" aria-label="Idioma">
-            <span className="control-icon">🌐</span>
-          </label>
-          <button 
-            className={`language-toggle ${language === 'en' ? 'active' : ''}`}
-            onClick={() => setLanguage(language === 'pt' ? 'en' : 'pt')}
-            aria-label="Alternar idioma"
-          >
-            <span className="lang-option" data-active={language === 'pt'}>PT</span>
-            <span className="lang-option" data-active={language === 'en'}>EN</span>
-            <div className="toggle-slider"></div>
-          </button>
-        </div>
+      {/* MAIN NAVIGATION HEADER */}
+      <nav className="main-header">
+        <div className="header-content">
+          <a href="#hero" className="header-logo">{personalInfo.displayName}</a>
 
-        {/* Theme Toggle */}
-        <div className="control-group">
-          <label className="control-label" aria-label="Tema">
-            <span className="control-icon">{isDarkMode ? '🌙' : '☀️'}</span>
-          </label>
-          <button 
-            className={`theme-toggle ${isDarkMode ? 'dark' : 'light'}`}
-            onClick={() => setIsDarkMode(!isDarkMode)}
-            aria-label="Alternar tema"
-          >
-            <div className="toggle-track">
-              <div className="toggle-thumb"></div>
+          <div className={`header-nav ${mobileMenuOpen ? 'open' : ''}`}>
+            <a href="#projects" className="header-nav-item" onClick={() => setMobileMenuOpen(false)}><span className="header-nav-number">01</span> {t.nav.projects}</a>
+            <a href="#about" className="header-nav-item" onClick={() => setMobileMenuOpen(false)}><span className="header-nav-number">02</span> {t.nav.about}</a>
+            <a href="#portfolio" className="header-nav-item" onClick={() => setMobileMenuOpen(false)}><span className="header-nav-number">03</span> {t.nav.portfolio}</a>
+            <a href="#services" className="header-nav-item" onClick={() => setMobileMenuOpen(false)}><span className="header-nav-number">04</span> {t.nav.services}</a>
+            <a href="#skills" className="header-nav-item" onClick={() => setMobileMenuOpen(false)}><span className="header-nav-number">05</span> {t.nav.skills}</a>
+            <a href="#certificates" className="header-nav-item" onClick={() => setMobileMenuOpen(false)}><span className="header-nav-number">06</span> {t.nav.certificates}</a>
+            <a href="#awards" className="header-nav-item" onClick={() => setMobileMenuOpen(false)}><span className="header-nav-number">07</span> {t.nav.awards}</a>
+            <a href="#contact" className="header-nav-item" onClick={() => setMobileMenuOpen(false)}><span className="header-nav-number">08</span> {t.nav.contact}</a>
+
+            {/* Theme & Language Controls (mobile: inline with links) */}
+            <div className="header-controls">
+              <div className="control-group">
+                <label className="control-label" aria-label="Idioma">
+                  <span className="control-icon">🌐</span>
+                </label>
+                <button
+                  className={`language-toggle ${language === 'en' ? 'active' : ''}`}
+                  onClick={() => setLanguage(language === 'pt' ? 'en' : 'pt')}
+                  aria-label="Alternar idioma"
+                >
+                  <span className="lang-option" data-active={language === 'pt'}>PT</span>
+                  <span className="lang-option" data-active={language === 'en'}>EN</span>
+                  <div className="toggle-slider"></div>
+                </button>
+              </div>
+
+              <div className="control-group">
+                <label className="control-label" aria-label="Tema">
+                  <span className="control-icon">{isDarkMode ? '🌙' : '☀️'}</span>
+                </label>
+                <button
+                  className={`theme-toggle ${isDarkMode ? 'dark' : 'light'}`}
+                  onClick={() => setIsDarkMode(!isDarkMode)}
+                  aria-label="Alternar tema"
+                >
+                  <div className="toggle-track">
+                    <div className="toggle-thumb"></div>
+                  </div>
+                </button>
+              </div>
             </div>
+          </div>
+
+          <button
+            className="mobile-menu-toggle"
+            aria-label="Menu"
+            aria-expanded={mobileMenuOpen}
+            onClick={() => setMobileMenuOpen((open) => !open)}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
           </button>
         </div>
-      </div>
+      </nav>
 
       {/* HERO / HEADER */}
       <header className="hero" id="hero">

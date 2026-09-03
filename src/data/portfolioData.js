@@ -1,8 +1,6 @@
 // ===================================
 // PORTFOLIO DATA - Arthur Candian Rocha
 // ===================================
-import { resolveImage } from '../assets/imageIndex.js';
-
 // Base path para imagens - ajusta automaticamente para produção
 const BASE_PATH = import.meta.env.BASE_URL || '/';
 

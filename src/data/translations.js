@@ -21,6 +21,7 @@ export const translations = {
       about: "Sobre",
       portfolio: "Projetos",
       services: "Serviços",
+      skills: "Competências",
       certificates: "Certificados",
       awards: "Formação",
       contact: "Contato"
@@ -142,6 +143,7 @@ export const translations = {
       about: "About",
       portfolio: "Projects",
       services: "Services",
+      skills: "Skills",
       certificates: "Certificates",
       awards: "Education",
       contact: "Contact"
