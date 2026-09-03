@@ -75,8 +75,20 @@ export const hardSkills = {
       { name: "Java", level: "advanced", icon: "☕" },
       { name: "Python", level: "intermediate", icon: "🐍" },
       { name: "C++", level: "intermediate", icon: "⚙️" },
-      { name: "Groovy", level: "basic", icon: "🎵" },
-      { name: "Node.js", level: "intermediate", icon: "🟢" }
+      { name: "Node.js", level: "intermediate", icon: "🟢" },
+      { name: "Express", level: "intermediate", icon: "🚂" },
+      { name: "PHP", level: "intermediate", icon: "🐘" },
+      { name: "SQL / PostgreSQL", level: "intermediate", icon: "🗄️" },
+      { name: "Redis", level: "basic", icon: "📮" },
+      { name: "Docker", level: "basic", icon: "🐳" },
+      { name: "Groovy", level: "basic", icon: "🎵" }
+    ]
+  },
+  mobile: {
+    category: "Mobile Development",
+    skills: [
+      { name: "Flutter", level: "intermediate", icon: "🦋" },
+      { name: "Dart", level: "intermediate", icon: "🎯" }
     ]
   },
   design: {
@@ -94,6 +106,9 @@ export const hardSkills = {
     category: "Other Skills",
     skills: [
       { name: "AI Automation", level: "intermediate", icon: "🤖" },
+      { name: "Generative AI & Prompt Engineering", level: "intermediate", icon: "🧠" },
+      { name: "Socket.io", level: "basic", icon: "🔌" },
+      { name: "JWT", level: "intermediate", icon: "🔐" },
       { name: "Computer Assembly & Maintenance", level: "advanced", icon: "🖥️" },
       { name: "Git/GitHub", level: "advanced", icon: "📦" }
     ]
@@ -125,6 +140,54 @@ export const softSkills = [
 
 // Experiência
 export const experience = [
+  {
+    id: 5,
+    company: "Bioma Investimentos",
+    companyShort: "Bioma Investimentos",
+    position: "Estagiário de Desenvolvimento",
+    positionEN: "Development Intern",
+    type: "internship",
+    startDate: "2026-08",
+    endDate: null,
+    current: true,
+    duration: "Agosto 2026 - Atualmente",
+    durationEN: "August 2026 - Present",
+    location: "Remote",
+    category: "Mobile Development",
+    description: "Desenvolvimento mobile com Flutter integrado a bancos de dados SQL, atuando no time de tecnologia da Bioma Investimentos.",
+    descriptionEN: "Mobile development with Flutter integrated with SQL databases, working on Bioma Investimentos' technology team.",
+    responsibilities: [
+      "Desenvolvimento de funcionalidades em Flutter",
+      "Integração com bancos de dados SQL",
+      "Colaboração com o time de tecnologia"
+    ],
+    technologies: ["Flutter", "Dart", "SQL"],
+    featured: true
+  },
+  {
+    id: 6,
+    company: "Assurance",
+    companyShort: "Assurance",
+    position: "Especialista em Alocação Profissional",
+    positionEN: "Professional Allocation Specialist",
+    type: "full-time",
+    startDate: "2026-02",
+    endDate: null,
+    current: true,
+    duration: "Fevereiro 2026 - Atualmente",
+    durationEN: "February 2026 - Present",
+    location: "Remote",
+    category: "IT Systems & Operations",
+    description: "Gestão de sistemas de clientes e operação do portal IBM, dando suporte a processos de alocação profissional.",
+    descriptionEN: "Managing client systems and IBM portal operations, supporting professional allocation processes.",
+    responsibilities: [
+      "Gestão de sistemas de clientes",
+      "Operação do portal IBM",
+      "Suporte a processos administrativos"
+    ],
+    technologies: ["IBM Portal", "Client Systems"],
+    featured: true
+  },
   {
     id: 1,
     company: "Santiago TI",
@@ -256,6 +319,28 @@ export const education = [
     ]
   },
   {
+    id: 3,
+    degree: "Tecnólogo em Análise e Desenvolvimento de Sistemas",
+    degreeEN: "Technologist in Systems Analysis and Development",
+    institution: "Univiçosa",
+    institutionShort: "Univiçosa",
+    startDate: "2025-12",
+    endDate: null,
+    graduationDate: "Em andamento",
+    graduationDateEN: "In progress",
+    current: true,
+    status: "in-progress",
+    location: "Remote",
+    duration: "Dezembro 2025 - Atualmente",
+    durationEN: "December 2025 - Present",
+    description: "Formação tecnológica complementar focada em análise de sistemas e desenvolvimento de software aplicado.",
+    highlights: [
+      "Análise de Sistemas",
+      "Desenvolvimento de Software",
+      "Gestão de Projetos de TI"
+    ]
+  },
+  {
     id: 2,
     degree: "Ensino Médio",
     degreeEN: "High School",
@@ -339,6 +424,66 @@ export const projects = [
     description: "Desenvolvi uma ferramenta em Node.js que automatiza a padronização de currículos para uma consultoria de recrutamento. O pipeline extrai texto de PDF/DOCX, usa o Gemini com saída estruturada validada por schema (Zod) para interpretar o conteúdo, e gera o documento final no template oficial da empresa. Processamento em lote resiliente a falhas e suíte de testes que roda sem depender de chave de API.",
     descriptionEN: "Built a Node.js tool that automates résumé standardization for a recruitment firm. The pipeline extracts text from PDF/DOCX, uses Gemini with schema-validated structured output (Zod) to parse content, and renders the final document in the company's official template.",
     technologies: ["Node.js", "Gemini API", "Zod", "docxtemplater"],
+    image: null,
+    featured: true,
+    link: null
+  },
+  {
+    id: 10,
+    name: "Gerenciador de Mercado",
+    nameShort: "Gerenciador de Mercado",
+    category: "Full Stack Development",
+    categoryEN: "Full Stack Development",
+    year: "2025",
+    type: "development",
+    description: "Solução full-stack para gestão de instituições locais, cobrindo controle de estoque, vendas e operação do dia a dia.",
+    descriptionEN: "Full-stack software solution for local institutions, covering inventory, sales and day-to-day operations management.",
+    technologies: ["JavaScript", "Node.js", "SQL"],
+    image: null,
+    featured: true,
+    link: "https://github.com/ArthurCRocha/Gerenciador_de_mercado"
+  },
+  {
+    id: 11,
+    name: "Chatbot para WhatsApp",
+    nameShort: "Chatbot WhatsApp",
+    category: "Automation & AI",
+    categoryEN: "Automation & AI",
+    year: "2025",
+    type: "development",
+    description: "Automação de atendimento via WhatsApp integrando API de mensagens a fluxos conversacionais.",
+    descriptionEN: "WhatsApp service automation integrating a messaging API with conversational flows.",
+    technologies: ["Node.js", "WhatsApp API", "Automation"],
+    image: null,
+    featured: true,
+    link: "https://github.com/ArthurCRocha/Chatbot_Whatsapp"
+  },
+  {
+    id: 12,
+    name: "Sistema de Cartório",
+    nameShort: "Cartório",
+    category: "Full Stack Development",
+    categoryEN: "Full Stack Development",
+    year: "2024",
+    type: "development",
+    description: "Sistema estruturado de registros para cartório, construído com PHP e MySQL.",
+    descriptionEN: "Structured registration system for a notary office, built with PHP and MySQL.",
+    technologies: ["PHP", "MySQL"],
+    image: null,
+    featured: true,
+    link: "https://github.com/ArthurCRocha/cartorio"
+  },
+  {
+    id: 13,
+    name: "Estudos de Flutter",
+    nameShort: "Flutter Learning",
+    category: "Mobile Development",
+    categoryEN: "Mobile Development",
+    year: "2026",
+    type: "development",
+    description: "Repositório de progressão em desenvolvimento mobile com Flutter, com exemplos práticos e exercícios.",
+    descriptionEN: "Mobile development progression repository with Flutter, featuring practical examples and exercises.",
+    technologies: ["Flutter", "Dart"],
     image: null,
     featured: true,
     link: null

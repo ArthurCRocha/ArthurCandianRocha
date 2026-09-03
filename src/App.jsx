@@ -16,7 +16,8 @@ export default function App() {
   const [modalImages, setModalImages] = useState([]);
   const [modalCurrentIndex, setModalCurrentIndex] = useState(0);
   const [modalInfo, setModalInfo] = useState({ title: '', description: '' });
-  
+  const [openFaqIndex, setOpenFaqIndex] = useState(null);
+
   // Estados para tema e idioma
   const [isDarkMode, setIsDarkMode] = useState(() => {
     const saved = localStorage.getItem('theme');
@@ -180,8 +181,8 @@ export default function App() {
     };
   }, []);
 
-  // Use real data for projects (experience)
-  const projects = experience.map(exp => ({
+  // Use real data for projects (experience), most recent first
+  const projects = helpers.getExperienceByDate().map(exp => ({
     id: exp.id,
     name: exp.companyShort,
     category: exp.category,
@@ -222,7 +223,8 @@ export default function App() {
             <a href="#skills" className="header-nav-item" onClick={() => setMobileMenuOpen(false)}><span className="header-nav-number">05</span> {t.nav.skills}</a>
             <a href="#certificates" className="header-nav-item" onClick={() => setMobileMenuOpen(false)}><span className="header-nav-number">06</span> {t.nav.certificates}</a>
             <a href="#awards" className="header-nav-item" onClick={() => setMobileMenuOpen(false)}><span className="header-nav-number">07</span> {t.nav.awards}</a>
-            <a href="#contact" className="header-nav-item" onClick={() => setMobileMenuOpen(false)}><span className="header-nav-number">08</span> {t.nav.contact}</a>
+            <a href="#faq" className="header-nav-item" onClick={() => setMobileMenuOpen(false)}><span className="header-nav-number">08</span> {t.nav.faq}</a>
+            <a href="#contact" className="header-nav-item" onClick={() => setMobileMenuOpen(false)}><span className="header-nav-number">09</span> {t.nav.contact}</a>
 
             {/* Theme & Language Controls (mobile: inline with links) */}
             <div className="header-controls">
@@ -384,6 +386,16 @@ export default function App() {
                       <span key={idx} className="tech-tag">{tech}</span>
                     ))}
                   </div>
+                  {project.link && (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-list-link"
+                    >
+                      {t.portfolio.viewProject} →
+                    </a>
+                  )}
                 </div>
                 {project.image && (
                   <div 
@@ -446,6 +458,16 @@ export default function App() {
                       <span key={idx} className="tech-tag">{tech}</span>
                     ))}
                   </div>
+                  {project.link && (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-list-link"
+                    >
+                      {t.portfolio.viewProject} →
+                    </a>
+                  )}
                 </div>
                 {project.image && (
                   <div 
@@ -634,6 +656,33 @@ export default function App() {
         </div>
       </section>
 
+      {/* FAQ SECTION */}
+      <section id="faq" className="section faq-section">
+        <div className="section-header">
+          <h2>{t.faq.title}</h2>
+          <p className="section-description">{t.faq.description}</p>
+        </div>
+
+        <div className="faq-list">
+          {t.faq.items.map((item, index) => (
+            <div key={index} className={`faq-item ${openFaqIndex === index ? 'open' : ''}`}>
+              <button
+                className="faq-question"
+                onClick={() => setOpenFaqIndex(openFaqIndex === index ? null : index)}
+                aria-expanded={openFaqIndex === index}
+              >
+                <span className="faq-question-number">{String(index + 1).padStart(2, '0')}</span>
+                <span className="faq-question-text">{item.question}</span>
+                <span className="faq-toggle-icon">{openFaqIndex === index ? '−' : '+'}</span>
+              </button>
+              {openFaqIndex === index && (
+                <p className="faq-answer">{item.answer}</p>
+              )}
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* CONTACT SECTION */}
       <section id="contact" className="section contact-section">
         <div className="section-header">
@@ -668,6 +717,7 @@ export default function App() {
               <li><a href="#services" className="footer-link">{t.nav.services}</a></li>
               <li><a href="#certificates" className="footer-link">{t.nav.certificates}</a></li>
               <li><a href="#awards" className="footer-link">{t.nav.awards}</a></li>
+              <li><a href="#faq" className="footer-link">{t.nav.faq}</a></li>
             </ul>
           </div>
           

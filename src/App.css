@@ -1054,6 +1054,22 @@ body {
   background-color: white;
 }
 
+.project-list-link {
+  display: inline-block;
+  margin-top: var(--spacing-sm);
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--color-accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: var(--transition-fast);
+  width: fit-content;
+}
+
+.project-list-link:hover {
+  border-bottom-color: var(--color-accent);
+}
+
 .project-list-image {
   width: 200px;
   height: 150px;
@@ -1540,6 +1556,95 @@ body {
   color: var(--color-text-secondary);
   font-weight: 500;
   text-align: right;
+}
+
+/* ===================================
+   FAQ SECTION
+   =================================== */
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--color-border);
+  padding: var(--spacing-lg) 0;
+  transition: var(--transition-fast);
+}
+
+.faq-item:last-child {
+  border-bottom: none;
+}
+
+.faq-question {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 40px 1fr auto;
+  align-items: center;
+  gap: var(--spacing-lg);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+  color: var(--color-text-primary);
+}
+
+.faq-question-number {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--color-text-secondary);
+  letter-spacing: 0.05em;
+}
+
+.faq-question-text {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  transition: var(--transition-fast);
+}
+
+.faq-item.open .faq-question-text,
+.faq-question:hover .faq-question-text {
+  color: var(--color-accent);
+}
+
+.faq-toggle-icon {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: var(--color-text-secondary);
+  width: 24px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.faq-answer {
+  margin-top: var(--spacing-md);
+  margin-left: calc(40px + var(--spacing-lg));
+  max-width: 700px;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  animation: fadeInUp 0.3s ease-out;
+}
+
+@media (max-width: 768px) {
+  .faq-question {
+    grid-template-columns: 24px 1fr auto;
+    gap: var(--spacing-md);
+  }
+
+  .faq-question-text {
+    font-size: 1.05rem;
+  }
+
+  .faq-answer {
+    margin-left: calc(24px + var(--spacing-md));
+  }
 }
 
 /* ===================================

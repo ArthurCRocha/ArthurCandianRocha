@@ -24,6 +24,7 @@ export const translations = {
       skills: "Competências",
       certificates: "Certificados",
       awards: "Formação",
+      faq: "FAQ",
       contact: "Contato"
     },
 
@@ -36,7 +37,7 @@ export const translations = {
     // About Section
     about: {
       title: "Sobre Mim",
-      description: "Estudante de Ciência da Computação no IF Sudeste MG, com formação prevista para julho de 2026. Minha jornada acadêmica é complementada por experiências práticas em desenvolvimento de software e design gráfico. Sou apaixonado por tecnologia e busco constantemente aprimorar minhas habilidades através de projetos desafiadores.",
+      description: "Sou um profissional híbrido: divido meu tempo entre desenvolvimento de software e design gráfico, e uso isso a meu favor — entendo tanto a lógica por trás do código quanto a experiência de quem vai usar o produto. Hoje atuo como estagiário de desenvolvimento na Bioma Investimentos (Flutter + SQL) e na Assurance, enquanto concluo minha graduação em Ciência da Computação no IF Sudeste MG (previsão: julho/2026) e curso uma tecnóloga complementar na Univiçosa. Se o problema envolve automatizar algo manual, digitalizar um processo em planilha ou dar cara profissional a um material, eu já resolvi algo parecido.",
       stats: {
         experience: "Anos de Experiência",
         projects: "Projetos Concluídos",
@@ -101,6 +102,34 @@ export const translations = {
       description: "Educação e conquistas acadêmicas"
     },
 
+    // FAQ Section
+    faq: {
+      title: "Perguntas Frequentes",
+      description: "Direto ao ponto, sem enrolação",
+      items: [
+        {
+          question: "Você atende remoto?",
+          answer: "Sim. Atuo 100% remoto hoje na Bioma Investimentos e na Assurance, e é o meu formato preferido de trabalho."
+        },
+        {
+          question: "Que tipo de projeto você topa?",
+          answer: "Projetos de 3 a 6 meses em desenvolvimento web/mobile ou design gráfico, com possibilidade de colaboração contínua depois."
+        },
+        {
+          question: "Você faz só código ou também design?",
+          answer: "Os dois. Consigo entregar tanto a implementação técnica quanto a identidade visual e as peças gráficas em volta dela."
+        },
+        {
+          question: "Você ainda está estudando — isso é um problema?",
+          answer: "Não deveria ser: já são mais de 3 anos atuando profissionalmente em paralelo aos estudos, e sei dividir bem estudo e entrega."
+        },
+        {
+          question: "Como faço contato?",
+          answer: "Pelo e-mail ou WhatsApp na seção de contato abaixo — costumo responder rápido."
+        }
+      ]
+    },
+
     // Contact Section
     contact: {
       title: "Vamos Trabalhar Juntos",
@@ -110,7 +139,7 @@ export const translations = {
         social: "Redes Sociais",
         navigation: "Navegação",
         info: "Informações",
-        copyright: "© 2025 Arthur Candian Rocha. Todos os direitos reservados. Desenvolvido com React."
+        copyright: "© 2026 Arthur Candian Rocha. Todos os direitos reservados. Desenvolvido com React."
       }
     },
 
@@ -146,6 +175,7 @@ export const translations = {
       skills: "Skills",
       certificates: "Certificates",
       awards: "Education",
+      faq: "FAQ",
       contact: "Contact"
     },
 
@@ -158,7 +188,7 @@ export const translations = {
     // About Section
     about: {
       title: "About Me",
-      description: "Computer Science student at IF Sudeste MG, with expected graduation in July 2026. My academic journey is complemented by practical experiences in software development and graphic design. I am passionate about technology and constantly seek to improve my skills through challenging projects.",
+      description: "I'm a hybrid professional: I split my time between software development and graphic design, and I use that to my advantage — I understand both the logic behind the code and the experience of whoever uses the product. Today I work as a development intern at Bioma Investimentos (Flutter + SQL) and at Assurance, while finishing my Computer Science degree at IF Sudeste MG (expected: July/2026) and taking a complementary technologist program at Univiçosa. If the problem is automating something manual, digitizing a spreadsheet-based process, or giving a piece of material a professional look, I've likely solved something similar before.",
       stats: {
         experience: "Years of Experience",
         projects: "Completed Projects",
@@ -223,6 +253,34 @@ export const translations = {
       description: "Education and academic achievements"
     },
 
+    // FAQ Section
+    faq: {
+      title: "Frequently Asked Questions",
+      description: "Straight to the point",
+      items: [
+        {
+          question: "Do you work remotely?",
+          answer: "Yes. I currently work 100% remote at Bioma Investimentos and Assurance, and it's my preferred way of working."
+        },
+        {
+          question: "What kind of projects do you take on?",
+          answer: "3 to 6 month projects in web/mobile development or graphic design, with the possibility of ongoing collaboration afterwards."
+        },
+        {
+          question: "Do you only code, or also design?",
+          answer: "Both. I can deliver the technical implementation as well as the visual identity and graphic pieces around it."
+        },
+        {
+          question: "You're still a student — is that a problem?",
+          answer: "It shouldn't be: I've been working professionally alongside my studies for over 3 years, and I know how to balance both."
+        },
+        {
+          question: "How do I get in touch?",
+          answer: "By email or WhatsApp in the contact section below — I usually reply quickly."
+        }
+      ]
+    },
+
     // Contact Section
     contact: {
       title: "Let's Work Together",
@@ -232,7 +290,7 @@ export const translations = {
         social: "Social Media",
         navigation: "Navigation",
         info: "Information",
-        copyright: "© 2025 Arthur Candian Rocha. All rights reserved. Built with React."
+        copyright: "© 2026 Arthur Candian Rocha. All rights reserved. Built with React."
       }
     },
 
