@@ -9,13 +9,17 @@
 }
 
 :root {
-  --color-bg: #fafaf9;
-  --color-text-primary: #0a0a0a;
-  --color-text-secondary: #737373;
-  --color-border: #e5e5e5;
-  --color-accent: #0a0a0a;
-  --font-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-display: 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  /* Paleta sumiê / washi — tema japonês */
+  --color-bg: #f6f2e9;
+  --color-bg-alt: #efe8d8;
+  --color-text-primary: #1c1a17;
+  --color-text-secondary: #6b6459;
+  --color-border: #ddd3bd;
+  --color-accent: #b23b2e;
+  --color-accent-soft: rgba(178, 59, 46, 0.1);
+  --font-primary: 'Zen Kaku Gothic New', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-display: 'Shippori Mincho', 'Space Grotesk', -apple-system, BlinkMacSystemFont, 'Segoe UI', serif;
+  --font-mono: 'JetBrains Mono', 'Space Grotesk', monospace;
   --transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
   --transition-fast: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
   --spacing-sm: 8px;
@@ -36,6 +40,9 @@ body {
   line-height: 1.6;
   color: var(--color-text-primary);
   background-color: var(--color-bg);
+  background-image:
+    radial-gradient(circle at 1px 1px, rgba(28, 26, 23, 0.05) 1px, transparent 0);
+  background-size: 22px 22px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings: 'liga' 1, 'kern' 1;
@@ -341,6 +348,7 @@ body {
 }
 
 .hero {
+  position: relative;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -348,11 +356,57 @@ body {
   padding: var(--spacing-3xl) var(--spacing-lg) var(--spacing-2xl);
   background-color: var(--color-bg);
   border-bottom: 1px solid var(--color-border);
+  overflow: hidden;
+  /* seigaiha (ondas) — fallback estático, visível por trás do canvas 3D */
+  background-image: radial-gradient(circle at 50% 100%, rgba(178, 59, 46, 0.05) 0%, transparent 42%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='60' viewBox='0 0 120 60'%3E%3Cg fill='none' stroke='%23b23b2e' stroke-opacity='0.08' stroke-width='1.5'%3E%3Cpath d='M0 60c10-20 20-30 30-30s20 10 30 30'/%3E%3Cpath d='M60 60c10-20 20-30 30-30s20 10 30 30'/%3E%3Cpath d='M-30 60c10-20 20-30 30-30s20 10 30 30'/%3E%3Cpath d='M90 60c10-20 20-30 30-30s20 10 30 30'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: auto, 120px 60px;
+  background-repeat: no-repeat, repeat-x;
+  background-position: center, bottom;
 }
 
 .hero-content {
+  position: relative;
+  z-index: 2;
   max-width: 800px;
   width: 100%;
+}
+
+.sakura-canvas {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero-seal {
+  position: absolute;
+  top: var(--spacing-2xl);
+  right: var(--spacing-xl);
+  z-index: 2;
+  width: 64px;
+  height: 64px;
+  border: 2px solid var(--color-accent);
+  color: var(--color-accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 4px;
+  transform: rotate(-4deg);
+  opacity: 0.85;
+}
+
+@media (max-width: 768px) {
+  .hero-seal {
+    top: var(--spacing-xl);
+    right: var(--spacing-md);
+    width: 48px;
+    height: 48px;
+    font-size: 1.1rem;
+  }
 }
 
 .hero-title {
@@ -815,9 +869,10 @@ body {
   padding: 4px 12px;
   background-color: var(--color-bg);
   color: var(--color-text-secondary);
-  font-size: 0.75rem;
-  font-weight: 600;
-  border-radius: 4px;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 500;
+  border-radius: 2px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
   border: 1px solid var(--color-border);

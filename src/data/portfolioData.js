@@ -1,6 +1,7 @@
 // ===================================
 // PORTFOLIO DATA - Arthur Candian Rocha
 // ===================================
+import { resolveImage } from '../assets/imageIndex.js';
 
 // Base path para imagens - ajusta automaticamente para produção
 const BASE_PATH = import.meta.env.BASE_URL || '/';
@@ -307,12 +308,40 @@ export const projects = [
     description: "Atividade com finalidade de aplicar conhecimentos em desenvolvimento em javaScript, criando uma aplicação web completa.",
     descriptionEN: "Activity aimed at applying knowledge in JavaScript development by creating a complete web application.",
     technologies: ["JavaScript", "HTML5", "CSS3", "Frontend Development"],
-    images: [
-      getImagePath("/assets/imagens/ttccfotos/tcc/Captura de tela 2025-11-28 122811.png"),
-      getImagePath("/assets/imagens/ttccfotos/tcc/Captura de tela 2025-11-28 122847.png"),
-      getImagePath("/assets/imagens/ttccfotos/tcc/Captura de tela 2025-11-28 122903.png")
-    ],
-    image: getImagePath("/assets/imagens/ttccfotos/tcc/Captura de tela 2025-11-28 122811.png"),
+    // As imagens originais deste projeto (4 .jfif) não existem mais no
+    // repositório — sem elas pra reimportar, o card aparece só com texto.
+    images: null,
+    image: null,
+    featured: true,
+    link: null
+  },
+  {
+    id: 3,
+    name: "Prodisel — Plataforma de Gestão",
+    nameShort: "Prodisel",
+    category: "Full Stack Development",
+    categoryEN: "Full Stack Development",
+    year: "2026",
+    type: "development",
+    description: "Liderei o desenvolvimento da Fase 1 do Prodisel, uma plataforma web para digitalizar um processo operacional que hoje depende de planilhas e controle manual. Arquitetura web-first com API mockada na fase inicial, permitindo iterar sobre a experiência antes de travar contratos de integração. Entreguei o MVP completo, com todos os módulos mapeados e uma demo funcional para validação de negócio.",
+    descriptionEN: "Led the development of Prodisel's Phase 1, a web platform to digitize an operational process that currently relies on spreadsheets and manual control. Web-first architecture with a mocked API in the initial phase, delivering a complete MVP with a working demo for business validation.",
+    technologies: ["React", "JavaScript", "API Mockada", "UI/UX Design"],
+    image: null,
+    featured: true,
+    link: null
+  },
+  {
+    id: 4,
+    name: "Padronizador de Currículos com IA",
+    nameShort: "Padronizador de Currículos",
+    category: "Automation & AI",
+    categoryEN: "Automation & AI",
+    year: "2026",
+    type: "development",
+    description: "Desenvolvi uma ferramenta em Node.js que automatiza a padronização de currículos para uma consultoria de recrutamento. O pipeline extrai texto de PDF/DOCX, usa o Gemini com saída estruturada validada por schema (Zod) para interpretar o conteúdo, e gera o documento final no template oficial da empresa. Processamento em lote resiliente a falhas e suíte de testes que roda sem depender de chave de API.",
+    descriptionEN: "Built a Node.js tool that automates résumé standardization for a recruitment firm. The pipeline extracts text from PDF/DOCX, uses Gemini with schema-validated structured output (Zod) to parse content, and renders the final document in the company's official template.",
+    technologies: ["Node.js", "Gemini API", "Zod", "docxtemplater"],
+    image: null,
     featured: true,
     link: null
   },
@@ -365,6 +394,8 @@ export const projects = [
     description: "Projetos desenvolvidos durante estágio na Prefeitura de Rio Pomba, incluindo posts informativos, campanhas digitais e certificados.",
     descriptionEN: "Projects developed during internship at Rio Pomba City Hall, including informative posts, digital campaigns and certificates.",
     technologies: ["Canva", "Photoshop"],
+    // tech-posts/3-4.png e orcamento-instagram/1.png não existem mais no
+    // repositório — removidos da lista pra não quebrar o carrossel.
     images: [
       getImagePath("/assets/imagens/projetos de design/agro-tech-posts/1.png"),
       getImagePath("/assets/imagens/projetos de design/agro-tech-posts/2.png"),
@@ -411,8 +442,18 @@ export const awards = [
     category: "IF Sudeste MG",
     year: "2020-2026",
     description: "Bacharelado em Ciência da Computação"
+  },
+  {
+    id: 2,
+    name: "Formação Híbrida",
+    nameEN: "Hybrid Background",
+    category: "Dev + Design",
+    year: "2023-2025",
+    description: "Atuação combinada em desenvolvimento de software e design gráfico"
   }
 ];
+
+export const resumePdf = new URL('../assets/pdfs/Título.pdf', import.meta.url).href;
 
 export const certificates = [
   {
@@ -587,6 +628,7 @@ export default {
   education,
   projects,
   awards,
+  resumePdf,
   certificates,
   services,
   stats,

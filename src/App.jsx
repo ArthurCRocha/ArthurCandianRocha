@@ -29,14 +29,19 @@ export default function App() {
   const t = translations[language];
 
   // Destructure portfolio data
-  const { 
-    personalInfo, 
-    contactInfo, 
-    experience, 
+  const {
+    personalInfo,
+    contactInfo,
+    experience,
     services: portfolioServices,
     certificates,
     stats,
-    helpers 
+    hardSkills,
+    softSkills,
+    education,
+    awards,
+    resumePdf,
+    helpers
   } = portfolioData;
 
   // Get projects by type
@@ -181,11 +186,6 @@ export default function App() {
     year: exp.year || exp.duration.split(' - ')[0]
   }));
 
-  const awards = [
-    { name: 'IF Sudeste MG', category: 'Ciência da Computação', year: '2020-2026' },
-    { name: 'Formação Híbrida', category: 'Dev + Design', year: '2023-2025' },
-  ];
-
   if (isLoading) {
     return (
       <div className="loader">
@@ -244,6 +244,8 @@ export default function App() {
 
       {/* HERO / HEADER */}
       <header className="hero" id="hero">
+        <SakuraCanvas />
+        <span className="hero-seal" aria-hidden="true">AR</span>
         <div className="hero-content">
           <h1 className="hero-title">{t.hero.title}</h1>
           <p className="hero-subtitle">{t.hero.subtitle}</p>
@@ -261,6 +263,10 @@ export default function App() {
             <div className="meta-item">
               <span className="meta-label">{t.hero.status}</span>
               <span className="meta-value available">{t.hero.available}</span>
+            </div>
+            <div className="meta-item">
+              <span className="meta-label">Currículo</span>
+              <a href={resumePdf} target="_blank" rel="noopener noreferrer" className="meta-link">Baixar PDF</a>
             </div>
           </div>
         </div>
@@ -492,6 +498,40 @@ export default function App() {
         </div>
       </section>
 
+      {/* SKILLS SECTION */}
+      <section id="skills" className="section services-section">
+        <div className="section-header">
+          <h2>Competências Técnicas</h2>
+        </div>
+
+        <div className="services-grid">
+          {Object.values(hardSkills).map((group) => (
+            <div className="services-column" key={group.category}>
+              <h3 className="services-title">{group.category}</h3>
+              <div className="project-list-tech">
+                {group.skills.map((skill) => (
+                  <span key={skill.name} className="tech-tag">
+                    {skill.icon} {skill.name}
+                  </span>
+                ))}
+              </div>
+            </div>
+          ))}
+
+          <div className="services-column">
+            <h3 className="services-title">Soft Skills</h3>
+            <ul className="services-list">
+              {softSkills.map((skill) => (
+                <li key={skill.name} className="service-item">
+                  <span className="service-dot"></span>
+                  {skill.icon} {skill.name}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
+
       {/* CERTIFICATES SECTION */}
       <section id="certificates" className="section certificates-section">
         <div className="section-header">
@@ -532,15 +572,30 @@ export default function App() {
         </div>
       </section>
 
-      {/* AWARDS SECTION */}
+      {/* AWARDS / EDUCATION SECTION */}
       <section id="awards" className="section awards-section">
         <div className="section-header">
           <h2>{t.awards.title}</h2>
         </div>
-        
+
         <div className="awards-list">
-          {awards.map((award, index) => (
-            <div key={index} className="award-item">
+          {education.map((edu) => (
+            <div key={edu.id} className="award-item">
+              <div className="award-name">{edu.degree}</div>
+              <div className="award-separator">—</div>
+              <div className="award-category">{edu.institutionShort}</div>
+              <div className="award-year">{edu.duration}</div>
+            </div>
+          ))}
+        </div>
+
+        <div className="section-header" style={{ marginTop: 'var(--spacing-2xl)' }}>
+          <h3 className="subsection-title">Reconhecimentos</h3>
+        </div>
+
+        <div className="awards-list">
+          {awards.map((award) => (
+            <div key={award.id} className="award-item">
               <div className="award-name">{award.name}</div>
               <div className="award-separator">—</div>
               <div className="award-category">{award.category}</div>
