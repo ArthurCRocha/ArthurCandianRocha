@@ -1,18 +1,14 @@
 import './App.css';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import portfolioData from './data/portfolioData';
 import translations from './data/translations';
-import SakuraCanvas from './components/SakuraCanvas';
-import ShaderBackground from './components/ShaderBackground';
 import RevealText from './components/RevealText';
-import useParallax from './hooks/useParallax';
 
 export default function App() {
   const [hoveredProject, setHoveredProject] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
   const [scrollProgress, setScrollProgress] = useState(0);
   const [projectImageIndexes, setProjectImageIndexes] = useState({});
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   
   // Estados para o modal de imagem
   const [modalImage, setModalImage] = useState(null);
@@ -21,43 +17,26 @@ export default function App() {
   const [modalInfo, setModalInfo] = useState({ title: '', description: '' });
   const [openFaqIndex, setOpenFaqIndex] = useState(null);
 
-  // Camadas de parallax: velocidades diferentes criam sensação de profundidade
-  const heroSealParallaxRef = useParallax(0.12);
-  const heroContentParallaxRef = useParallax(-0.04);
-  const aboutShaderParallaxRef = useParallax(0.08);
-
-  // Estados para tema e idioma
-  const [isDarkMode, setIsDarkMode] = useState(() => {
-    const saved = localStorage.getItem('theme');
-    return saved === 'dark';
-  });
-  const [language, setLanguage] = useState(() => {
-    const saved = localStorage.getItem('language');
-    return saved || 'pt';
-  });
-
-  // Get translations
-  const t = translations[language];
+  // Conteúdo principal do portfólio está em português.
+  const t = translations.pt;
 
   // Destructure portfolio data
   const {
     personalInfo,
     contactInfo,
-    experience,
-    services: portfolioServices,
     certificates,
     stats,
     hardSkills,
     softSkills,
     education,
     awards,
-    resumePdf,
     helpers
   } = portfolioData;
 
   // Get projects by type
   const developmentProjects = helpers.getDevelopmentProjects();
   const designProjects = helpers.getDesignProjects();
+  const featuredProject = developmentProjects.find((project) => project.id === 3);
 
   // Navigate to next image
   const handleNextImage = (e, project) => {
@@ -104,7 +83,6 @@ export default function App() {
     setModalImages(images || [image]);
     setModalCurrentIndex(currentIndex);
     setModalInfo(info);
-    document.body.style.overflow = 'hidden'; // Previne scroll do body
   };
 
   // Função para fechar modal
@@ -113,26 +91,25 @@ export default function App() {
     setModalImages([]);
     setModalCurrentIndex(0);
     setModalInfo({ title: '', description: '' });
-    document.body.style.overflow = 'auto';
   };
 
   // Navegar para próxima imagem no modal
-  const modalNextImage = (e) => {
+  const modalNextImage = useCallback((e) => {
     e?.stopPropagation();
     if (modalImages.length <= 1) return;
     const newIndex = (modalCurrentIndex + 1) % modalImages.length;
     setModalCurrentIndex(newIndex);
     setModalImage(modalImages[newIndex]);
-  };
+  }, [modalCurrentIndex, modalImages]);
 
   // Navegar para imagem anterior no modal
-  const modalPrevImage = (e) => {
+  const modalPrevImage = useCallback((e) => {
     e?.stopPropagation();
     if (modalImages.length <= 1) return;
     const newIndex = modalCurrentIndex <= 0 ? modalImages.length - 1 : modalCurrentIndex - 1;
     setModalCurrentIndex(newIndex);
     setModalImage(modalImages[newIndex]);
-  };
+  }, [modalCurrentIndex, modalImages]);
 
   // Teclas de atalho para navegação
   useEffect(() => {
@@ -150,23 +127,14 @@ export default function App() {
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [modalImage, modalCurrentIndex, modalImages]);
+  }, [modalImage, modalCurrentIndex, modalImages, modalNextImage, modalPrevImage]);
 
-  // Aplicar tema escuro
   useEffect(() => {
-    if (isDarkMode) {
-      document.documentElement.setAttribute('data-theme', 'dark');
-      localStorage.setItem('theme', 'dark');
-    } else {
-      document.documentElement.removeAttribute('data-theme');
-      localStorage.setItem('theme', 'light');
-    }
-  }, [isDarkMode]);
-
-  // Salvar idioma
-  useEffect(() => {
-    localStorage.setItem('language', language);
-  }, [language]);
+    document.body.style.overflow = modalImage ? 'hidden' : '';
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [modalImage]);
 
   useEffect(() => {
     // Simulate initial load
@@ -218,74 +186,10 @@ export default function App() {
         ></div>
       </div>
 
-      {/* MAIN NAVIGATION HEADER */}
-      <nav className="main-header">
-        <div className="header-content">
-          <a href="#hero" className="header-logo">{personalInfo.displayName}</a>
-
-          <div className={`header-nav ${mobileMenuOpen ? 'open' : ''}`}>
-            <a href="#projects" className="header-nav-item" onClick={() => setMobileMenuOpen(false)}><span className="header-nav-number">01</span> {t.nav.projects}</a>
-            <a href="#about" className="header-nav-item" onClick={() => setMobileMenuOpen(false)}><span className="header-nav-number">02</span> {t.nav.about}</a>
-            <a href="#portfolio" className="header-nav-item" onClick={() => setMobileMenuOpen(false)}><span className="header-nav-number">03</span> {t.nav.portfolio}</a>
-            <a href="#services" className="header-nav-item" onClick={() => setMobileMenuOpen(false)}><span className="header-nav-number">04</span> {t.nav.services}</a>
-            <a href="#skills" className="header-nav-item" onClick={() => setMobileMenuOpen(false)}><span className="header-nav-number">05</span> {t.nav.skills}</a>
-            <a href="#certificates" className="header-nav-item" onClick={() => setMobileMenuOpen(false)}><span className="header-nav-number">06</span> {t.nav.certificates}</a>
-            <a href="#awards" className="header-nav-item" onClick={() => setMobileMenuOpen(false)}><span className="header-nav-number">07</span> {t.nav.awards}</a>
-            <a href="#faq" className="header-nav-item" onClick={() => setMobileMenuOpen(false)}><span className="header-nav-number">08</span> {t.nav.faq}</a>
-            <a href="#contact" className="header-nav-item" onClick={() => setMobileMenuOpen(false)}><span className="header-nav-number">09</span> {t.nav.contact}</a>
-
-            {/* Theme & Language Controls (mobile: inline with links) */}
-            <div className="header-controls">
-              <div className="control-group">
-                <label className="control-label" aria-label="Idioma">
-                  <span className="control-icon">🌐</span>
-                </label>
-                <button
-                  className={`language-toggle ${language === 'en' ? 'active' : ''}`}
-                  onClick={() => setLanguage(language === 'pt' ? 'en' : 'pt')}
-                  aria-label="Alternar idioma"
-                >
-                  <span className="lang-option" data-active={language === 'pt'}>PT</span>
-                  <span className="lang-option" data-active={language === 'en'}>EN</span>
-                  <div className="toggle-slider"></div>
-                </button>
-              </div>
-
-              <div className="control-group">
-                <label className="control-label" aria-label="Tema">
-                  <span className="control-icon">{isDarkMode ? '🌙' : '☀️'}</span>
-                </label>
-                <button
-                  className={`theme-toggle ${isDarkMode ? 'dark' : 'light'}`}
-                  onClick={() => setIsDarkMode(!isDarkMode)}
-                  aria-label="Alternar tema"
-                >
-                  <div className="toggle-track">
-                    <div className="toggle-thumb"></div>
-                  </div>
-                </button>
-              </div>
-            </div>
-          </div>
-
-          <button
-            className="mobile-menu-toggle"
-            aria-label="Menu"
-            aria-expanded={mobileMenuOpen}
-            onClick={() => setMobileMenuOpen((open) => !open)}
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-        </div>
-      </nav>
-
       {/* HERO / HEADER */}
       <header className="hero" id="hero">
-        <SakuraCanvas />
-        <span ref={heroSealParallaxRef} className="hero-seal" aria-hidden="true">AR</span>
-        <div ref={heroContentParallaxRef} className="hero-content">
+        <span className="hero-seal" aria-hidden="true">AR</span>
+        <div className="hero-content">
           <h1 className="hero-title">{t.hero.title}</h1>
           <p className="hero-subtitle">{t.hero.subtitle}</p>
           <p className="hero-description">{t.hero.bio}</p>
@@ -303,16 +207,12 @@ export default function App() {
               <span className="meta-label">{t.hero.status}</span>
               <span className="meta-value available">{t.hero.available}</span>
             </div>
-            <div className="meta-item">
-              <span className="meta-label">Currículo</span>
-              <a href={resumePdf} target="_blank" rel="noopener noreferrer" className="meta-link">Baixar PDF</a>
-            </div>
           </div>
         </div>
       </header>
 
-      {/* PROJECTS SECTION */}
-      <section id="projects" className="section projects-section">
+      {/* EXPERIENCE SECTION */}
+      <section id="experience" className="section projects-section">
         <div className="section-header">
           <RevealText as="h2" text={t.projects.title} />
         </div>
@@ -339,9 +239,6 @@ export default function App() {
 
       {/* ABOUT SECTION */}
       <section id="about" className="section about-section">
-        <div ref={aboutShaderParallaxRef} className="about-shader-layer">
-          <ShaderBackground />
-        </div>
         <div className="section-header">
           <RevealText as="h2" text={t.about.title} />
         </div>
@@ -375,6 +272,32 @@ export default function App() {
           <p className="section-description">{t.portfolio.description}</p>
         </div>
 
+        {featuredProject && (
+          <article className="featured-project">
+            <div className="featured-project-label">Projeto em destaque</div>
+            <div className="featured-project-content">
+              <div>
+                <p className="project-list-category">{featuredProject.category} · {featuredProject.year}</p>
+                <h3>{featuredProject.name}</h3>
+              </div>
+              <p>{featuredProject.description}</p>
+              <div className="project-list-tech">
+                {featuredProject.technologies.map((tech) => <span key={tech} className="tech-tag">{tech}</span>)}
+              </div>
+              {featuredProject.link && (
+                <a
+                  href={featuredProject.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-list-link"
+                >
+                  Ver repositório →
+                </a>
+              )}
+            </div>
+          </article>
+        )}
+
         {/* Development Projects */}
         <div className="projects-subsection">
           <h3 className="subsection-title">
@@ -404,7 +327,7 @@ export default function App() {
                       rel="noopener noreferrer"
                       className="project-list-link"
                     >
-                      {t.portfolio.viewProject} →
+                      Ver repositório →
                     </a>
                   )}
                 </div>
@@ -561,7 +484,7 @@ export default function App() {
       </section>
 
       {/* SKILLS SECTION */}
-      <section id="skills" className="section services-section">
+      <section id="skills" className="section services-section skills-section">
         <div className="section-header">
           <RevealText as="h2" text="Competências Técnicas" />
         </div>
@@ -678,17 +601,26 @@ export default function App() {
           {t.faq.items.map((item, index) => (
             <div key={index} className={`faq-item ${openFaqIndex === index ? 'open' : ''}`}>
               <button
+                id={`faq-question-${index}`}
+                type="button"
                 className="faq-question"
                 onClick={() => setOpenFaqIndex(openFaqIndex === index ? null : index)}
                 aria-expanded={openFaqIndex === index}
+                aria-controls={`faq-answer-${index}`}
               >
                 <span className="faq-question-number">{String(index + 1).padStart(2, '0')}</span>
                 <span className="faq-question-text">{item.question}</span>
                 <span className="faq-toggle-icon">{openFaqIndex === index ? '−' : '+'}</span>
               </button>
-              {openFaqIndex === index && (
+              <div
+                id={`faq-answer-${index}`}
+                className={`faq-answer-wrapper ${openFaqIndex === index ? 'open' : ''}`}
+                role="region"
+                aria-labelledby={`faq-question-${index}`}
+                aria-hidden={openFaqIndex !== index}
+              >
                 <p className="faq-answer">{item.answer}</p>
-              )}
+              </div>
             </div>
           ))}
         </div>
@@ -717,19 +649,16 @@ export default function App() {
               <li><a href={contactInfo.social.instagram.url} target="_blank" rel="noopener noreferrer" className="social-link"><span className="link-number">03</span> Instagram</a></li>
               <li><a href={contactInfo.whatsapp} target="_blank" rel="noopener noreferrer" className="social-link"><span className="link-number">04</span> WhatsApp</a></li>
             </ul>
-          </div>
-          
-          <div className="footer-column">
-            <h4>{t.contact.footer.navigation}</h4>
-            <ul className="footer-links">
-              <li><a href="#projects" className="footer-link">{t.nav.projects}</a></li>
-              <li><a href="#about" className="footer-link">{t.nav.about}</a></li>
-              <li><a href="#portfolio" className="footer-link">{t.nav.portfolio}</a></li>
-              <li><a href="#services" className="footer-link">{t.nav.services}</a></li>
-              <li><a href="#certificates" className="footer-link">{t.nav.certificates}</a></li>
-              <li><a href="#awards" className="footer-link">{t.nav.awards}</a></li>
-              <li><a href="#faq" className="footer-link">{t.nav.faq}</a></li>
-            </ul>
+            <nav className="footer-navigation" aria-label="Navegação rápida">
+              <h4>{t.contact.footer.navigation}</h4>
+              <ul className="footer-links">
+                <li><a href="#about" className="footer-link">Sobre mim</a></li>
+                <li><a href="#portfolio" className="footer-link">Projetos</a></li>
+                <li><a href="#experience" className="footer-link">Experiência</a></li>
+                <li><a href="#faq" className="footer-link">FAQ</a></li>
+                <li><a href="#contact" className="footer-link">Contato</a></li>
+              </ul>
+            </nav>
           </div>
           
           <div className="footer-column">

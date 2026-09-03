@@ -17,7 +17,7 @@ export const personalInfo = {
   displayName: "Arthur Rocha",
   title: "Full Stack Developer & Graphic Designer",
   subtitle: "Web Developer & Digital Designer",
-  bio: "Estudante de Ciência da Computação no IF Sudeste MG (Previsão de conclusão: Julho/2026). Profissional híbrido com forte atuação tanto no desenvolvimento de software quanto no design gráfico e produção audiovisual. Busco integrar conhecimentos teóricos com experiências reais de mercado, focando em soluções eficientes e automação.",
+  bio: "Profissional híbrido com atuação em desenvolvimento de software, design gráfico e produção audiovisual, focado em soluções eficientes e automação.",
   location: {
     city: "Rio Pomba",
     state: "Minas Gerais",
@@ -302,14 +302,14 @@ export const education = [
     institution: "IF Sudeste MG - Campus Rio Pomba",
     institutionShort: "IF Sudeste MG",
     startDate: "2020-01",
-    endDate: "2026-07",
-    graduationDate: "Julho 2026",
-    graduationDateEN: "July 2026",
-    current: true,
-    status: "in-progress",
+    endDate: "2025-01",
+    graduationDate: "Trancado em 2025",
+    graduationDateEN: "Paused in 2025",
+    current: false,
+    status: "paused",
     location: "Rio Pomba, MG",
-    duration: "2020 - 2026 (Previsão)",
-    durationEN: "2020 - 2026 (Expected)",
+    duration: "2020 - 2025 · Trancado",
+    durationEN: "2020 - 2025 · Paused",
     description: "Formação abrangente em desenvolvimento de software, algoritmos, estruturas de dados, banco de dados, e engenharia de software.",
     highlights: [
       "Desenvolvimento Full Stack",
@@ -583,7 +583,7 @@ export const awards = [
     name: "Formação Acadêmica",
     nameEN: "Academic Achievement",
     category: "IF Sudeste MG",
-    year: "2020-2026",
+    year: "2020-2025 · Trancado",
     description: "Bacharelado em Ciência da Computação"
   },
   {
@@ -595,8 +595,6 @@ export const awards = [
     description: "Atuação combinada em desenvolvimento de software e design gráfico"
   }
 ];
-
-export const resumePdf = new URL('../assets/pdfs/Título.pdf', import.meta.url).href;
 
 export const certificates = [
   {
@@ -766,7 +764,6 @@ export default {
   education,
   projects,
   awards,
-  resumePdf,
   certificates,
   services,
   stats,

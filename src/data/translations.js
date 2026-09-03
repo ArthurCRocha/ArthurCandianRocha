@@ -8,7 +8,7 @@ export const translations = {
     hero: {
       title: "Arthur Rocha",
       subtitle: "Web Developer & Digital Designer",
-      bio: "Estudante de Ciência da Computação no IF Sudeste MG (Previsão de conclusão: Julho/2026). Profissional híbrido com forte atuação tanto no desenvolvimento de software quanto no design gráfico e produção audiovisual. Busco integrar conhecimentos teóricos com experiências reais de mercado, focando em soluções eficientes e automação.",
+      bio: "Profissional híbrido com atuação em desenvolvimento de software, design gráfico e produção audiovisual, focado em soluções eficientes e automação.",
       location: "Localização",
       email: "Email",
       status: "Status",
@@ -37,7 +37,7 @@ export const translations = {
     // About Section
     about: {
       title: "Sobre Mim",
-      description: "Sou um profissional híbrido: divido meu tempo entre desenvolvimento de software e design gráfico, e uso isso a meu favor — entendo tanto a lógica por trás do código quanto a experiência de quem vai usar o produto. Hoje atuo como estagiário de desenvolvimento na Bioma Investimentos (Flutter + SQL) e na Assurance, enquanto concluo minha graduação em Ciência da Computação no IF Sudeste MG (previsão: julho/2026) e curso uma tecnóloga complementar na Univiçosa. Se o problema envolve automatizar algo manual, digitalizar um processo em planilha ou dar cara profissional a um material, eu já resolvi algo parecido.",
+      description: "Sou um profissional híbrido: divido meu tempo entre desenvolvimento de software e design gráfico, e uso isso a meu favor — entendo tanto a lógica por trás do código quanto a experiência de quem vai usar o produto. Hoje atuo como estagiário de desenvolvimento na Bioma Investimentos (Flutter + SQL) e na Assurance, enquanto concluo minha graduação na Univiçosa. Antes disso, iniciei o bacharelado em Ciência da Computação no IF Sudeste MG, curso que foi trancado em 2025. Se o problema envolve automatizar algo manual, digitalizar um processo em planilha ou dar cara profissional a um material, eu já resolvi algo parecido.",
       stats: {
         experience: "Anos de Experiência",
         projects: "Projetos Concluídos",
@@ -159,7 +159,7 @@ export const translations = {
     hero: {
       title: "Arthur Rocha",
       subtitle: "Web Developer & Digital Designer",
-      bio: "Computer Science student at IF Sudeste MG (Expected completion: July/2026). Hybrid professional with strong expertise in both software development and graphic design and audiovisual production. I seek to integrate theoretical knowledge with real market experiences, focusing on efficient solutions and automation.",
+      bio: "Hybrid professional working across software development, graphic design and audiovisual production, focused on efficient solutions and automation.",
       location: "Location",
       email: "Email",
       status: "Status",
@@ -188,7 +188,7 @@ export const translations = {
     // About Section
     about: {
       title: "About Me",
-      description: "I'm a hybrid professional: I split my time between software development and graphic design, and I use that to my advantage — I understand both the logic behind the code and the experience of whoever uses the product. Today I work as a development intern at Bioma Investimentos (Flutter + SQL) and at Assurance, while finishing my Computer Science degree at IF Sudeste MG (expected: July/2026) and taking a complementary technologist program at Univiçosa. If the problem is automating something manual, digitizing a spreadsheet-based process, or giving a piece of material a professional look, I've likely solved something similar before.",
+      description: "I'm a hybrid professional: I split my time between software development and graphic design, and I use that to my advantage — I understand both the logic behind the code and the experience of whoever uses the product. Today I work as a development intern at Bioma Investimentos (Flutter + SQL) and at Assurance, while finishing my degree at Univiçosa. Before that, I started a Bachelor's Degree in Computer Science at IF Sudeste MG, which I paused in 2025. If the problem is automating something manual, digitizing a spreadsheet-based process, or giving a piece of material a professional look, I've likely solved something similar before.",
       stats: {
         experience: "Years of Experience",
         projects: "Completed Projects",

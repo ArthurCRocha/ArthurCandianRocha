@@ -8,14 +8,15 @@ const prefersReducedMotion = () =>
 // Com prefers-reduced-motion, já nasce visível (sem observer, sem animação).
 export default function useReveal(options) {
   const ref = useRef(null);
-  const [isVisible, setIsVisible] = useState(prefersReducedMotion);
+  const [isVisible, setIsVisible] = useState(() => (
+    prefersReducedMotion() || typeof IntersectionObserver === 'undefined'
+  ));
 
   useEffect(() => {
     if (prefersReducedMotion()) return undefined;
 
     const node = ref.current;
     if (!node || typeof IntersectionObserver === 'undefined') {
-      setIsVisible(true);
       return undefined;
     }
 
