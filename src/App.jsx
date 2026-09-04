@@ -590,41 +590,7 @@ export default function App() {
         </div>
       </section>
 
-      {/* FAQ SECTION */}
-      <section id="faq" className="section faq-section">
-        <div className="section-header">
-          <RevealText as="h2" text={t.faq.title} />
-          <p className="section-description">{t.faq.description}</p>
-        </div>
-
-        <div className="faq-list">
-          {t.faq.items.map((item, index) => (
-            <div key={index} className={`faq-item ${openFaqIndex === index ? 'open' : ''}`}>
-              <button
-                id={`faq-question-${index}`}
-                type="button"
-                className="faq-question"
-                onClick={() => setOpenFaqIndex(openFaqIndex === index ? null : index)}
-                aria-expanded={openFaqIndex === index}
-                aria-controls={`faq-answer-${index}`}
-              >
-                <span className="faq-question-number">{String(index + 1).padStart(2, '0')}</span>
-                <span className="faq-question-text">{item.question}</span>
-                <span className="faq-toggle-icon">{openFaqIndex === index ? '−' : '+'}</span>
-              </button>
-              <div
-                id={`faq-answer-${index}`}
-                className={`faq-answer-wrapper ${openFaqIndex === index ? 'open' : ''}`}
-                role="region"
-                aria-labelledby={`faq-question-${index}`}
-                aria-hidden={openFaqIndex !== index}
-              >
-                <p className="faq-answer">{item.answer}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
+      
 
       {/* CONTACT SECTION */}
       <section id="contact" className="section contact-section">
