@@ -272,32 +272,6 @@ export default function App() {
           <p className="section-description">{t.portfolio.description}</p>
         </div>
 
-        {featuredProject && (
-          <article className="featured-project">
-            <div className="featured-project-label">Projeto em destaque</div>
-            <div className="featured-project-content">
-              <div>
-                <p className="project-list-category">{featuredProject.category} · {featuredProject.year}</p>
-                <h3>{featuredProject.name}</h3>
-              </div>
-              <p>{featuredProject.description}</p>
-              <div className="project-list-tech">
-                {featuredProject.technologies.map((tech) => <span key={tech} className="tech-tag">{tech}</span>)}
-              </div>
-              {featuredProject.link && (
-                <a
-                  href={featuredProject.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="project-list-link"
-                >
-                  Ver repositório →
-                </a>
-              )}
-            </div>
-          </article>
-        )}
-
         {/* Development Projects */}
         <div className="projects-subsection">
           <h3 className="subsection-title">
