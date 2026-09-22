@@ -15,7 +15,12 @@ export default function App() {
   const [modalImages, setModalImages] = useState([]);
   const [modalCurrentIndex, setModalCurrentIndex] = useState(0);
   const [modalInfo, setModalInfo] = useState({ title: '', description: '' });
-  const [openFaqIndex, setOpenFaqIndex] = useState(null);
+
+  // Tema: o index.html ja aplicou o valor salvo antes da primeira pintura,
+  // entao basta ler de volta o que ficou no <html>.
+  const [theme, setTheme] = useState(() =>
+    document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light'
+  );
 
   // Conteúdo principal do portfólio está em português.
   const t = translations.pt;
@@ -36,7 +41,6 @@ export default function App() {
   // Get projects by type
   const developmentProjects = helpers.getDevelopmentProjects();
   const designProjects = helpers.getDesignProjects();
-  const featuredProject = developmentProjects.find((project) => project.id === 3);
 
   // Navigate to next image
   const handleNextImage = (e, project) => {
@@ -130,6 +134,15 @@ export default function App() {
   }, [modalImage, modalCurrentIndex, modalImages, modalNextImage, modalPrevImage]);
 
   useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme);
+    try {
+      localStorage.setItem('theme', theme);
+    } catch {
+      // Navegacao privada bloqueia o storage: o tema so nao persiste.
+    }
+  }, [theme]);
+
+  useEffect(() => {
     document.body.style.overflow = modalImage ? 'hidden' : '';
     return () => {
       document.body.style.overflow = '';
@@ -157,6 +170,11 @@ export default function App() {
     };
   }, []);
 
+  // Faixa rolante: nomes das competencias, sem repetir a lista na mao
+  const marqueeItems = Object.values(hardSkills).flatMap((group) =>
+    group.skills.map((skill) => skill.name)
+  );
+
   // Use real data for projects (experience), most recent first
   const projects = helpers.getExperienceByDate().map(exp => ({
     id: exp.id,
@@ -169,8 +187,9 @@ export default function App() {
     return (
       <div className="loader">
         <div className="loader-content">
+          <span className="loader-mark">AR</span>
           <div className="loader-bar"></div>
-          <p className="loader-text">{t.common.loading}...</p>
+          <p className="loader-text">{t.common.loading}</p>
         </div>
       </div>
     );
@@ -185,6 +204,17 @@ export default function App() {
           style={{ width: `${scrollProgress}%` }}
         ></div>
       </div>
+
+      {/* THEME TOGGLE */}
+      <button
+        type="button"
+        className="theme-toggle"
+        onClick={() => setTheme((current) => (current === 'dark' ? 'light' : 'dark'))}
+        aria-label={theme === 'dark' ? 'Mudar para o tema claro' : 'Mudar para o tema escuro'}
+      >
+        <span className="theme-toggle-dot" aria-hidden="true"></span>
+        {theme === 'dark' ? 'Claro' : 'Escuro'}
+      </button>
 
       {/* HERO / HEADER */}
       <header className="hero" id="hero">
@@ -209,33 +239,22 @@ export default function App() {
             </div>
           </div>
         </div>
+
+        <span className="scroll-cue" aria-hidden="true">Role</span>
       </header>
 
-      {/* EXPERIENCE SECTION */}
-      <section id="experience" className="section projects-section">
-        <div className="section-header">
-          <RevealText as="h2" text={t.projects.title} />
-        </div>
-        
-        <div className="projects-list">
-          {projects.map((project) => (
-            <div
-              key={project.id}
-              className="project-item"
-              onMouseEnter={() => setHoveredProject(project.id)}
-              onMouseLeave={() => setHoveredProject(null)}
-            >
-              <div className="project-number">{String(project.id).padStart(2, '0')}</div>
-              <div className="project-info">
-                <h3 className="project-name">{project.name}</h3>
-                <p className="project-category">{project.category}</p>
-              </div>
-              <div className="project-year">{project.year}</div>
-              <div className={`project-indicator ${hoveredProject === project.id ? 'active' : ''}`}></div>
+      {/* MARQUEE */}
+      <div className="marquee" aria-hidden="true">
+        <div className="marquee-track">
+          {[0, 1].map((copy) => (
+            <div className="marquee-group" key={copy}>
+              {marqueeItems.map((item) => (
+                <span className="marquee-item" key={`${copy}-${item}`}>{item}</span>
+              ))}
             </div>
           ))}
         </div>
-      </section>
+      </div>
 
       {/* ABOUT SECTION */}
       <section id="about" className="section about-section">
@@ -264,7 +283,37 @@ export default function App() {
           </div>
         </div>
       </section>
+      {/* SKILLS SECTION */}
+      <section id="skills" className="section services-section skills-section">
+        <div className="section-header">
+          <RevealText as="h2" text="Competências Técnicas" />
+        </div>
 
+        <div className="services-grid">
+          {Object.values(hardSkills).map((group) => (
+            <div className="services-column" key={group.category}>
+              <h3 className="services-title">{group.category}</h3>
+              <div className="project-list-tech">
+                {group.skills.map((skill) => (
+                  <span key={skill.name} className="tech-tag">{skill.name}</span>
+                ))}
+              </div>
+            </div>
+          ))}
+
+          <div className="services-column">
+            <h3 className="services-title">Soft Skills</h3>
+            <ul className="services-list">
+              {softSkills.map((skill) => (
+                <li key={skill.name} className="service-item">
+                  <span className="service-dot"></span>
+                  {skill.name}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </section>
       {/* PORTFOLIO SECTION - DEVELOPMENT & DESIGN PROJECTS */}
       <section id="portfolio" className="section portfolio-projects-section">
         <div className="section-header">
@@ -275,7 +324,7 @@ export default function App() {
         {/* Development Projects */}
         <div className="projects-subsection">
           <h3 className="subsection-title">
-            <span className="subsection-icon">💻</span>
+            <span className="subsection-index">01</span>
             {t.portfolio.development}
           </h3>
           <div className="projects-list-minimal">
@@ -347,7 +396,7 @@ export default function App() {
         {/* Design Projects */}
         <div className="projects-subsection">
           <h3 className="subsection-title">
-            <span className="subsection-icon">🎨</span>
+            <span className="subsection-index">02</span>
             {t.portfolio.design}
           </h3>
           <div className="projects-list-minimal">
@@ -416,7 +465,31 @@ export default function App() {
           </div>
         </div>
       </section>
-
+      {/* EXPERIENCE SECTION */}
+      <section id="experience" className="section projects-section">
+        <div className="section-header">
+          <RevealText as="h2" text={t.projects.title} />
+        </div>
+        
+        <div className="projects-list">
+          {projects.map((project) => (
+            <div
+              key={project.id}
+              className="project-item"
+              onMouseEnter={() => setHoveredProject(project.id)}
+              onMouseLeave={() => setHoveredProject(null)}
+            >
+              <div className="project-number">{String(project.id).padStart(2, '0')}</div>
+              <div className="project-info">
+                <h3 className="project-name">{project.name}</h3>
+                <p className="project-category">{project.category}</p>
+              </div>
+              <div className="project-year">{project.year}</div>
+              <div className={`project-indicator ${hoveredProject === project.id ? 'active' : ''}`}></div>
+            </div>
+          ))}
+        </div>
+      </section>
       {/* SERVICES SECTION */}
       <section id="services" className="section services-section">
         <div className="section-header">
@@ -456,41 +529,6 @@ export default function App() {
           </div>
         </div>
       </section>
-
-      {/* SKILLS SECTION */}
-      <section id="skills" className="section services-section skills-section">
-        <div className="section-header">
-          <RevealText as="h2" text="Competências Técnicas" />
-        </div>
-
-        <div className="services-grid">
-          {Object.values(hardSkills).map((group) => (
-            <div className="services-column" key={group.category}>
-              <h3 className="services-title">{group.category}</h3>
-              <div className="project-list-tech">
-                {group.skills.map((skill) => (
-                  <span key={skill.name} className="tech-tag">
-                    {skill.icon} {skill.name}
-                  </span>
-                ))}
-              </div>
-            </div>
-          ))}
-
-          <div className="services-column">
-            <h3 className="services-title">Soft Skills</h3>
-            <ul className="services-list">
-              {softSkills.map((skill) => (
-                <li key={skill.name} className="service-item">
-                  <span className="service-dot"></span>
-                  {skill.icon} {skill.name}
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </section>
-
       {/* CERTIFICATES SECTION */}
       <section id="certificates" className="section certificates-section">
         <div className="section-header">
@@ -530,7 +568,6 @@ export default function App() {
           ))}
         </div>
       </section>
-
       {/* AWARDS / EDUCATION SECTION */}
       <section id="awards" className="section awards-section">
         <div className="section-header">
@@ -548,7 +585,7 @@ export default function App() {
           ))}
         </div>
 
-        <div className="section-header" style={{ marginTop: 'var(--spacing-2xl)' }}>
+        <div className="section-subhead">
           <h3 className="subsection-title">Reconhecimentos</h3>
         </div>
 
@@ -563,9 +600,6 @@ export default function App() {
           ))}
         </div>
       </section>
-
-      
-
       {/* CONTACT SECTION */}
       <section id="contact" className="section contact-section">
         <div className="section-header">
@@ -574,7 +608,14 @@ export default function App() {
         
         <div className="contact-content">
           <p className="contact-text">{t.contact.description}</p>
-          <a href={`mailto:${contactInfo.email}`} className="contact-button">{t.contact.cta}</a>
+          <a
+            href={`mailto:${contactInfo.email}`}
+            className="contact-button"
+            aria-label={`${t.contact.cta}: ${contactInfo.email}`}
+          >
+            {contactInfo.email}
+          </a>
+          <span className="contact-note">{t.contact.cta}</span>
         </div>
       </section>
 
@@ -595,7 +636,6 @@ export default function App() {
                 <li><a href="#about" className="footer-link">Sobre mim</a></li>
                 <li><a href="#portfolio" className="footer-link">Projetos</a></li>
                 <li><a href="#experience" className="footer-link">Experiência</a></li>
-                <li><a href="#faq" className="footer-link">FAQ</a></li>
                 <li><a href="#contact" className="footer-link">Contato</a></li>
               </ul>
             </nav>
