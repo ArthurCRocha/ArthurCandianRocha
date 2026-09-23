@@ -19,10 +19,10 @@ export const personalInfo = {
   subtitle: "Web Developer & Digital Designer",
   bio: "Profissional híbrido com atuação em desenvolvimento de software, design gráfico e produção audiovisual, focado em soluções eficientes e automação.",
   location: {
-    city: "Rio Pomba",
+    city: "Viçosa",
     state: "Minas Gerais",
     country: "Brasil",
-    displayText: "Rio Pomba, MG - Brasil"
+    displayText: "Viçosa, MG - Brasil"
   },
   availability: {
     status: "Available for projects",
@@ -166,26 +166,27 @@ export const experience = [
   },
   {
     id: 6,
-    company: "Assurance",
-    companyShort: "Assurance",
-    position: "Especialista em Alocação Profissional",
-    positionEN: "Professional Allocation Specialist",
-    type: "full-time",
+    company: "Assurance IT",
+    companyShort: "Assurance IT",
+    position: "Assistente de RH",
+    positionEN: "HR Assistant",
+    type: "internship",
     startDate: "2026-02",
     endDate: null,
     current: true,
     duration: "Fevereiro 2026 - Atualmente",
     durationEN: "February 2026 - Present",
     location: "Remote",
-    category: "IT Systems & Operations",
-    description: "Gestão de sistemas de clientes e operação do portal IBM, dando suporte a processos de alocação profissional.",
-    descriptionEN: "Managing client systems and IBM portal operations, supporting professional allocation processes.",
+    category: "HR & Operations",
+    description: "Auxílio nas rotinas de recrutamento e RH, realizando a triagem de candidatos, gestão e atualização de vagas no sistema WP (códigos PMP) e processamento de demandas/inputs de clientes (IBM). Iniciativa própria de implementação de ferramenta de padronização automática de currículos, em fase final de adoção pela equipe.",
+    descriptionEN: "Support for recruitment and HR routines, including candidate screening, job posting management on the WP system (PMP codes), and processing client demands/inputs (IBM). Self-driven implementation of an automated résumé standardization tool, currently in final adoption stage by the team.",
     responsibilities: [
-      "Gestão de sistemas de clientes",
-      "Operação do portal IBM",
-      "Suporte a processos administrativos"
+      "Triagem de candidatos",
+      "Gestão e atualização de vagas no sistema WP",
+      "Processamento de demandas/inputs de clientes (IBM)",
+      "Implementação de ferramenta própria de padronização de currículos"
     ],
-    technologies: ["IBM Portal", "Client Systems"],
+    technologies: ["WP System", "IBM Portal", "Recruitment"],
     featured: true
   },
   {
@@ -421,9 +422,9 @@ export const projects = [
     categoryEN: "Automation & AI",
     year: "2026",
     type: "development",
-    description: "Desenvolvi uma ferramenta em Node.js que automatiza a padronização de currículos para uma consultoria de recrutamento. O pipeline extrai texto de PDF/DOCX, usa o Gemini com saída estruturada validada por schema (Zod) para interpretar o conteúdo, e gera o documento final no template oficial da empresa. Processamento em lote resiliente a falhas e suíte de testes que roda sem depender de chave de API.",
-    descriptionEN: "Built a Node.js tool that automates résumé standardization for a recruitment firm. The pipeline extracts text from PDF/DOCX, uses Gemini with schema-validated structured output (Zod) to parse content, and renders the final document in the company's official template.",
-    technologies: ["Node.js", "Gemini API", "Zod", "docxtemplater"],
+    description: "Desenvolvi por iniciativa própria uma ferramenta em Python que automatiza a padronização de currículos recebidos pelo RH da Assurance IT, processo até então feito manualmente. Utiliza a API do Gemini (LLM) para extrair os dados dos currículos e aplicá-los em um template fixo. Já testada com casos reais, reduzindo consideravelmente o tempo gasto no processo.",
+    descriptionEN: "Self-initiated Python tool that automates résumé standardization for Assurance IT's HR team, a process previously done manually. Uses the Gemini API (LLM) to extract résumé data and apply it to a fixed template. Already tested with real cases, considerably reducing the time spent on the process.",
+    technologies: ["Python", "Gemini API", "LLM", "Automação"],
     image: null,
     featured: true,
     link: null
@@ -575,6 +576,21 @@ export const projects = [
     featured: true,
     link: null
   },
+  {
+    id: 14,
+    name: "Cineclube — Conservatório Estadual de Música de Visconde do Rio Branco",
+    nameShort: "Cineclube",
+    category: "Audiovisual",
+    categoryEN: "Audiovisual",
+    year: "2017-2018",
+    type: "design",
+    description: "Participação em oficina de produção de filmes amadores do cineclube da escola, marco inicial de entrada no universo de design e produção audiovisual. Atuação em grupo, responsável por edição de vídeo, captação de imagem e áudio e produção geral. Filmes exibidos em sessões do cineclube.",
+    descriptionEN: "Participated in an amateur filmmaking workshop for the school's film club, the starting point of my entry into design and audiovisual production. Worked as part of a group, responsible for video editing, image and audio capture, and general production. Films were shown at film club sessions.",
+    technologies: ["Sony Vegas", "Produção Audiovisual", "Edição de Vídeo"],
+    image: null,
+    featured: false,
+    link: null
+  },
 ];
 
 export const awards = [
@@ -599,36 +615,47 @@ export const awards = [
 export const certificates = [
   {
     id: 1,
-    name: "GitHub Certificate",
-    nameShort: "GitHub",
-    issuer: "GitHub",
-    date: "2024",
+    name: "Versionamento de Código com Git e GitHub",
+    nameShort: "Git & GitHub",
+    issuer: "Digital Innovation One (DIO)",
+    date: "2025",
     category: "Development",
     image: getImagePath("/assets/certificados/GithubCertificate/BBPWC7UD_page-0001.jpg"),
     credentialId: "BBPWC7UD",
-    description: "Certificação em Git e GitHub"
+    description: "Curso de versionamento de código com Git e GitHub, 2 horas"
   },
   {
     id: 2,
-    name: "Professional Certificate",
-    nameShort: "Certificate",
-    issuer: "Instituição",
-    date: "2024",
-    category: "Professional",
+    name: "Introdução à Lógica de Programação com a GFT",
+    nameShort: "Lógica com GFT",
+    issuer: "Digital Innovation One (DIO) · GFT",
+    date: "2025",
+    category: "Development",
     image: getImagePath("/assets/certificados/NPLEAT9F/NPLEAT9F_page-0001.jpg"),
     credentialId: "NPLEAT9F",
-    description: "Certificado profissional"
+    description: "Curso de introdução à lógica de programação, 1 hora"
   },
   {
     id: 3,
-    name: "Technical Certificate",
-    nameShort: "Technical",
-    issuer: "Instituição",
-    date: "2024",
-    category: "Technical",
+    name: "Aperte Start com Lógica de Programação",
+    nameShort: "Aperte Start",
+    issuer: "Digital Innovation One (DIO)",
+    date: "2025",
+    category: "Development",
     image: getImagePath("/assets/certificados/4KHYPEUV/4KHYPEUV_page-0001.jpg"),
     credentialId: "4KHYPEUV",
-    description: "Certificado técnico"
+    description: "Curso introdutório de lógica de programação, 1 hora"
+  },
+  {
+    id: 4,
+    name: "Claude Code 101",
+    nameShort: "Claude Code",
+    issuer: "Anthropic",
+    date: "2026",
+    category: "Development",
+    image: getImagePath("/assets/certificados/ClaudeCode101/ClaudeCode101_page-0001.jpg"),
+    credentialId: "5ZZPO2CBUKF7",
+    description: "Certificação em desenvolvimento assistido por IA com Claude Code"
   }
 ];
 

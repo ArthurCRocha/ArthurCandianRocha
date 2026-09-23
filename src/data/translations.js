@@ -151,6 +151,27 @@ export const translations = {
       next: "Próximo",
       viewMore: "Ver Mais",
       technologies: "Tecnologias"
+    },
+
+    // Interface
+    ui: {
+      skills: "Competências Técnicas",
+      softSkills: "Soft Skills",
+      viewRepository: "Ver repositório",
+      recognitions: "Reconhecimentos",
+      scroll: "Role",
+      menu: "Menu",
+      closeMenu: "Fechar menu",
+      openMenu: "Abrir menu",
+      themeLight: "Claro",
+      themeDark: "Escuro",
+      toLightTheme: "Mudar para o tema claro",
+      toDarkTheme: "Mudar para o tema escuro",
+      switchLanguage: "Switch to English",
+      previousImage: "Imagem anterior",
+      nextImage: "Próxima imagem",
+      expandedImage: "Imagem expandida",
+      quickNav: "Navegação rápida"
     }
   },
 
@@ -302,6 +323,27 @@ export const translations = {
       next: "Next",
       viewMore: "View More",
       technologies: "Technologies"
+    },
+
+    // Interface
+    ui: {
+      skills: "Technical Skills",
+      softSkills: "Soft Skills",
+      viewRepository: "View repository",
+      recognitions: "Recognitions",
+      scroll: "Scroll",
+      menu: "Menu",
+      closeMenu: "Close menu",
+      openMenu: "Open menu",
+      themeLight: "Light",
+      themeDark: "Dark",
+      toLightTheme: "Switch to light theme",
+      toDarkTheme: "Switch to dark theme",
+      switchLanguage: "Mudar para português",
+      previousImage: "Previous image",
+      nextImage: "Next image",
+      expandedImage: "Expanded image",
+      quickNav: "Quick navigation"
     }
   }
 };
