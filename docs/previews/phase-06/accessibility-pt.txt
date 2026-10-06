@@ -1,0 +1,15 @@
+- region "Ainda aprendendo. Ainda construindo. Ainda seguindo.":
+  - paragraph: 05 / NOW
+  - heading "Ainda aprendendo. Ainda construindo. Ainda seguindo." [level=2]
+  - term: Aprendendo
+  - definition:
+    - paragraph: Tecnólogo em Análise e Desenvolvimento de Sistemas
+    - paragraph: Univiçosa
+    - paragraph:
+      - time: 2026 - Atualmente
+  - term: Construindo
+  - definition:
+    - paragraph: Estagiário de Desenvolvimento
+    - paragraph: Bioma Investimentos
+    - paragraph:
+      - time: Agosto 2026 - Atualmente

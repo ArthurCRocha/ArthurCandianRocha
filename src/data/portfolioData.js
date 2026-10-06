@@ -60,7 +60,7 @@ export const hardSkills = {
   frontend: {
     category: "Frontend Development",
     skills: [
-      { name: "React.js", level: "advanced", icon: "⚛️" },
+      { name: "React", level: "advanced", icon: "⚛️" },
       { name: "Angular.js", level: "intermediate", icon: "🅰️" },
       { name: "HTML5", level: "advanced", icon: "🌐" },
       { name: "CSS3", level: "advanced", icon: "🎨" },
@@ -154,12 +154,19 @@ export const experience = [
     durationEN: "August 2026 - Present",
     location: "Remote",
     category: "Mobile Development",
-    description: "Desenvolvimento mobile com Flutter integrado a bancos de dados SQL, atuando no time de tecnologia da Bioma Investimentos.",
-    descriptionEN: "Mobile development with Flutter integrated with SQL databases, working on Bioma Investimentos' technology team.",
+    description: "Desenvolvimento mobile com Flutter, trabalho com SQL, suporte e integrações, em colaboração com o time de tecnologia da Bioma Investimentos.",
+    descriptionEN: "Mobile development with Flutter, SQL work, support and integrations, in collaboration with Bioma Investimentos' technology team.",
     responsibilities: [
       "Desenvolvimento de funcionalidades em Flutter",
       "Integração com bancos de dados SQL",
+      "Suporte e trabalho de integração entre sistemas",
       "Colaboração com o time de tecnologia"
+    ],
+    responsibilitiesEN: [
+      "Flutter feature development",
+      "SQL database integration",
+      "Support and integration work between systems",
+      "Collaboration with the technology team"
     ],
     technologies: ["Flutter", "Dart", "SQL"],
     featured: true
@@ -303,14 +310,14 @@ export const education = [
     institution: "IF Sudeste MG - Campus Rio Pomba",
     institutionShort: "IF Sudeste MG",
     startDate: "2020-01",
-    endDate: "2025-01",
-    graduationDate: "Trancado em 2025",
-    graduationDateEN: "Paused in 2025",
+    endDate: "2026",
+    graduationDate: "Saída em 2026",
+    graduationDateEN: "Left in 2026",
     current: false,
-    status: "paused",
+    status: "left",
     location: "Rio Pomba, MG",
-    duration: "2020 - 2025 · Trancado",
-    durationEN: "2020 - 2025 · Paused",
+    duration: "2020 - 2026",
+    durationEN: "2020 - 2026",
     description: "Formação abrangente em desenvolvimento de software, algoritmos, estruturas de dados, banco de dados, e engenharia de software.",
     highlights: [
       "Desenvolvimento Full Stack",
@@ -325,15 +332,15 @@ export const education = [
     degreeEN: "Technologist in Systems Analysis and Development",
     institution: "Univiçosa",
     institutionShort: "Univiçosa",
-    startDate: "2025-12",
+    startDate: "2026",
     endDate: null,
     graduationDate: "Em andamento",
     graduationDateEN: "In progress",
     current: true,
     status: "in-progress",
     location: "Remote",
-    duration: "Dezembro 2025 - Atualmente",
-    durationEN: "December 2025 - Present",
+    duration: "2026 - Atualmente",
+    durationEN: "2026 - Present",
     description: "Formação tecnológica complementar focada em análise de sistemas e desenvolvimento de software aplicado.",
     highlights: [
       "Análise de Sistemas",
@@ -358,6 +365,16 @@ export const education = [
     durationEN: "2016 - 2018"
   }
 ];
+
+// Verified product stack. The public case deliberately stores no operational
+// identifiers, private configuration or undisclosed quantitative discovery data.
+const prodieselStack = {
+  mobile: ["Flutter", "Dart", "MobX", "flutter_modular", "Dio", "flutter_secure_storage", "flutter_flavorizr"],
+  backend: ["Python", "FastAPI", "SQLAlchemy", "Alembic", "PostgreSQL", "JWT", "bcrypt", "pytest"],
+  legacy: ["SQL Server", "T-SQL"],
+  integration: ["Python", "PowerShell"],
+  build: ["Codemagic", "Gradle", "Android SDK"]
+};
 
 // Projetos
 export const projects = [
@@ -401,15 +418,93 @@ export const projects = [
   },
   {
     id: 3,
-    name: "Prodisel — Plataforma de Gestão",
-    nameShort: "Prodisel",
-    category: "Full Stack Development",
-    categoryEN: "Full Stack Development",
+    name: "Prodiesel — App para Transportadores de Leite",
+    nameEN: "Prodiesel — Milk Transporter App",
+    nameShort: "Prodiesel",
+    category: "Mobile / Full Stack",
+    categoryEN: "Mobile / Full Stack",
     year: "2026",
     type: "development",
-    description: "Liderei o desenvolvimento da Fase 1 do Prodisel, uma plataforma web para digitalizar um processo operacional que hoje depende de planilhas e controle manual. Arquitetura web-first com API mockada na fase inicial, permitindo iterar sobre a experiência antes de travar contratos de integração. Entreguei o MVP completo, com todos os módulos mapeados e uma demo funcional para validação de negócio.",
-    descriptionEN: "Led the development of Prodisel's Phase 1, a web platform to digitize an operational process that currently relies on spreadsheets and manual control. Web-first architecture with a mocked API in the initial phase, delivering a complete MVP with a working demo for business validation.",
-    technologies: ["React", "JavaScript", "API Mockada", "UI/UX Design"],
+    description: "Aplicativo Flutter para motoristas e transportadores de leite consultarem demonstrativos de pagamento, volume transportado e coletas diárias. Na Bioma Investimentos, contribuí em equipe para o fluxo completo: dados do ERP legado em SQL Server/T-SQL, sincronização em Python/PowerShell, API FastAPI/PostgreSQL e integração mobile.",
+    descriptionEN: "A Flutter app for milk drivers and transporters to consult payment statements, transported volume and daily collections. At Bioma Investimentos, I contributed within a team across the complete flow: legacy ERP data in SQL Server/T-SQL, Python/PowerShell synchronization, a FastAPI/PostgreSQL API and mobile integration.",
+    technologies: [...new Set(Object.values(prodieselStack).flat())],
+    caseStudy: {
+      experienceId: 5,
+      summary: "Dos dados legados ao celular do motorista.",
+      summaryEN: "From legacy data to the driver's phone.",
+      context: "Aplicativo mobile para consultar demonstrativos de pagamento, volume de leite transportado e coletas diárias.",
+      contextEN: "A mobile app for checking payment statements, transported milk volume and daily collections.",
+      role: "Contribuição em equipe nos dados legados, sincronização, API e integração mobile.",
+      roleEN: "Team contribution across legacy data, synchronization, the API and mobile integration.",
+      teamContext: {
+        collaborative: true,
+        summary: "Trabalho colaborativo, como estagiário de desenvolvimento na Bioma Investimentos.",
+        summaryEN: "Collaborative work as a development intern at Bioma Investimentos."
+      },
+      architecture: {
+        summary: "ERP legado → sincronização → API → app mobile.",
+        summaryEN: "Legacy ERP → synchronization → API → mobile app.",
+        layers: [
+          { id: "legacy", name: "ERP legado", nameEN: "Legacy ERP", technologies: prodieselStack.legacy },
+          { id: "integration", name: "Sincronização / sender", nameEN: "Synchronization / sender", technologies: prodieselStack.integration },
+          { id: "api", name: "API", nameEN: "API", technologies: ["FastAPI", "PostgreSQL"] },
+          { id: "mobile", name: "App mobile", nameEN: "Mobile app", technologies: ["Flutter", "Dart"] }
+        ]
+      },
+      stack: prodieselStack,
+      visibleStack: ["Flutter", "FastAPI", "PostgreSQL", "SQL Server / T-SQL", "Python"],
+      prototype: {
+        technologies: ["Flutter Web", "FastAPI"],
+        apiMode: "mock",
+        summary: "Validação inicial do MVP com Flutter Web e FastAPI mockada. O produto principal é mobile em Flutter.",
+        summaryEN: "Initial MVP validation with Flutter Web and mocked FastAPI. The primary product is a Flutter mobile app."
+      },
+      discovery: {
+        summary: "Dados operacionais mostraram transportadores pessoa jurídica. O login passou a aceitar CPF ou CNPJ, com associação automática entre conta e motorista.",
+        summaryEN: "Operational data showed transporters operating as legal entities. Login was adapted to accept CPF or CNPJ, automatically linking accounts and drivers."
+      },
+      implementation: [
+        { text: "Discovery do produto e do MVP; mapeamento do domínio do ERP existente para o aplicativo.", textEN: "Product and MVP discovery; mapping the existing ERP domain to the app." },
+        { text: "Procedures SQL Server e sincronização entre o ERP legado e a API.", textEN: "SQL Server procedures and synchronization between the legacy ERP and the API." },
+        { text: "Domínio do motorista em FastAPI/PostgreSQL e fluxo de autenticação.", textEN: "The driver domain in FastAPI/PostgreSQL and the authentication flow." },
+        { text: "Integração Flutter mobile, build Android e validação em dispositivo físico.", textEN: "Flutter mobile integration, Android builds and real-device validation." },
+        { text: "Depuração técnica, cobertura de testes e preparação das integrações para entrada em produção.", textEN: "Technical debugging, test coverage and integration work for go-live." }
+      ],
+      testing: {
+        summary: "Testes de contrato e de stores, testes da API com pytest, revisão de código e validação em dispositivo físico.",
+        summaryEN: "Contract and store tests, API testing with pytest, code review and real-device validation.",
+        methods: ["prototype-contract-tests", "store-tests", "api-pytest", "code-review", "real-device-validation"]
+      },
+      productionState: {
+        api: "production",
+        synchronization: "production",
+        mobile: "apk-tested-against-production",
+        storePublication: "pending",
+        summary: "API e sincronização em produção. APK testado em dispositivo físico conectado à produção; publicação nas lojas pendente.",
+        summaryEN: "API and synchronization in production. APK tested on a real device against production; store publication pending."
+      },
+      engineeringChallenges: [
+        {
+          summary: "Incidente em produção relacionado a uma renomeação e ao estado do Alembic.",
+          summaryEN: "A production incident related to a rename and the Alembic state.",
+          response: "Investigação da causa raiz e rollback, como base para aprendizado e aprofundamento futuro do case.",
+          responseEN: "Root-cause investigation and rollback, as a basis for learning and future case-study detail."
+        }
+      ],
+      developmentProcess: {
+        aiAssistance: {
+          used: true,
+          extent: "extensive",
+          tools: ["Claude Code"],
+          summary: "Uso amplo de assistência de IA no fluxo de desenvolvimento, incluindo Claude Code.",
+          summaryEN: "Extensive AI assistance in the development workflow, including Claude Code."
+        }
+      },
+      securityNotes: {
+        discoveryDisclosure: "qualitative-only",
+        omitted: ["undisclosed-aggregate-metrics", "customer-names", "individual-tax-identifiers", "account-ids", "payroll-values", "credentials", "private-production-configuration", "private-repository-links"]
+      }
+    },
     image: null,
     featured: true,
     link: null
@@ -599,7 +694,7 @@ export const awards = [
     name: "Formação Acadêmica",
     nameEN: "Academic Achievement",
     category: "IF Sudeste MG",
-    year: "2020-2025 · Trancado",
+    year: "2020-2026",
     description: "Bacharelado em Ciência da Computação"
   },
   {

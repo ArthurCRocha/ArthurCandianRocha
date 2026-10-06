@@ -9,6 +9,10 @@ export default class SceneBoundary extends Component {
     return { failed: true };
   }
 
+  componentDidCatch() {
+    this.props.onFailure?.();
+  }
+
   render() {
     if (this.state.failed) return null;
     return this.props.children;

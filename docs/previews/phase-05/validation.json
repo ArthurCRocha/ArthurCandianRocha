@@ -1,0 +1,2274 @@
+{
+  "checkedAt": "2026-10-06T03:31:49.222Z",
+  "facts": {
+    "experienceIds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "educationIds": [
+      1,
+      2,
+      3
+    ],
+    "sourceExperienceIds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sourceEducationIds": [
+      1,
+      2,
+      3
+    ],
+    "moments": [
+      {
+        "id": "school",
+        "kind": "education",
+        "sourceId": 2,
+        "start": "2016-01",
+        "precision": "month",
+        "period": "2016 - 2018",
+        "periodEN": "2016 - 2018",
+        "role": "Ensino Médio",
+        "roleEN": "High School",
+        "organization": "Colégio Rio Branco",
+        "current": false,
+        "centralRecordMatches": true
+      },
+      {
+        "id": "audiovisual",
+        "kind": "project",
+        "sourceId": 14,
+        "start": "2017",
+        "precision": "year",
+        "period": "2017-2018",
+        "role": "Cineclube — Conservatório Estadual de Música de Visconde do Rio Branco",
+        "organization": "Conservatório Estadual de Música de Visconde do Rio Branco",
+        "current": false,
+        "centralRecordMatches": true,
+        "summary": "Captação de imagem e áudio, edição de vídeo e produção em grupo.",
+        "summaryEN": "Image and audio capture, video editing and group production."
+      },
+      {
+        "id": "computing",
+        "kind": "education",
+        "sourceId": 1,
+        "start": "2020-01",
+        "precision": "month",
+        "period": "2020 - 2026",
+        "periodEN": "2020 - 2026",
+        "role": "Bacharelado em Ciência da Computação",
+        "roleEN": "Bachelor's Degree in Computer Science",
+        "organization": "IF Sudeste MG - Campus Rio Pomba",
+        "current": false,
+        "centralRecordMatches": true,
+        "summary": "Algoritmos, estruturas de dados e desenvolvimento de software.",
+        "summaryEN": "Algorithms, data structures and software development."
+      },
+      {
+        "id": "design",
+        "kind": "experience",
+        "sourceId": 3,
+        "start": "2023-03",
+        "precision": "month",
+        "period": "Março 2023 - Março 2025",
+        "periodEN": "March 2023 - March 2025",
+        "role": "Estagiário / Designer Gráfico",
+        "roleEN": "Intern / Graphic Designer",
+        "organization": "Instituto Federal de Educação, Ciência e Tecnologia do Sudeste de Minas Gerais",
+        "current": false,
+        "centralRecordMatches": true,
+        "summary": "Redes sociais, diagramação e campanhas na comunicação institucional.",
+        "summaryEN": "Social media, document layout and campaigns in institutional communications."
+      },
+      {
+        "id": "development",
+        "kind": "experience",
+        "sourceId": 4,
+        "start": "2024-11",
+        "precision": "month",
+        "period": "Novembro 2024 - Fevereiro 2025",
+        "periodEN": "November 2024 - February 2025",
+        "role": "Estagiário em Desenvolvimento",
+        "roleEN": "Development Intern",
+        "organization": "Metryx Tecnologia Ltda.",
+        "current": false,
+        "centralRecordMatches": true,
+        "summary": "Desenvolvimento frontend, análise de código, correção de bugs e melhorias de interface.",
+        "summaryEN": "Frontend development, code analysis, bug fixes and interface improvements."
+      },
+      {
+        "id": "support",
+        "kind": "experience",
+        "sourceId": 1,
+        "start": "2025-07",
+        "precision": "month",
+        "period": "Julho 2025 - Atualmente",
+        "periodEN": "July 2025 - Present",
+        "role": "Suporte e Desenvolvimento",
+        "roleEN": "Support & Development",
+        "organization": "Santiago TI",
+        "current": true,
+        "centralRecordMatches": true,
+        "summary": "Computadores, desenvolvimento de software e sistemas de segurança.",
+        "summaryEN": "Computers, software development and security systems."
+      },
+      {
+        "id": "marketing",
+        "kind": "experience",
+        "sourceId": 2,
+        "start": "2025-08",
+        "precision": "month",
+        "period": "Agosto 2025 (1 mês)",
+        "periodEN": "August 2025 (1 month)",
+        "role": "Estagiário de Marketing",
+        "roleEN": "Marketing Intern",
+        "organization": "Prefeitura de Rio Pomba",
+        "current": false,
+        "centralRecordMatches": true,
+        "summary": "Peças gráficas, edição de vídeos e automações com IA.",
+        "summaryEN": "Graphic materials, video editing and AI automation."
+      },
+      {
+        "id": "studies",
+        "kind": "education",
+        "sourceId": 3,
+        "start": "2026",
+        "precision": "year",
+        "period": "2026 - Atualmente",
+        "periodEN": "2026 - Present",
+        "role": "Tecnólogo em Análise e Desenvolvimento de Sistemas",
+        "roleEN": "Technologist in Systems Analysis and Development",
+        "organization": "Univiçosa",
+        "current": true,
+        "centralRecordMatches": true,
+        "previousStudiesId": 1
+      },
+      {
+        "id": "operations",
+        "kind": "experience",
+        "sourceId": 6,
+        "start": "2026-02",
+        "precision": "month",
+        "period": "Fevereiro 2026 - Atualmente",
+        "periodEN": "February 2026 - Present",
+        "role": "Assistente de RH",
+        "roleEN": "HR Assistant",
+        "organization": "Assurance IT",
+        "current": true,
+        "centralRecordMatches": true,
+        "summary": "Recrutamento e gestão de vagas. Iniciativa própria de padronização automática de currículos.",
+        "summaryEN": "Recruitment and job posting management. A self-initiated résumé standardization tool."
+      },
+      {
+        "id": "mobile",
+        "kind": "experience",
+        "sourceId": 5,
+        "start": "2026-08",
+        "precision": "month",
+        "period": "Agosto 2026 - Atualmente",
+        "periodEN": "August 2026 - Present",
+        "role": "Estagiário de Desenvolvimento",
+        "roleEN": "Development Intern",
+        "organization": "Bioma Investimentos",
+        "current": true,
+        "centralRecordMatches": true,
+        "summary": "Desenvolvimento mobile com Flutter integrado a bancos de dados SQL.",
+        "summaryEN": "Mobile development with Flutter integrated with SQL databases."
+      }
+    ],
+    "computingEnd": "2026",
+    "computingStatus": "left",
+    "studiesStart": "2026",
+    "technologies": [
+      {
+        "id": "react",
+        "name": "React",
+        "sourceSpelling": [
+          "React.js",
+          "React"
+        ],
+        "references": [
+          {
+            "kind": "project",
+            "id": 3
+          }
+        ]
+      },
+      {
+        "id": "angular",
+        "name": "Angular",
+        "sourceSpelling": [
+          "Angular.js",
+          "Angular"
+        ],
+        "references": [
+          {
+            "kind": "experience",
+            "id": 4
+          }
+        ]
+      }
+    ]
+  },
+  "layouts": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 900,
+      "lang": "pt",
+      "chronology": [
+        {
+          "id": "school",
+          "date": "2016-01",
+          "precision": "month",
+          "heading": "Ensino Médio",
+          "organization": "Colégio Rio Branco",
+          "text": "ANTES DA COMPUTAÇÃO\n\n2016 - 2018\n\nEnsino Médio\n\nColégio Rio Branco"
+        },
+        {
+          "id": "audiovisual",
+          "date": "2017",
+          "precision": "year",
+          "heading": "Cineclube",
+          "organization": "Conservatório Estadual de Música de Visconde do Rio Branco",
+          "text": "ANTES DA COMPUTAÇÃO\n\n2017–2018\n\nCineclube\n\nConservatório Estadual de Música de Visconde do Rio Branco\n\nCaptação de imagem e áudio, edição de vídeo e produção em grupo."
+        },
+        {
+          "id": "computing",
+          "date": "2020-01",
+          "precision": "month",
+          "heading": "Bacharelado em Ciência da Computação",
+          "organization": "IF Sudeste MG - Campus Rio Pomba",
+          "text": "2020\n\nENTRADA NA COMPUTAÇÃO\n\nBacharelado em Ciência da Computação\n\nIF Sudeste MG - Campus Rio Pomba\n\n2020 - 2026\n\nAlgoritmos, estruturas de dados e desenvolvimento de software.\n\nSAÍDA EM 2026"
+        },
+        {
+          "id": "design",
+          "date": "2023-03",
+          "precision": "month",
+          "heading": "Estagiário / Designer Gráfico",
+          "organization": "IF Sudeste MG",
+          "text": "MARÇO 2023 - MARÇO 2025\n\nEstagiário / Designer Gráfico\n\nIF Sudeste MG\n\nRedes sociais, diagramação e campanhas na comunicação institucional."
+        },
+        {
+          "id": "development",
+          "date": "2024-11",
+          "precision": "month",
+          "heading": "Estagiário em Desenvolvimento",
+          "organization": "Metryx Tecnologia Ltda.",
+          "text": "NOVEMBRO 2024 - FEVEREIRO 2025\n\nEstagiário em Desenvolvimento\n\nMetryx Tecnologia Ltda.\n\nDesenvolvimento frontend, análise de código, correção de bugs e melhorias de interface."
+        },
+        {
+          "id": "support",
+          "date": "2025-07",
+          "precision": "month",
+          "heading": "Suporte e Desenvolvimento",
+          "organization": "Santiago TI",
+          "text": "JULHO 2025 - ATUALMENTE\nEM ANDAMENTO\n\nSuporte e Desenvolvimento\n\nSantiago TI\n\nComputadores, desenvolvimento de software e sistemas de segurança."
+        },
+        {
+          "id": "marketing",
+          "date": "2025-08",
+          "precision": "month",
+          "heading": "Estagiário de Marketing",
+          "organization": "Prefeitura de Rio Pomba",
+          "text": "AGOSTO 2025 (1 MÊS)\n\nEstagiário de Marketing\n\nPrefeitura de Rio Pomba\n\nPeças gráficas, edição de vídeos e automações com IA."
+        },
+        {
+          "id": "studies",
+          "date": "2026",
+          "precision": "year",
+          "heading": "Tecnólogo em Análise e Desenvolvimento de Sistemas",
+          "organization": "Univiçosa",
+          "text": "2026 / FORMAÇÃO E TRABALHO, EM PARALELO\n\n2026\nEm andamento\n\nTecnólogo em Análise e Desenvolvimento de Sistemas\n\nUniviçosa\n\n2026 - ATUALMENTE\n\nIF SUDESTE MG / SAÍDA EM 2026\nContinuidade do percurso acadêmico na Univiçosa."
+        },
+        {
+          "id": "operations",
+          "date": "2026-02",
+          "precision": "month",
+          "heading": "Assistente de RH",
+          "organization": "Assurance IT",
+          "text": "FEVEREIRO 2026 - ATUALMENTE\nEM ANDAMENTO\n\nAssistente de RH\n\nAssurance IT\n\nRecrutamento e gestão de vagas. Iniciativa própria de padronização automática de currículos."
+        },
+        {
+          "id": "mobile",
+          "date": "2026-08",
+          "precision": "month",
+          "heading": "Estagiário de Desenvolvimento",
+          "organization": "Bioma Investimentos",
+          "text": "AGOSTO 2026 - ATUALMENTE\nEM ANDAMENTO\n\nEstagiário de Desenvolvimento\n\nBioma Investimentos\n\nDesenvolvimento mobile com Flutter integrado a bancos de dados SQL."
+        }
+      ],
+      "geometry": {
+        "width": 1319,
+        "height": 5967,
+        "fieldWidth": 1319,
+        "paths": [
+          {
+            "id": "school",
+            "length": 169.97808837890625,
+            "d": "M461.65 0 C461.65 30 594 30 594 90"
+          },
+          {
+            "id": "audiovisual",
+            "length": 710.7023315429688,
+            "d": "M594 90 C594 25 1266 25 1266 140"
+          },
+          {
+            "id": "computing",
+            "length": 688,
+            "d": "M1266 140 V410 H1068 V630"
+          },
+          {
+            "id": "design",
+            "length": 1233.2437744140625,
+            "d": "M1068 630 C1068 1265 317 1265 317 1515"
+          },
+          {
+            "id": "development",
+            "length": 1476,
+            "d": "M317 1515 V2003 H1095 V2213"
+          },
+          {
+            "id": "support",
+            "length": 1341,
+            "d": "M1095 2213 V2623 H369 V2828"
+          },
+          {
+            "id": "marketing",
+            "length": 918.8893432617188,
+            "d": "M369 2828 C369 3103 1068 3103 1068 3343"
+          },
+          {
+            "id": "studies",
+            "length": 625.8870849609375,
+            "d": "M1068 3343 V3591 Q1068 3623 1100 3623 H1116 Q1148 3623 1148 3655 V3913"
+          },
+          {
+            "id": "operations",
+            "length": 1670.8873291015625,
+            "d": "M1148 3913 V4545 Q1148 4577 1116 4577 H349 Q317 4577 317 4609 V4777"
+          },
+          {
+            "id": "mobile",
+            "length": 2256.177001953125,
+            "d": "M317 4777 V5155 Q317 5187 349 5187 H1036 Q1068 5187 1068 5219 V5432 C1068 5877 461.65 5877 461.65 5967"
+          }
+        ],
+        "joinX": {
+          "work": 522.11875,
+          "path": 522.11875
+        },
+        "backgroundRows": [
+          0,
+          0
+        ]
+      },
+      "motion": [
+        {
+          "id": "computing",
+          "before": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 22,
+            "d": "M1266 140 V410 H1068 V630"
+          },
+          "after": {
+            "dash": 0,
+            "opacity": 1,
+            "bodyY": 0,
+            "d": "M1266 140 V410 H1068 V630"
+          },
+          "reversed": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 22,
+            "d": "M1266 140 V410 H1068 V630"
+          }
+        },
+        {
+          "id": "design",
+          "before": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 22,
+            "d": "M1068 630 C1068 1265 317 1265 317 1515"
+          },
+          "after": {
+            "dash": 0,
+            "opacity": 1,
+            "bodyY": 0,
+            "d": "M1068 630 C1068 1265 317 1265 317 1515"
+          },
+          "reversed": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 22,
+            "d": "M1068 630 C1068 1265 317 1265 317 1515"
+          }
+        },
+        {
+          "id": "development",
+          "before": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 22,
+            "d": "M317 1515 V2003 H1095 V2213"
+          },
+          "after": {
+            "dash": 0,
+            "opacity": 1,
+            "bodyY": 0,
+            "d": "M317 1515 V2003 H1095 V2213"
+          },
+          "reversed": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 22,
+            "d": "M317 1515 V2003 H1095 V2213"
+          }
+        },
+        {
+          "id": "studies",
+          "before": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 22,
+            "d": "M1068 3343 V3591 Q1068 3623 1100 3623 H1116 Q1148 3623 1148 3655 V3913"
+          },
+          "after": {
+            "dash": 0,
+            "opacity": 1,
+            "bodyY": 0,
+            "d": "M1068 3343 V3591 Q1068 3623 1100 3623 H1116 Q1148 3623 1148 3655 V3913"
+          },
+          "reversed": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 22,
+            "d": "M1068 3343 V3591 Q1068 3623 1100 3623 H1116 Q1148 3623 1148 3655 V3913"
+          }
+        },
+        {
+          "id": "mobile",
+          "before": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 22,
+            "d": "M317 4777 V5155 Q317 5187 349 5187 H1036 Q1068 5187 1068 5219 V5432 C1068 5877 461.65 5877 461.65 5967"
+          },
+          "after": {
+            "dash": 0,
+            "opacity": 1,
+            "bodyY": 0,
+            "d": "M317 4777 V5155 Q317 5187 349 5187 H1036 Q1068 5187 1068 5219 V5432 C1068 5877 461.65 5877 461.65 5967"
+          },
+          "reversed": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 22,
+            "d": "M317 4777 V5155 Q317 5187 349 5187 H1036 Q1068 5187 1068 5219 V5432 C1068 5877 461.65 5877 461.65 5967"
+          }
+        }
+      ],
+      "overflow": {
+        "width": 1440,
+        "scroll": 1440,
+        "offenders": []
+      },
+      "triggerCount": 22,
+      "newTriggers": 12,
+      "pins": 1,
+      "backScrollThroughAllChapters": true,
+      "keyboard": true,
+      "localeToggleClean": true,
+      "performance": {
+        "loop": "demand",
+        "geometry": 1,
+        "textures": 0
+      },
+      "errors": []
+    },
+    {
+      "name": "desktop-en",
+      "width": 1440,
+      "height": 900,
+      "lang": "en",
+      "chronology": [
+        {
+          "id": "school",
+          "date": "2016-01",
+          "precision": "month",
+          "heading": "High School",
+          "organization": "Colégio Rio Branco",
+          "text": "BEFORE COMPUTING\n\n2016 - 2018\n\nHigh School\n\nColégio Rio Branco"
+        },
+        {
+          "id": "audiovisual",
+          "date": "2017",
+          "precision": "year",
+          "heading": "Cineclube",
+          "organization": "Conservatório Estadual de Música de Visconde do Rio Branco",
+          "text": "BEFORE COMPUTING\n\n2017–2018\n\nCineclube\n\nConservatório Estadual de Música de Visconde do Rio Branco\n\nImage and audio capture, video editing and group production."
+        },
+        {
+          "id": "computing",
+          "date": "2020-01",
+          "precision": "month",
+          "heading": "Bachelor's Degree in Computer Science",
+          "organization": "IF Sudeste MG - Campus Rio Pomba",
+          "text": "2020\n\nENTERING COMPUTING\n\nBachelor's Degree in Computer Science\n\nIF Sudeste MG - Campus Rio Pomba\n\n2020 - 2026\n\nAlgorithms, data structures and software development.\n\nLEFT IN 2026"
+        },
+        {
+          "id": "design",
+          "date": "2023-03",
+          "precision": "month",
+          "heading": "Intern / Graphic Designer",
+          "organization": "IF Sudeste MG",
+          "text": "MARCH 2023 - MARCH 2025\n\nIntern / Graphic Designer\n\nIF Sudeste MG\n\nSocial media, document layout and campaigns in institutional communications."
+        },
+        {
+          "id": "development",
+          "date": "2024-11",
+          "precision": "month",
+          "heading": "Development Intern",
+          "organization": "Metryx Tecnologia Ltda.",
+          "text": "NOVEMBER 2024 - FEBRUARY 2025\n\nDevelopment Intern\n\nMetryx Tecnologia Ltda.\n\nFrontend development, code analysis, bug fixes and interface improvements."
+        },
+        {
+          "id": "support",
+          "date": "2025-07",
+          "precision": "month",
+          "heading": "Support & Development",
+          "organization": "Santiago TI",
+          "text": "JULY 2025 - PRESENT\nIN PROGRESS\n\nSupport & Development\n\nSantiago TI\n\nComputers, software development and security systems."
+        },
+        {
+          "id": "marketing",
+          "date": "2025-08",
+          "precision": "month",
+          "heading": "Marketing Intern",
+          "organization": "Prefeitura de Rio Pomba",
+          "text": "AUGUST 2025 (1 MONTH)\n\nMarketing Intern\n\nPrefeitura de Rio Pomba\n\nGraphic materials, video editing and AI automation."
+        },
+        {
+          "id": "studies",
+          "date": "2026",
+          "precision": "year",
+          "heading": "Technologist in Systems Analysis and Development",
+          "organization": "Univiçosa",
+          "text": "2026 / EDUCATION AND WORK, IN PARALLEL\n\n2026\nIn progress\n\nTechnologist in Systems Analysis and Development\n\nUniviçosa\n\n2026 - PRESENT\n\nIF SUDESTE MG / LEFT IN 2026\nContinuing the academic path at Univiçosa."
+        },
+        {
+          "id": "operations",
+          "date": "2026-02",
+          "precision": "month",
+          "heading": "HR Assistant",
+          "organization": "Assurance IT",
+          "text": "FEBRUARY 2026 - PRESENT\nIN PROGRESS\n\nHR Assistant\n\nAssurance IT\n\nRecruitment and job posting management. A self-initiated résumé standardization tool."
+        },
+        {
+          "id": "mobile",
+          "date": "2026-08",
+          "precision": "month",
+          "heading": "Development Intern",
+          "organization": "Bioma Investimentos",
+          "text": "AUGUST 2026 - PRESENT\nIN PROGRESS\n\nDevelopment Intern\n\nBioma Investimentos\n\nMobile development with Flutter integrated with SQL databases."
+        }
+      ],
+      "geometry": {
+        "width": 1319,
+        "height": 5967,
+        "fieldWidth": 1319,
+        "paths": [
+          {
+            "id": "school",
+            "length": 169.97808837890625,
+            "d": "M461.65 0 C461.65 30 594 30 594 90"
+          },
+          {
+            "id": "audiovisual",
+            "length": 710.7023315429688,
+            "d": "M594 90 C594 25 1266 25 1266 140"
+          },
+          {
+            "id": "computing",
+            "length": 688,
+            "d": "M1266 140 V410 H1068 V630"
+          },
+          {
+            "id": "design",
+            "length": 1233.2437744140625,
+            "d": "M1068 630 C1068 1265 317 1265 317 1515"
+          },
+          {
+            "id": "development",
+            "length": 1476,
+            "d": "M317 1515 V2003 H1095 V2213"
+          },
+          {
+            "id": "support",
+            "length": 1341,
+            "d": "M1095 2213 V2623 H369 V2828"
+          },
+          {
+            "id": "marketing",
+            "length": 918.8893432617188,
+            "d": "M369 2828 C369 3103 1068 3103 1068 3343"
+          },
+          {
+            "id": "studies",
+            "length": 625.8870849609375,
+            "d": "M1068 3343 V3591 Q1068 3623 1100 3623 H1116 Q1148 3623 1148 3655 V3913"
+          },
+          {
+            "id": "operations",
+            "length": 1670.8873291015625,
+            "d": "M1148 3913 V4545 Q1148 4577 1116 4577 H349 Q317 4577 317 4609 V4777"
+          },
+          {
+            "id": "mobile",
+            "length": 2256.177001953125,
+            "d": "M317 4777 V5155 Q317 5187 349 5187 H1036 Q1068 5187 1068 5219 V5432 C1068 5877 461.65 5877 461.65 5967"
+          }
+        ],
+        "joinX": {
+          "work": 522.11875,
+          "path": 522.11875
+        },
+        "backgroundRows": [
+          0,
+          0
+        ]
+      },
+      "motion": [
+        {
+          "id": "computing",
+          "before": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 22,
+            "d": "M1266 140 V410 H1068 V630"
+          },
+          "after": {
+            "dash": 0,
+            "opacity": 1,
+            "bodyY": 0,
+            "d": "M1266 140 V410 H1068 V630"
+          },
+          "reversed": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 22,
+            "d": "M1266 140 V410 H1068 V630"
+          }
+        },
+        {
+          "id": "design",
+          "before": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 22,
+            "d": "M1068 630 C1068 1265 317 1265 317 1515"
+          },
+          "after": {
+            "dash": 0,
+            "opacity": 1,
+            "bodyY": 0,
+            "d": "M1068 630 C1068 1265 317 1265 317 1515"
+          },
+          "reversed": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 22,
+            "d": "M1068 630 C1068 1265 317 1265 317 1515"
+          }
+        },
+        {
+          "id": "development",
+          "before": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 22,
+            "d": "M317 1515 V2003 H1095 V2213"
+          },
+          "after": {
+            "dash": 0,
+            "opacity": 1,
+            "bodyY": 0,
+            "d": "M317 1515 V2003 H1095 V2213"
+          },
+          "reversed": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 22,
+            "d": "M317 1515 V2003 H1095 V2213"
+          }
+        },
+        {
+          "id": "studies",
+          "before": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 22,
+            "d": "M1068 3343 V3591 Q1068 3623 1100 3623 H1116 Q1148 3623 1148 3655 V3913"
+          },
+          "after": {
+            "dash": 0,
+            "opacity": 1,
+            "bodyY": 0,
+            "d": "M1068 3343 V3591 Q1068 3623 1100 3623 H1116 Q1148 3623 1148 3655 V3913"
+          },
+          "reversed": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 22,
+            "d": "M1068 3343 V3591 Q1068 3623 1100 3623 H1116 Q1148 3623 1148 3655 V3913"
+          }
+        },
+        {
+          "id": "mobile",
+          "before": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 22,
+            "d": "M317 4777 V5155 Q317 5187 349 5187 H1036 Q1068 5187 1068 5219 V5432 C1068 5877 461.65 5877 461.65 5967"
+          },
+          "after": {
+            "dash": 0,
+            "opacity": 1,
+            "bodyY": 0,
+            "d": "M317 4777 V5155 Q317 5187 349 5187 H1036 Q1068 5187 1068 5219 V5432 C1068 5877 461.65 5877 461.65 5967"
+          },
+          "reversed": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 22,
+            "d": "M317 4777 V5155 Q317 5187 349 5187 H1036 Q1068 5187 1068 5219 V5432 C1068 5877 461.65 5877 461.65 5967"
+          }
+        }
+      ],
+      "overflow": {
+        "width": 1440,
+        "scroll": 1440,
+        "offenders": []
+      },
+      "triggerCount": 22,
+      "newTriggers": 12,
+      "pins": 1,
+      "backScrollThroughAllChapters": true,
+      "keyboard": true,
+      "localeToggleClean": true,
+      "performance": {
+        "loop": "demand",
+        "geometry": 1,
+        "textures": 0
+      },
+      "errors": []
+    },
+    {
+      "name": "laptop-en",
+      "width": 1024,
+      "height": 768,
+      "lang": "en",
+      "chronology": [
+        {
+          "id": "school",
+          "date": "2016-01",
+          "precision": "month",
+          "heading": "High School",
+          "organization": "Colégio Rio Branco",
+          "text": "BEFORE COMPUTING\n\n2016 - 2018\n\nHigh School\n\nColégio Rio Branco"
+        },
+        {
+          "id": "audiovisual",
+          "date": "2017",
+          "precision": "year",
+          "heading": "Cineclube",
+          "organization": "Conservatório Estadual de Música de Visconde do Rio Branco",
+          "text": "BEFORE COMPUTING\n\n2017–2018\n\nCineclube\n\nConservatório Estadual de Música de Visconde do Rio Branco\n\nImage and audio capture, video editing and group production."
+        },
+        {
+          "id": "computing",
+          "date": "2020-01",
+          "precision": "month",
+          "heading": "Bachelor's Degree in Computer Science",
+          "organization": "IF Sudeste MG - Campus Rio Pomba",
+          "text": "2020\n\nENTERING COMPUTING\n\nBachelor's Degree in Computer Science\n\nIF Sudeste MG - Campus Rio Pomba\n\n2020 - 2026\n\nAlgorithms, data structures and software development.\n\nLEFT IN 2026"
+        },
+        {
+          "id": "design",
+          "date": "2023-03",
+          "precision": "month",
+          "heading": "Intern / Graphic Designer",
+          "organization": "IF Sudeste MG",
+          "text": "MARCH 2023 - MARCH 2025\n\nIntern / Graphic Designer\n\nIF Sudeste MG\n\nSocial media, document layout and campaigns in institutional communications."
+        },
+        {
+          "id": "development",
+          "date": "2024-11",
+          "precision": "month",
+          "heading": "Development Intern",
+          "organization": "Metryx Tecnologia Ltda.",
+          "text": "NOVEMBER 2024 - FEBRUARY 2025\n\nDevelopment Intern\n\nMetryx Tecnologia Ltda.\n\nFrontend development, code analysis, bug fixes and interface improvements."
+        },
+        {
+          "id": "support",
+          "date": "2025-07",
+          "precision": "month",
+          "heading": "Support & Development",
+          "organization": "Santiago TI",
+          "text": "JULY 2025 - PRESENT\nIN PROGRESS\n\nSupport & Development\n\nSantiago TI\n\nComputers, software development and security systems."
+        },
+        {
+          "id": "marketing",
+          "date": "2025-08",
+          "precision": "month",
+          "heading": "Marketing Intern",
+          "organization": "Prefeitura de Rio Pomba",
+          "text": "AUGUST 2025 (1 MONTH)\n\nMarketing Intern\n\nPrefeitura de Rio Pomba\n\nGraphic materials, video editing and AI automation."
+        },
+        {
+          "id": "studies",
+          "date": "2026",
+          "precision": "year",
+          "heading": "Technologist in Systems Analysis and Development",
+          "organization": "Univiçosa",
+          "text": "2026 / EDUCATION AND WORK, IN PARALLEL\n\n2026\nIn progress\n\nTechnologist in Systems Analysis and Development\n\nUniviçosa\n\n2026 - PRESENT\n\nIF SUDESTE MG / LEFT IN 2026\nContinuing the academic path at Univiçosa."
+        },
+        {
+          "id": "operations",
+          "date": "2026-02",
+          "precision": "month",
+          "heading": "HR Assistant",
+          "organization": "Assurance IT",
+          "text": "FEBRUARY 2026 - PRESENT\nIN PROGRESS\n\nHR Assistant\n\nAssurance IT\n\nRecruitment and job posting management. A self-initiated résumé standardization tool."
+        },
+        {
+          "id": "mobile",
+          "date": "2026-08",
+          "precision": "month",
+          "heading": "Development Intern",
+          "organization": "Bioma Investimentos",
+          "text": "AUGUST 2026 - PRESENT\nIN PROGRESS\n\nDevelopment Intern\n\nBioma Investimentos\n\nMobile development with Flutter integrated with SQL databases."
+        }
+      ],
+      "geometry": {
+        "width": 938,
+        "height": 5620,
+        "fieldWidth": 938,
+        "paths": [
+          {
+            "id": "school",
+            "length": 144.47506713867188,
+            "d": "M328.29999999999995 0 C328.29999999999995 30 430 30 430 90"
+          },
+          {
+            "id": "audiovisual",
+            "length": 531.3615112304688,
+            "d": "M430 90 C430 25 915 25 915 140"
+          },
+          {
+            "id": "computing",
+            "length": 695,
+            "d": "M915 140 V460 H760 V680"
+          },
+          {
+            "id": "design",
+            "length": 1003.2802734375,
+            "d": "M760 680 C760 1220 225 1220 225 1470"
+          },
+          {
+            "id": "development",
+            "length": 1164,
+            "d": "M225 1470 V1870 H779 V2080"
+          },
+          {
+            "id": "support",
+            "length": 1131,
+            "d": "M779 2080 V2490 H263 V2695"
+          },
+          {
+            "id": "marketing",
+            "length": 756.4481201171875,
+            "d": "M263 2695 C263 2970 760 2970 760 3210"
+          },
+          {
+            "id": "studies",
+            "length": 685.8870849609375,
+            "d": "M760 3210 V3458 Q760 3490 792 3490 H868 Q900 3490 900 3522 V3780"
+          },
+          {
+            "id": "operations",
+            "length": 1400.88720703125,
+            "d": "M900 3780 V4298 Q900 4330 868 4330 H257 Q225 4330 225 4362 V4530"
+          },
+          {
+            "id": "mobile",
+            "length": 1824.349609375,
+            "d": "M225 4530 V4908 Q225 4940 257 4940 H728 Q760 4940 760 4972 V5185 C760 5530 328.29999999999995 5530 328.29999999999995 5620"
+          }
+        ],
+        "joinX": {
+          "work": 371.29999999999995,
+          "path": 371.29999999999995
+        },
+        "backgroundRows": [
+          0,
+          0
+        ]
+      },
+      "motion": [
+        {
+          "id": "computing",
+          "before": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 22,
+            "d": "M915 140 V460 H760 V680"
+          },
+          "after": {
+            "dash": 0,
+            "opacity": 1,
+            "bodyY": 0,
+            "d": "M915 140 V460 H760 V680"
+          },
+          "reversed": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 22,
+            "d": "M915 140 V460 H760 V680"
+          }
+        },
+        {
+          "id": "design",
+          "before": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 22,
+            "d": "M760 680 C760 1220 225 1220 225 1470"
+          },
+          "after": {
+            "dash": 0,
+            "opacity": 1,
+            "bodyY": 0,
+            "d": "M760 680 C760 1220 225 1220 225 1470"
+          },
+          "reversed": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 22,
+            "d": "M760 680 C760 1220 225 1220 225 1470"
+          }
+        },
+        {
+          "id": "development",
+          "before": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 22,
+            "d": "M225 1470 V1870 H779 V2080"
+          },
+          "after": {
+            "dash": 0,
+            "opacity": 1,
+            "bodyY": 0,
+            "d": "M225 1470 V1870 H779 V2080"
+          },
+          "reversed": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 22,
+            "d": "M225 1470 V1870 H779 V2080"
+          }
+        },
+        {
+          "id": "studies",
+          "before": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 22,
+            "d": "M760 3210 V3458 Q760 3490 792 3490 H868 Q900 3490 900 3522 V3780"
+          },
+          "after": {
+            "dash": 0,
+            "opacity": 1,
+            "bodyY": 0,
+            "d": "M760 3210 V3458 Q760 3490 792 3490 H868 Q900 3490 900 3522 V3780"
+          },
+          "reversed": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 22,
+            "d": "M760 3210 V3458 Q760 3490 792 3490 H868 Q900 3490 900 3522 V3780"
+          }
+        },
+        {
+          "id": "mobile",
+          "before": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 22,
+            "d": "M225 4530 V4908 Q225 4940 257 4940 H728 Q760 4940 760 4972 V5185 C760 5530 328.29999999999995 5530 328.29999999999995 5620"
+          },
+          "after": {
+            "dash": 0,
+            "opacity": 1,
+            "bodyY": 0,
+            "d": "M225 4530 V4908 Q225 4940 257 4940 H728 Q760 4940 760 4972 V5185 C760 5530 328.29999999999995 5530 328.29999999999995 5620"
+          },
+          "reversed": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 22,
+            "d": "M225 4530 V4908 Q225 4940 257 4940 H728 Q760 4940 760 4972 V5185 C760 5530 328.29999999999995 5530 328.29999999999995 5620"
+          }
+        }
+      ],
+      "overflow": {
+        "width": 1024,
+        "scroll": 1024,
+        "offenders": []
+      },
+      "triggerCount": 22,
+      "newTriggers": 12,
+      "pins": 1,
+      "backScrollThroughAllChapters": true,
+      "keyboard": true,
+      "localeToggleClean": true,
+      "performance": {
+        "loop": "demand",
+        "geometry": 1,
+        "textures": 0
+      },
+      "errors": []
+    },
+    {
+      "name": "tablet",
+      "width": 768,
+      "height": 1024,
+      "lang": "pt",
+      "chronology": [
+        {
+          "id": "school",
+          "date": "2016-01",
+          "precision": "month",
+          "heading": "Ensino Médio",
+          "organization": "Colégio Rio Branco",
+          "text": "ANTES DA COMPUTAÇÃO\n\n2016 - 2018\n\nEnsino Médio\n\nColégio Rio Branco"
+        },
+        {
+          "id": "audiovisual",
+          "date": "2017",
+          "precision": "year",
+          "heading": "Cineclube",
+          "organization": "Conservatório Estadual de Música de Visconde do Rio Branco",
+          "text": "ANTES DA COMPUTAÇÃO\n\n2017–2018\n\nCineclube\n\nConservatório Estadual de Música de Visconde do Rio Branco\n\nCaptação de imagem e áudio, edição de vídeo e produção em grupo."
+        },
+        {
+          "id": "computing",
+          "date": "2020-01",
+          "precision": "month",
+          "heading": "Bacharelado em Ciência da Computação",
+          "organization": "IF Sudeste MG - Campus Rio Pomba",
+          "text": "2020\n\nENTRADA NA COMPUTAÇÃO\n\nBacharelado em Ciência da Computação\n\nIF Sudeste MG - Campus Rio Pomba\n\n2020 - 2026\n\nAlgoritmos, estruturas de dados e desenvolvimento de software.\n\nSAÍDA EM 2026"
+        },
+        {
+          "id": "design",
+          "date": "2023-03",
+          "precision": "month",
+          "heading": "Estagiário / Designer Gráfico",
+          "organization": "IF Sudeste MG",
+          "text": "MARÇO 2023 - MARÇO 2025\n\nEstagiário / Designer Gráfico\n\nIF Sudeste MG\n\nRedes sociais, diagramação e campanhas na comunicação institucional."
+        },
+        {
+          "id": "development",
+          "date": "2024-11",
+          "precision": "month",
+          "heading": "Estagiário em Desenvolvimento",
+          "organization": "Metryx Tecnologia Ltda.",
+          "text": "NOVEMBRO 2024 - FEVEREIRO 2025\n\nEstagiário em Desenvolvimento\n\nMetryx Tecnologia Ltda.\n\nDesenvolvimento frontend, análise de código, correção de bugs e melhorias de interface."
+        },
+        {
+          "id": "support",
+          "date": "2025-07",
+          "precision": "month",
+          "heading": "Suporte e Desenvolvimento",
+          "organization": "Santiago TI",
+          "text": "JULHO 2025 - ATUALMENTE\nEM ANDAMENTO\n\nSuporte e Desenvolvimento\n\nSantiago TI\n\nComputadores, desenvolvimento de software e sistemas de segurança."
+        },
+        {
+          "id": "marketing",
+          "date": "2025-08",
+          "precision": "month",
+          "heading": "Estagiário de Marketing",
+          "organization": "Prefeitura de Rio Pomba",
+          "text": "AGOSTO 2025 (1 MÊS)\n\nEstagiário de Marketing\n\nPrefeitura de Rio Pomba\n\nPeças gráficas, edição de vídeos e automações com IA."
+        },
+        {
+          "id": "studies",
+          "date": "2026",
+          "precision": "year",
+          "heading": "Tecnólogo em Análise e Desenvolvimento de Sistemas",
+          "organization": "Univiçosa",
+          "text": "2026 / FORMAÇÃO E TRABALHO, EM PARALELO\n\n2026\nEm andamento\n\nTecnólogo em Análise e Desenvolvimento de Sistemas\n\nUniviçosa\n\n2026 - ATUALMENTE\n\nIF SUDESTE MG / SAÍDA EM 2026\nContinuidade do percurso acadêmico na Univiçosa."
+        },
+        {
+          "id": "operations",
+          "date": "2026-02",
+          "precision": "month",
+          "heading": "Assistente de RH",
+          "organization": "Assurance IT",
+          "text": "FEVEREIRO 2026 - ATUALMENTE\nEM ANDAMENTO\n\nAssistente de RH\n\nAssurance IT\n\nRecrutamento e gestão de vagas. Iniciativa própria de padronização automática de currículos."
+        },
+        {
+          "id": "mobile",
+          "date": "2026-08",
+          "precision": "month",
+          "heading": "Estagiário de Desenvolvimento",
+          "organization": "Bioma Investimentos",
+          "text": "AGOSTO 2026 - ATUALMENTE\nEM ANDAMENTO\n\nEstagiário de Desenvolvimento\n\nBioma Investimentos\n\nDesenvolvimento mobile com Flutter integrado a bancos de dados SQL."
+        }
+      ],
+      "geometry": {
+        "width": 704,
+        "height": 6222,
+        "fieldWidth": 704,
+        "paths": [
+          {
+            "id": "school",
+            "length": 124.40831756591797,
+            "d": "M246.39999999999998 0 C246.39999999999998 30 322 30 322 90"
+          },
+          {
+            "id": "audiovisual",
+            "length": 417.7226257324219,
+            "d": "M322 90 C322 25 686 25 686 140"
+          },
+          {
+            "id": "computing",
+            "length": 656,
+            "d": "M686 140 V460 H570 V680"
+          },
+          {
+            "id": "design",
+            "length": 1114.093017578125,
+            "d": "M570 680 C570 1433 169 1433 169 1683"
+          },
+          {
+            "id": "development",
+            "length": 1214,
+            "d": "M169 1683 V2272 H584 V2482"
+          },
+          {
+            "id": "support",
+            "length": 1002,
+            "d": "M584 2482 V2892 H197 V3097"
+          },
+          {
+            "id": "marketing",
+            "length": 666.88037109375,
+            "d": "M197 3097 C197 3372 570 3372 570 3612"
+          },
+          {
+            "id": "studies",
+            "length": 650.8870849609375,
+            "d": "M570 3612 V3860 Q570 3892 602 3892 H643 Q675 3892 675 3924 V4182"
+          },
+          {
+            "id": "operations",
+            "length": 1231.88720703125,
+            "d": "M675 4182 V4700 Q675 4732 643 4732 H201 Q169 4732 169 4764 V4932"
+          },
+          {
+            "id": "mobile",
+            "length": 1783.254638671875,
+            "d": "M169 4932 V5310 Q169 5342 201 5342 H538 Q570 5342 570 5374 V5587 C570 6132 246.39999999999998 6132 246.39999999999998 6222"
+          }
+        ],
+        "joinX": {
+          "work": 278.65,
+          "path": 278.65
+        },
+        "backgroundRows": [
+          0,
+          0
+        ]
+      },
+      "motion": [
+        {
+          "id": "computing",
+          "before": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 22,
+            "d": "M686 140 V460 H570 V680"
+          },
+          "after": {
+            "dash": 0,
+            "opacity": 1,
+            "bodyY": 0,
+            "d": "M686 140 V460 H570 V680"
+          },
+          "reversed": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 22,
+            "d": "M686 140 V460 H570 V680"
+          }
+        },
+        {
+          "id": "design",
+          "before": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 22,
+            "d": "M570 680 C570 1433 169 1433 169 1683"
+          },
+          "after": {
+            "dash": 0,
+            "opacity": 1,
+            "bodyY": 0,
+            "d": "M570 680 C570 1433 169 1433 169 1683"
+          },
+          "reversed": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 22,
+            "d": "M570 680 C570 1433 169 1433 169 1683"
+          }
+        },
+        {
+          "id": "development",
+          "before": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 22,
+            "d": "M169 1683 V2272 H584 V2482"
+          },
+          "after": {
+            "dash": 0,
+            "opacity": 1,
+            "bodyY": 0,
+            "d": "M169 1683 V2272 H584 V2482"
+          },
+          "reversed": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 22,
+            "d": "M169 1683 V2272 H584 V2482"
+          }
+        },
+        {
+          "id": "studies",
+          "before": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 22,
+            "d": "M570 3612 V3860 Q570 3892 602 3892 H643 Q675 3892 675 3924 V4182"
+          },
+          "after": {
+            "dash": 0,
+            "opacity": 1,
+            "bodyY": 0,
+            "d": "M570 3612 V3860 Q570 3892 602 3892 H643 Q675 3892 675 3924 V4182"
+          },
+          "reversed": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 22,
+            "d": "M570 3612 V3860 Q570 3892 602 3892 H643 Q675 3892 675 3924 V4182"
+          }
+        },
+        {
+          "id": "mobile",
+          "before": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 22,
+            "d": "M169 4932 V5310 Q169 5342 201 5342 H538 Q570 5342 570 5374 V5587 C570 6132 246.39999999999998 6132 246.39999999999998 6222"
+          },
+          "after": {
+            "dash": 0,
+            "opacity": 1,
+            "bodyY": 0,
+            "d": "M169 4932 V5310 Q169 5342 201 5342 H538 Q570 5342 570 5374 V5587 C570 6132 246.39999999999998 6132 246.39999999999998 6222"
+          },
+          "reversed": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 22,
+            "d": "M169 4932 V5310 Q169 5342 201 5342 H538 Q570 5342 570 5374 V5587 C570 6132 246.39999999999998 6132 246.39999999999998 6222"
+          }
+        }
+      ],
+      "overflow": {
+        "width": 768,
+        "scroll": 768,
+        "offenders": []
+      },
+      "triggerCount": 22,
+      "newTriggers": 12,
+      "pins": 1,
+      "backScrollThroughAllChapters": true,
+      "keyboard": true,
+      "localeToggleClean": true,
+      "performance": {
+        "loop": "demand",
+        "geometry": 1,
+        "textures": 0
+      },
+      "errors": []
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "lang": "pt",
+      "chronology": [
+        {
+          "id": "school",
+          "date": "2016-01",
+          "precision": "month",
+          "heading": "Ensino Médio",
+          "organization": "Colégio Rio Branco",
+          "text": "ANTES DA COMPUTAÇÃO\n\n2016 - 2018\n\nEnsino Médio\n\nColégio Rio Branco"
+        },
+        {
+          "id": "audiovisual",
+          "date": "2017",
+          "precision": "year",
+          "heading": "Cineclube",
+          "organization": "Conservatório Estadual de Música de Visconde do Rio Branco",
+          "text": "ANTES DA COMPUTAÇÃO\n\n2017–2018\n\nCineclube\n\nConservatório Estadual de Música de Visconde do Rio Branco\n\nCaptação de imagem e áudio, edição de vídeo e produção em grupo."
+        },
+        {
+          "id": "computing",
+          "date": "2020-01",
+          "precision": "month",
+          "heading": "Bacharelado em Ciência da Computação",
+          "organization": "IF Sudeste MG - Campus Rio Pomba",
+          "text": "2020\n\nENTRADA NA COMPUTAÇÃO\n\nBacharelado em Ciência da Computação\n\nIF Sudeste MG - Campus Rio Pomba\n\n2020 - 2026\n\nAlgoritmos, estruturas de dados e desenvolvimento de software.\n\nSAÍDA EM 2026"
+        },
+        {
+          "id": "design",
+          "date": "2023-03",
+          "precision": "month",
+          "heading": "Estagiário / Designer Gráfico",
+          "organization": "IF Sudeste MG",
+          "text": "MARÇO 2023 - MARÇO 2025\n\nEstagiário / Designer Gráfico\n\nIF Sudeste MG\n\nRedes sociais, diagramação e campanhas na comunicação institucional."
+        },
+        {
+          "id": "development",
+          "date": "2024-11",
+          "precision": "month",
+          "heading": "Estagiário em Desenvolvimento",
+          "organization": "Metryx Tecnologia Ltda.",
+          "text": "NOVEMBRO 2024 - FEVEREIRO 2025\n\nEstagiário em Desenvolvimento\n\nMetryx Tecnologia Ltda.\n\nDesenvolvimento frontend, análise de código, correção de bugs e melhorias de interface."
+        },
+        {
+          "id": "support",
+          "date": "2025-07",
+          "precision": "month",
+          "heading": "Suporte e Desenvolvimento",
+          "organization": "Santiago TI",
+          "text": "JULHO 2025 - ATUALMENTE\nEM ANDAMENTO\n\nSuporte e Desenvolvimento\n\nSantiago TI\n\nComputadores, desenvolvimento de software e sistemas de segurança."
+        },
+        {
+          "id": "marketing",
+          "date": "2025-08",
+          "precision": "month",
+          "heading": "Estagiário de Marketing",
+          "organization": "Prefeitura de Rio Pomba",
+          "text": "AGOSTO 2025 (1 MÊS)\n\nEstagiário de Marketing\n\nPrefeitura de Rio Pomba\n\nPeças gráficas, edição de vídeos e automações com IA."
+        },
+        {
+          "id": "studies",
+          "date": "2026",
+          "precision": "year",
+          "heading": "Tecnólogo em Análise e Desenvolvimento de Sistemas",
+          "organization": "Univiçosa",
+          "text": "2026 / FORMAÇÃO E TRABALHO, EM PARALELO\n\n2026\nEm andamento\n\nTecnólogo em Análise e Desenvolvimento de Sistemas\n\nUniviçosa\n\n2026 - ATUALMENTE\n\nIF SUDESTE MG / SAÍDA EM 2026\nContinuidade do percurso acadêmico na Univiçosa."
+        },
+        {
+          "id": "operations",
+          "date": "2026-02",
+          "precision": "month",
+          "heading": "Assistente de RH",
+          "organization": "Assurance IT",
+          "text": "FEVEREIRO 2026 - ATUALMENTE\nEM ANDAMENTO\n\nAssistente de RH\n\nAssurance IT\n\nRecrutamento e gestão de vagas. Iniciativa própria de padronização automática de currículos."
+        },
+        {
+          "id": "mobile",
+          "date": "2026-08",
+          "precision": "month",
+          "heading": "Estagiário de Desenvolvimento",
+          "organization": "Bioma Investimentos",
+          "text": "AGOSTO 2026 - ATUALMENTE\nEM ANDAMENTO\n\nEstagiário de Desenvolvimento\n\nBioma Investimentos\n\nDesenvolvimento mobile com Flutter integrado a bancos de dados SQL."
+        }
+      ],
+      "geometry": {
+        "width": 342,
+        "height": 5400,
+        "fieldWidth": 342,
+        "paths": [
+          {
+            "id": "school",
+            "length": 240.17437744140625,
+            "d": "M119.69999999999999 0 C119.69999999999999 30 321 30 321 105"
+          },
+          {
+            "id": "audiovisual",
+            "length": 485.1109619140625,
+            "d": "M321 105 C321 264 17 264 17 450"
+          },
+          {
+            "id": "computing",
+            "length": 678,
+            "d": "M17 450 V674 H325 V820"
+          },
+          {
+            "id": "design",
+            "length": 798.7501831054688,
+            "d": "M325 820 C325 1314 17 1314 17 1530"
+          },
+          {
+            "id": "development",
+            "length": 808,
+            "d": "M17 1530 V1884 H325 V2030"
+          },
+          {
+            "id": "support",
+            "length": 893,
+            "d": "M325 2030 V2424 H17 V2615"
+          },
+          {
+            "id": "marketing",
+            "length": 569.1923828125,
+            "d": "M17 2615 C17 2914 325 2914 325 3060"
+          },
+          {
+            "id": "studies",
+            "length": 500,
+            "d": "M325 3060 V3414 Q325 3414 325 3414 H325 Q325 3414 325 3414 V3560"
+          },
+          {
+            "id": "operations",
+            "length": 1108.88720703125,
+            "d": "M325 3560 V4152 Q325 4184 293 4184 H49 Q17 4184 17 4216 V4385"
+          },
+          {
+            "id": "mobile",
+            "length": 1359.8287353515625,
+            "d": "M17 4385 V4722 Q17 4754 49 4754 H293 Q325 4754 325 4786 V4900 C325 5310 119.69999999999999 5310 119.69999999999999 5400"
+          }
+        ],
+        "joinX": {
+          "work": 143.7,
+          "path": 143.7
+        },
+        "backgroundRows": [
+          0,
+          300
+        ]
+      },
+      "motion": [
+        {
+          "id": "computing",
+          "before": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 12,
+            "d": "M17 450 V674 H325 V820"
+          },
+          "after": {
+            "dash": 0,
+            "opacity": 1,
+            "bodyY": 0,
+            "d": "M17 450 V674 H325 V820"
+          },
+          "reversed": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 12,
+            "d": "M17 450 V674 H325 V820"
+          }
+        },
+        {
+          "id": "design",
+          "before": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 12,
+            "d": "M325 820 C325 1314 17 1314 17 1530"
+          },
+          "after": {
+            "dash": 0,
+            "opacity": 1,
+            "bodyY": 0,
+            "d": "M325 820 C325 1314 17 1314 17 1530"
+          },
+          "reversed": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 12,
+            "d": "M325 820 C325 1314 17 1314 17 1530"
+          }
+        },
+        {
+          "id": "development",
+          "before": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 12,
+            "d": "M17 1530 V1884 H325 V2030"
+          },
+          "after": {
+            "dash": 0,
+            "opacity": 1,
+            "bodyY": 0,
+            "d": "M17 1530 V1884 H325 V2030"
+          },
+          "reversed": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 12,
+            "d": "M17 1530 V1884 H325 V2030"
+          }
+        },
+        {
+          "id": "studies",
+          "before": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 12,
+            "d": "M325 3060 V3414 Q325 3414 325 3414 H325 Q325 3414 325 3414 V3560"
+          },
+          "after": {
+            "dash": 0,
+            "opacity": 1,
+            "bodyY": 0,
+            "d": "M325 3060 V3414 Q325 3414 325 3414 H325 Q325 3414 325 3414 V3560"
+          },
+          "reversed": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 12,
+            "d": "M325 3060 V3414 Q325 3414 325 3414 H325 Q325 3414 325 3414 V3560"
+          }
+        },
+        {
+          "id": "mobile",
+          "before": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 12,
+            "d": "M17 4385 V4722 Q17 4754 49 4754 H293 Q325 4754 325 4786 V4900 C325 5310 119.69999999999999 5310 119.69999999999999 5400"
+          },
+          "after": {
+            "dash": 0,
+            "opacity": 1,
+            "bodyY": 0,
+            "d": "M17 4385 V4722 Q17 4754 49 4754 H293 Q325 4754 325 4786 V4900 C325 5310 119.69999999999999 5310 119.69999999999999 5400"
+          },
+          "reversed": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 12,
+            "d": "M17 4385 V4722 Q17 4754 49 4754 H293 Q325 4754 325 4786 V4900 C325 5310 119.69999999999999 5310 119.69999999999999 5400"
+          }
+        }
+      ],
+      "overflow": {
+        "width": 390,
+        "scroll": 390,
+        "offenders": []
+      },
+      "triggerCount": 22,
+      "newTriggers": 12,
+      "pins": 1,
+      "backScrollThroughAllChapters": true,
+      "keyboard": true,
+      "localeToggleClean": true,
+      "performance": {
+        "loop": "demand",
+        "geometry": 1,
+        "textures": 0
+      },
+      "errors": []
+    },
+    {
+      "name": "small-mobile-en",
+      "width": 320,
+      "height": 740,
+      "lang": "en",
+      "chronology": [
+        {
+          "id": "school",
+          "date": "2016-01",
+          "precision": "month",
+          "heading": "High School",
+          "organization": "Colégio Rio Branco",
+          "text": "BEFORE COMPUTING\n\n2016 - 2018\n\nHigh School\n\nColégio Rio Branco"
+        },
+        {
+          "id": "audiovisual",
+          "date": "2017",
+          "precision": "year",
+          "heading": "Cineclube",
+          "organization": "Conservatório Estadual de Música de Visconde do Rio Branco",
+          "text": "BEFORE COMPUTING\n\n2017–2018\n\nCineclube\n\nConservatório Estadual de Música de Visconde do Rio Branco\n\nImage and audio capture, video editing and group production."
+        },
+        {
+          "id": "computing",
+          "date": "2020-01",
+          "precision": "month",
+          "heading": "Bachelor's Degree in Computer Science",
+          "organization": "IF Sudeste MG - Campus Rio Pomba",
+          "text": "2020\n\nENTERING COMPUTING\n\nBachelor's Degree in Computer Science\n\nIF Sudeste MG - Campus Rio Pomba\n\n2020 - 2026\n\nAlgorithms, data structures and software development.\n\nLEFT IN 2026"
+        },
+        {
+          "id": "design",
+          "date": "2023-03",
+          "precision": "month",
+          "heading": "Intern / Graphic Designer",
+          "organization": "IF Sudeste MG",
+          "text": "MARCH 2023 - MARCH 2025\n\nIntern / Graphic Designer\n\nIF Sudeste MG\n\nSocial media, document layout and campaigns in institutional communications."
+        },
+        {
+          "id": "development",
+          "date": "2024-11",
+          "precision": "month",
+          "heading": "Development Intern",
+          "organization": "Metryx Tecnologia Ltda.",
+          "text": "NOVEMBER 2024 - FEBRUARY 2025\n\nDevelopment Intern\n\nMetryx Tecnologia Ltda.\n\nFrontend development, code analysis, bug fixes and interface improvements."
+        },
+        {
+          "id": "support",
+          "date": "2025-07",
+          "precision": "month",
+          "heading": "Support & Development",
+          "organization": "Santiago TI",
+          "text": "JULY 2025 - PRESENT\nIN PROGRESS\n\nSupport & Development\n\nSantiago TI\n\nComputers, software development and security systems."
+        },
+        {
+          "id": "marketing",
+          "date": "2025-08",
+          "precision": "month",
+          "heading": "Marketing Intern",
+          "organization": "Prefeitura de Rio Pomba",
+          "text": "AUGUST 2025 (1 MONTH)\n\nMarketing Intern\n\nPrefeitura de Rio Pomba\n\nGraphic materials, video editing and AI automation."
+        },
+        {
+          "id": "studies",
+          "date": "2026",
+          "precision": "year",
+          "heading": "Technologist in Systems Analysis and Development",
+          "organization": "Univiçosa",
+          "text": "2026 / EDUCATION AND WORK, IN PARALLEL\n\n2026\nIn progress\n\nTechnologist in Systems Analysis and Development\n\nUniviçosa\n\n2026 - PRESENT\n\nIF SUDESTE MG / LEFT IN 2026\nContinuing the academic path at Univiçosa."
+        },
+        {
+          "id": "operations",
+          "date": "2026-02",
+          "precision": "month",
+          "heading": "HR Assistant",
+          "organization": "Assurance IT",
+          "text": "FEBRUARY 2026 - PRESENT\nIN PROGRESS\n\nHR Assistant\n\nAssurance IT\n\nRecruitment and job posting management. A self-initiated résumé standardization tool."
+        },
+        {
+          "id": "mobile",
+          "date": "2026-08",
+          "precision": "month",
+          "heading": "Development Intern",
+          "organization": "Bioma Investimentos",
+          "text": "AUGUST 2026 - PRESENT\nIN PROGRESS\n\nDevelopment Intern\n\nBioma Investimentos\n\nMobile development with Flutter integrated with SQL databases."
+        }
+      ],
+      "geometry": {
+        "width": 272,
+        "height": 5400,
+        "fieldWidth": 272,
+        "paths": [
+          {
+            "id": "school",
+            "length": 204.43502807617188,
+            "d": "M95.19999999999999 0 C95.19999999999999 30 256 30 256 105"
+          },
+          {
+            "id": "audiovisual",
+            "length": 441.47406005859375,
+            "d": "M256 105 C256 264 14 264 14 450"
+          },
+          {
+            "id": "computing",
+            "length": 614,
+            "d": "M14 450 V674 H258 V820"
+          },
+          {
+            "id": "design",
+            "length": 767.9270629882812,
+            "d": "M258 820 C258 1314 14 1314 14 1530"
+          },
+          {
+            "id": "development",
+            "length": 744,
+            "d": "M14 1530 V1884 H258 V2030"
+          },
+          {
+            "id": "support",
+            "length": 829,
+            "d": "M258 2030 V2424 H14 V2615"
+          },
+          {
+            "id": "marketing",
+            "length": 528.5399169921875,
+            "d": "M14 2615 C14 2914 258 2914 258 3060"
+          },
+          {
+            "id": "studies",
+            "length": 500,
+            "d": "M258 3060 V3414 Q258 3414 258 3414 H258 Q258 3414 258 3414 V3560"
+          },
+          {
+            "id": "operations",
+            "length": 1044.88720703125,
+            "d": "M258 3560 V4152 Q258 4184 226 4184 H46 Q14 4184 14 4216 V4385"
+          },
+          {
+            "id": "mobile",
+            "length": 1274.93798828125,
+            "d": "M14 4385 V4722 Q14 4754 46 4754 H226 Q258 4754 258 4786 V4900 C258 5310 95.19999999999999 5310 95.19999999999999 5400"
+          }
+        ],
+        "joinX": {
+          "work": 119.19999999999999,
+          "path": 119.19999999999999
+        },
+        "backgroundRows": [
+          0,
+          300
+        ]
+      },
+      "motion": [
+        {
+          "id": "computing",
+          "before": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 12,
+            "d": "M14 450 V674 H258 V820"
+          },
+          "after": {
+            "dash": 0,
+            "opacity": 1,
+            "bodyY": 0,
+            "d": "M14 450 V674 H258 V820"
+          },
+          "reversed": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 12,
+            "d": "M14 450 V674 H258 V820"
+          }
+        },
+        {
+          "id": "design",
+          "before": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 12,
+            "d": "M258 820 C258 1314 14 1314 14 1530"
+          },
+          "after": {
+            "dash": 0,
+            "opacity": 1,
+            "bodyY": 0,
+            "d": "M258 820 C258 1314 14 1314 14 1530"
+          },
+          "reversed": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 12,
+            "d": "M258 820 C258 1314 14 1314 14 1530"
+          }
+        },
+        {
+          "id": "development",
+          "before": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 12,
+            "d": "M14 1530 V1884 H258 V2030"
+          },
+          "after": {
+            "dash": 0,
+            "opacity": 1,
+            "bodyY": 0,
+            "d": "M14 1530 V1884 H258 V2030"
+          },
+          "reversed": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 12,
+            "d": "M14 1530 V1884 H258 V2030"
+          }
+        },
+        {
+          "id": "studies",
+          "before": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 12,
+            "d": "M258 3060 V3414 Q258 3414 258 3414 H258 Q258 3414 258 3414 V3560"
+          },
+          "after": {
+            "dash": 0,
+            "opacity": 1,
+            "bodyY": 0,
+            "d": "M258 3060 V3414 Q258 3414 258 3414 H258 Q258 3414 258 3414 V3560"
+          },
+          "reversed": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 12,
+            "d": "M258 3060 V3414 Q258 3414 258 3414 H258 Q258 3414 258 3414 V3560"
+          }
+        },
+        {
+          "id": "mobile",
+          "before": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 12,
+            "d": "M14 4385 V4722 Q14 4754 46 4754 H226 Q258 4754 258 4786 V4900 C258 5310 95.19999999999999 5310 95.19999999999999 5400"
+          },
+          "after": {
+            "dash": 0,
+            "opacity": 1,
+            "bodyY": 0,
+            "d": "M14 4385 V4722 Q14 4754 46 4754 H226 Q258 4754 258 4786 V4900 C258 5310 95.19999999999999 5310 95.19999999999999 5400"
+          },
+          "reversed": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 12,
+            "d": "M14 4385 V4722 Q14 4754 46 4754 H226 Q258 4754 258 4786 V4900 C258 5310 95.19999999999999 5310 95.19999999999999 5400"
+          }
+        }
+      ],
+      "overflow": {
+        "width": 320,
+        "scroll": 320,
+        "offenders": []
+      },
+      "triggerCount": 22,
+      "newTriggers": 12,
+      "pins": 1,
+      "backScrollThroughAllChapters": true,
+      "keyboard": true,
+      "localeToggleClean": true,
+      "performance": {
+        "loop": "demand",
+        "geometry": 1,
+        "textures": 0
+      },
+      "errors": []
+    },
+    {
+      "name": "landscape-en",
+      "width": 844,
+      "height": 390,
+      "lang": "en",
+      "chronology": [
+        {
+          "id": "school",
+          "date": "2016-01",
+          "precision": "month",
+          "heading": "High School",
+          "organization": "Colégio Rio Branco",
+          "text": "BEFORE COMPUTING\n\n2016 - 2018\n\nHigh School\n\nColégio Rio Branco"
+        },
+        {
+          "id": "audiovisual",
+          "date": "2017",
+          "precision": "year",
+          "heading": "Cineclube",
+          "organization": "Conservatório Estadual de Música de Visconde do Rio Branco",
+          "text": "BEFORE COMPUTING\n\n2017–2018\n\nCineclube\n\nConservatório Estadual de Música de Visconde do Rio Branco\n\nImage and audio capture, video editing and group production."
+        },
+        {
+          "id": "computing",
+          "date": "2020-01",
+          "precision": "month",
+          "heading": "Bachelor's Degree in Computer Science",
+          "organization": "IF Sudeste MG - Campus Rio Pomba",
+          "text": "2020\n\nENTERING COMPUTING\n\nBachelor's Degree in Computer Science\n\nIF Sudeste MG - Campus Rio Pomba\n\n2020 - 2026\n\nAlgorithms, data structures and software development.\n\nLEFT IN 2026"
+        },
+        {
+          "id": "design",
+          "date": "2023-03",
+          "precision": "month",
+          "heading": "Intern / Graphic Designer",
+          "organization": "IF Sudeste MG",
+          "text": "MARCH 2023 - MARCH 2025\n\nIntern / Graphic Designer\n\nIF Sudeste MG\n\nSocial media, document layout and campaigns in institutional communications."
+        },
+        {
+          "id": "development",
+          "date": "2024-11",
+          "precision": "month",
+          "heading": "Development Intern",
+          "organization": "Metryx Tecnologia Ltda.",
+          "text": "NOVEMBER 2024 - FEBRUARY 2025\n\nDevelopment Intern\n\nMetryx Tecnologia Ltda.\n\nFrontend development, code analysis, bug fixes and interface improvements."
+        },
+        {
+          "id": "support",
+          "date": "2025-07",
+          "precision": "month",
+          "heading": "Support & Development",
+          "organization": "Santiago TI",
+          "text": "JULY 2025 - PRESENT\nIN PROGRESS\n\nSupport & Development\n\nSantiago TI\n\nComputers, software development and security systems."
+        },
+        {
+          "id": "marketing",
+          "date": "2025-08",
+          "precision": "month",
+          "heading": "Marketing Intern",
+          "organization": "Prefeitura de Rio Pomba",
+          "text": "AUGUST 2025 (1 MONTH)\n\nMarketing Intern\n\nPrefeitura de Rio Pomba\n\nGraphic materials, video editing and AI automation."
+        },
+        {
+          "id": "studies",
+          "date": "2026",
+          "precision": "year",
+          "heading": "Technologist in Systems Analysis and Development",
+          "organization": "Univiçosa",
+          "text": "2026 / EDUCATION AND WORK, IN PARALLEL\n\n2026\nIn progress\n\nTechnologist in Systems Analysis and Development\n\nUniviçosa\n\n2026 - PRESENT\n\nIF SUDESTE MG / LEFT IN 2026\nContinuing the academic path at Univiçosa."
+        },
+        {
+          "id": "operations",
+          "date": "2026-02",
+          "precision": "month",
+          "heading": "HR Assistant",
+          "organization": "Assurance IT",
+          "text": "FEBRUARY 2026 - PRESENT\nIN PROGRESS\n\nHR Assistant\n\nAssurance IT\n\nRecruitment and job posting management. A self-initiated résumé standardization tool."
+        },
+        {
+          "id": "mobile",
+          "date": "2026-08",
+          "precision": "month",
+          "heading": "Development Intern",
+          "organization": "Bioma Investimentos",
+          "text": "AUGUST 2026 - PRESENT\nIN PROGRESS\n\nDevelopment Intern\n\nBioma Investimentos\n\nMobile development with Flutter integrated with SQL databases."
+        }
+      ],
+      "geometry": {
+        "width": 773,
+        "height": 5620,
+        "fieldWidth": 773,
+        "paths": [
+          {
+            "id": "school",
+            "length": 130.231201171875,
+            "d": "M270.54999999999995 0 C270.54999999999995 30 354 30 354 90"
+          },
+          {
+            "id": "audiovisual",
+            "length": 451.2469482421875,
+            "d": "M354 90 C354 25 754 25 754 140"
+          },
+          {
+            "id": "computing",
+            "length": 668,
+            "d": "M754 140 V460 H626 V680"
+          },
+          {
+            "id": "design",
+            "length": 942.9446411132812,
+            "d": "M626 680 C626 1220 186 1220 186 1470"
+          },
+          {
+            "id": "development",
+            "length": 1066,
+            "d": "M186 1470 V1870 H642 V2080"
+          },
+          {
+            "id": "support",
+            "length": 1041,
+            "d": "M642 2080 V2490 H216 V2695"
+          },
+          {
+            "id": "marketing",
+            "length": 692.5003051757812,
+            "d": "M216 2695 C216 2970 626 2970 626 3210"
+          },
+          {
+            "id": "studies",
+            "length": 661.8870849609375,
+            "d": "M626 3210 V3458 Q626 3490 658 3490 H710 Q742 3490 742 3522 V3780"
+          },
+          {
+            "id": "operations",
+            "length": 1281.88720703125,
+            "d": "M742 3780 V4298 Q742 4330 710 4330 H218 Q186 4330 186 4362 V4530"
+          },
+          {
+            "id": "mobile",
+            "length": 1671.50927734375,
+            "d": "M186 4530 V4908 Q186 4940 218 4940 H594 Q626 4940 626 4972 V5185 C626 5530 270.54999999999995 5530 270.54999999999995 5620"
+          }
+        ],
+        "joinX": {
+          "work": 305.98749999999995,
+          "path": 305.98749999999995
+        },
+        "backgroundRows": [
+          0,
+          0
+        ]
+      },
+      "motion": [
+        {
+          "id": "computing",
+          "before": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 22,
+            "d": "M754 140 V460 H626 V680"
+          },
+          "after": {
+            "dash": 0,
+            "opacity": 1,
+            "bodyY": 0,
+            "d": "M754 140 V460 H626 V680"
+          },
+          "reversed": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 22,
+            "d": "M754 140 V460 H626 V680"
+          }
+        },
+        {
+          "id": "design",
+          "before": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 22,
+            "d": "M626 680 C626 1220 186 1220 186 1470"
+          },
+          "after": {
+            "dash": 0,
+            "opacity": 1,
+            "bodyY": 0,
+            "d": "M626 680 C626 1220 186 1220 186 1470"
+          },
+          "reversed": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 22,
+            "d": "M626 680 C626 1220 186 1220 186 1470"
+          }
+        },
+        {
+          "id": "development",
+          "before": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 22,
+            "d": "M186 1470 V1870 H642 V2080"
+          },
+          "after": {
+            "dash": 0,
+            "opacity": 1,
+            "bodyY": 0,
+            "d": "M186 1470 V1870 H642 V2080"
+          },
+          "reversed": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 22,
+            "d": "M186 1470 V1870 H642 V2080"
+          }
+        },
+        {
+          "id": "studies",
+          "before": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 22,
+            "d": "M626 3210 V3458 Q626 3490 658 3490 H710 Q742 3490 742 3522 V3780"
+          },
+          "after": {
+            "dash": 0,
+            "opacity": 1,
+            "bodyY": 0,
+            "d": "M626 3210 V3458 Q626 3490 658 3490 H710 Q742 3490 742 3522 V3780"
+          },
+          "reversed": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 22,
+            "d": "M626 3210 V3458 Q626 3490 658 3490 H710 Q742 3490 742 3522 V3780"
+          }
+        },
+        {
+          "id": "mobile",
+          "before": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 22,
+            "d": "M186 4530 V4908 Q186 4940 218 4940 H594 Q626 4940 626 4972 V5185 C626 5530 270.54999999999995 5530 270.54999999999995 5620"
+          },
+          "after": {
+            "dash": 0,
+            "opacity": 1,
+            "bodyY": 0,
+            "d": "M186 4530 V4908 Q186 4940 218 4940 H594 Q626 4940 626 4972 V5185 C626 5530 270.54999999999995 5530 270.54999999999995 5620"
+          },
+          "reversed": {
+            "dash": 1,
+            "opacity": 1,
+            "bodyY": 22,
+            "d": "M186 4530 V4908 Q186 4940 218 4940 H594 Q626 4940 626 4972 V5185 C626 5530 270.54999999999995 5530 270.54999999999995 5620"
+          }
+        }
+      ],
+      "overflow": {
+        "width": 844,
+        "scroll": 844,
+        "offenders": []
+      },
+      "triggerCount": 22,
+      "newTriggers": 12,
+      "pins": 1,
+      "backScrollThroughAllChapters": true,
+      "keyboard": true,
+      "localeToggleClean": true,
+      "performance": {
+        "loop": "demand",
+        "geometry": 1,
+        "textures": 0
+      },
+      "errors": []
+    }
+  ],
+  "motion": {
+    "desktop": {
+      "lang": "pt",
+      "completeStaticPath": true,
+      "allContentReadable": true,
+      "triggerCount": 0,
+      "pins": 0,
+      "preferenceToggleClean": true
+    },
+    "mobile": {
+      "lang": "en",
+      "completeStaticPath": true,
+      "allContentReadable": true,
+      "triggerCount": 0,
+      "pins": 0,
+      "preferenceToggleClean": true
+    }
+  },
+  "production": [
+    {
+      "lang": "pt",
+      "width": 1440,
+      "height": 900,
+      "allTenMoments": true,
+      "studiesYearOnly": true,
+      "errors": []
+    },
+    {
+      "lang": "en",
+      "width": 390,
+      "height": 844,
+      "allTenMoments": true,
+      "studiesYearOnly": true,
+      "errors": []
+    }
+  ],
+  "responsiveResize": {
+    "profiles": [
+      {
+        "viewport": 390,
+        "scroll": 390,
+        "svgWidth": 342,
+        "fieldWidth": 342,
+        "bodyOpacity": [
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1"
+        ]
+      },
+      {
+        "viewport": 1440,
+        "scroll": 1440,
+        "svgWidth": 1319,
+        "fieldWidth": 1319,
+        "bodyOpacity": [
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1",
+          "1"
+        ]
+      }
+    ],
+    "triggerCountStable": true,
+    "geometryRecalculated": true
+  },
+  "checks": {
+    "build": "npm run build — passed",
+    "lint": "npx eslint . — passed",
+    "diffWhitespace": "git diff --check — passed",
+    "outdatedEducationReference": "absent from src, dist and rendered PT/EN",
+    "approvedComponentHashes": "all Hero, Origin, Craft and Selected Work component/style SHA-256 hashes match the Phase 05 baseline",
+    "minimumPathTextContrast": 5.065763686950067,
+    "newDependencies": 0,
+    "newCanvas": 0,
+    "implementedChapter": "04 / Path"
+  },
+  "build": {
+    "mainJS": {
+      "kB": 388.99,
+      "gzipKB": 131.71
+    },
+    "css": {
+      "kB": 42.16,
+      "gzipKB": 9.29
+    },
+    "heroScene": {
+      "kB": 927.36,
+      "gzipKB": 248.38
+    },
+    "baselineMainJS": {
+      "kB": 378.36,
+      "gzipKB": 128.89
+    },
+    "baselineCSS": {
+      "kB": 32.99,
+      "gzipKB": 7.77
+    },
+    "mainAndCSSGzipDeltaKB": 4.34
+  }
+}

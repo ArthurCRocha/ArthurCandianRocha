@@ -1,0 +1,15 @@
+- region "Still learning. Still building. Still moving.":
+  - paragraph: 05 / NOW
+  - heading "Still learning. Still building. Still moving." [level=2]
+  - term: Learning
+  - definition:
+    - paragraph: Technologist in Systems Analysis and Development
+    - paragraph: Univiçosa
+    - paragraph:
+      - time: 2026 - Present
+  - term: Building
+  - definition:
+    - paragraph: Development Intern
+    - paragraph: Bioma Investimentos
+    - paragraph:
+      - time: August 2026 - Present

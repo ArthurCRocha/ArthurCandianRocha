@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#eeeae1"/>
+  <circle cx="925" cy="248" r="155" fill="#b82025"/>
+  <g fill="#171714" font-family="Georgia,serif" font-size="165" letter-spacing="-8">
+    <text x="65" y="293">ARTHUR</text>
+    <text x="180" y="438">ROCHA<tspan fill="#b82025">.</tspan></text>
+  </g>
+  <g fill="#45443e" font-family="monospace" font-size="14" letter-spacing="2">
+    <text x="65" y="60">AR / 26 — PERSONAL PORTFOLIO</text>
+    <text x="65" y="575">FULL STACK DEVELOPER × DIGITAL DESIGN</text>
+    <text x="1050" y="575">BRA / 26</text>
+  </g>
+</svg>

@@ -1,0 +1,128 @@
+{
+  "checkedAt": "2026-10-06T02:00:05.234Z",
+  "scope": "Factual education correction only; previous layout and animation checks retained separately.",
+  "rendered": [
+    {
+      "lang": "pt",
+      "width": 1440,
+      "height": 900,
+      "computing": "2020Em 2020, entrei na graduação em computação no IF Sudeste MG. Um ponto de partida para entender como os sistemas funcionam.Bacharelado em Ciência da ComputaçãoSaída em 2026",
+      "education": "Formação / em andamentoUniviçosaTecnólogo em Análise e Desenvolvimento de Sistemas2026 - Atualmente",
+      "earlierBackground": "O olhar visual já vinha do audiovisual: imagem e edição no cineclube, em 2017–2018.",
+      "degree": "Prática / desenvolvimentoMetryx TecnologiaEstagiário em DesenvolvimentoNovembro 2024 - Fevereiro 2025Formação / em andamentoUniviçosaTecnólogo em Análise e Desenvolvimento de Sistemas2026 - Atualmente",
+      "outdatedReferenceFound": false,
+      "errors": []
+    },
+    {
+      "lang": "en",
+      "width": 1440,
+      "height": 900,
+      "computing": "2020In 2020, I began studying computing at IF Sudeste MG. A starting point for understanding how systems work.Bachelor's Degree in Computer ScienceLeft in 2026",
+      "education": "Education / in progressUniviçosaTechnologist in Systems Analysis and Development2026 - Present",
+      "earlierBackground": "That visual curiosity was already there: image-making and editing at the film club, in 2017–2018.",
+      "degree": "Practice / developmentMetryx TecnologiaDevelopment InternNovember 2024 - February 2025Education / in progressUniviçosaTechnologist in Systems Analysis and Development2026 - Present",
+      "outdatedReferenceFound": false,
+      "errors": []
+    },
+    {
+      "lang": "pt",
+      "width": 390,
+      "height": 844,
+      "computing": "2020Em 2020, entrei na graduação em computação no IF Sudeste MG. Um ponto de partida para entender como os sistemas funcionam.Bacharelado em Ciência da ComputaçãoSaída em 2026",
+      "education": "Formação / em andamentoUniviçosaTecnólogo em Análise e Desenvolvimento de Sistemas2026 - Atualmente",
+      "earlierBackground": "O olhar visual já vinha do audiovisual: imagem e edição no cineclube, em 2017–2018.",
+      "degree": "Prática / desenvolvimentoMetryx TecnologiaEstagiário em DesenvolvimentoNovembro 2024 - Fevereiro 2025Formação / em andamentoUniviçosaTecnólogo em Análise e Desenvolvimento de Sistemas2026 - Atualmente",
+      "outdatedReferenceFound": false,
+      "errors": []
+    },
+    {
+      "lang": "en",
+      "width": 390,
+      "height": 844,
+      "computing": "2020In 2020, I began studying computing at IF Sudeste MG. A starting point for understanding how systems work.Bachelor's Degree in Computer ScienceLeft in 2026",
+      "education": "Education / in progressUniviçosaTechnologist in Systems Analysis and Development2026 - Present",
+      "earlierBackground": "That visual curiosity was already there: image-making and editing at the film club, in 2017–2018.",
+      "degree": "Practice / developmentMetryx TecnologiaDevelopment InternNovember 2024 - February 2025Education / in progressUniviçosaTechnologist in Systems Analysis and Development2026 - Present",
+      "outdatedReferenceFound": false,
+      "errors": []
+    }
+  ],
+  "data": {
+    "computing": {
+      "id": 1,
+      "degree": "Bacharelado em Ciência da Computação",
+      "degreeEN": "Bachelor's Degree in Computer Science",
+      "institution": "IF Sudeste MG - Campus Rio Pomba",
+      "institutionShort": "IF Sudeste MG",
+      "startDate": "2020-01",
+      "endDate": "2026",
+      "graduationDate": "Saída em 2026",
+      "graduationDateEN": "Left in 2026",
+      "current": false,
+      "status": "left",
+      "location": "Rio Pomba, MG",
+      "duration": "2020 - 2026",
+      "durationEN": "2020 - 2026",
+      "description": "Formação abrangente em desenvolvimento de software, algoritmos, estruturas de dados, banco de dados, e engenharia de software.",
+      "highlights": [
+        "Desenvolvimento Full Stack",
+        "Algoritmos e Estruturas de Dados",
+        "Banco de Dados",
+        "Engenharia de Software"
+      ]
+    },
+    "studies": {
+      "id": 3,
+      "degree": "Tecnólogo em Análise e Desenvolvimento de Sistemas",
+      "degreeEN": "Technologist in Systems Analysis and Development",
+      "institution": "Univiçosa",
+      "institutionShort": "Univiçosa",
+      "startDate": "2026",
+      "endDate": null,
+      "graduationDate": "Em andamento",
+      "graduationDateEN": "In progress",
+      "current": true,
+      "status": "in-progress",
+      "location": "Remote",
+      "duration": "2026 - Atualmente",
+      "durationEN": "2026 - Present",
+      "description": "Formação tecnológica complementar focada em análise de sistemas e desenvolvimento de software aplicado.",
+      "highlights": [
+        "Análise de Sistemas",
+        "Desenvolvimento de Software",
+        "Gestão de Projetos de TI"
+      ]
+    },
+    "audiovisual": {
+      "id": 14,
+      "name": "Cineclube — Conservatório Estadual de Música de Visconde do Rio Branco",
+      "nameShort": "Cineclube",
+      "category": "Audiovisual",
+      "categoryEN": "Audiovisual",
+      "year": "2017-2018",
+      "type": "design",
+      "description": "Participação em oficina de produção de filmes amadores do cineclube da escola, marco inicial de entrada no universo de design e produção audiovisual. Atuação em grupo, responsável por edição de vídeo, captação de imagem e áudio e produção geral. Filmes exibidos em sessões do cineclube.",
+      "descriptionEN": "Participated in an amateur filmmaking workshop for the school's film club, the starting point of my entry into design and audiovisual production. Worked as part of a group, responsible for video editing, image and audio capture, and general production. Films were shown at film club sessions.",
+      "technologies": [
+        "Sony Vegas",
+        "Produção Audiovisual",
+        "Edição de Vídeo"
+      ],
+      "image": null,
+      "featured": false,
+      "link": null
+    },
+    "academicRecognition": {
+      "id": 1,
+      "name": "Formação Acadêmica",
+      "nameEN": "Academic Achievement",
+      "category": "IF Sudeste MG",
+      "year": "2020-2026",
+      "description": "Bacharelado em Ciência da Computação"
+    },
+    "about": {
+      "pt": "Sou um profissional híbrido: divido meu tempo entre desenvolvimento de software e design gráfico, e uso isso a meu favor — entendo tanto a lógica por trás do código quanto a experiência de quem vai usar o produto. Hoje atuo como estagiário de desenvolvimento na Bioma Investimentos (Flutter + SQL) e na Assurance, enquanto curso Análise e Desenvolvimento de Sistemas na Univiçosa. Iniciei o bacharelado em Ciência da Computação no IF Sudeste MG em 2020. Em 2026, deixei o IF Sudeste MG e continuei meu percurso acadêmico na Univiçosa. Se o problema envolve automatizar algo manual, digitalizar um processo em planilha ou dar cara profissional a um material, eu já resolvi algo parecido.",
+      "en": "I'm a hybrid professional: I split my time between software development and graphic design, and I use that to my advantage — I understand both the logic behind the code and the experience of whoever uses the product. Today I work as a development intern at Bioma Investimentos (Flutter + SQL) and at Assurance, while studying Systems Analysis and Development at Univiçosa. I began a Bachelor's Degree in Computer Science at IF Sudeste MG in 2020. In 2026, I left IF Sudeste MG and continued my academic path at Univiçosa. If the problem is automating something manual, digitizing a spreadsheet-based process, or giving a piece of material a professional look, I've likely solved something similar before."
+    }
+  }
+}

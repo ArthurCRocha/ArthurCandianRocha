@@ -1,0 +1,52 @@
+/* Reference tokens for the archived portfolio CSS. Not imported. */
+:root {
+  --paper: #eeeae1;
+  --paper-raised: #f5f1e9;
+  --paper-sunken: #e5e0d6;
+  --ink: #171714;
+  --ink-muted: #45443e;
+  --ink-subtle: #666258;
+  --ink-ghost: #938e83;
+  --red: #b82025;
+  --hairline: #d0cabf;
+  --hairline-strong: #aea698;
+  --wash-1: rgb(23 23 20 / 3.5%);
+  --wash-2: rgb(23 23 20 / 7%);
+  --shade: rgb(23 23 20 / 50%);
+  --scrim: rgb(15 15 13 / 96%);
+  --on-ink: #eeeae1;
+
+  --font-display: 'Instrument Serif', 'Times New Roman', serif;
+  --font-sans: 'DM Sans', 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace;
+  --fs-display: clamp(4rem, 15vw, 15rem);
+  --fs-h2: clamp(2.25rem, 6.5vw, 4.75rem);
+  --fs-h3: clamp(1.5rem, 3vw, 2.125rem);
+  --fs-h4: clamp(1.25rem, 2.2vw, 1.5rem);
+  --fs-lead: clamp(1.0625rem, 1.6vw, 1.3125rem);
+  --fs-body: 1.0625rem;
+  --fs-sm: 0.9375rem;
+  --fs-micro: 0.75rem;
+  --track-micro: 0.12em;
+  --track-tight: -0.035em;
+
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 40px;
+  --spacing-2xl: 72px;
+  --spacing-3xl: 120px;
+  --gutter: 24px;
+  --intro-gutter: clamp(24px, 4.2vw, 80px);
+  --measure: 62ch;
+  --max-w: 1200px;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-reveal: var(--ease);
+  --duration-reveal: 750ms;
+  --transition: all 0.4s var(--ease);
+  --transition-fast: all 0.2s var(--ease);
+  --radius: 2px;
+  --radius-lg: 4px;
+  color-scheme: light;
+}

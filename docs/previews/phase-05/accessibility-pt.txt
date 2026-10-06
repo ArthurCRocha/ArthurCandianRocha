@@ -1,0 +1,88 @@
+- region "O caminho não foi uma linha reta.":
+  - paragraph: 04 / PATH
+  - heading "O caminho não foi uma linha reta." [level=2]
+  - paragraph: Da imagem aos sistemas. Formação e trabalho se encontram ao longo do caminho.
+  - list "Percurso acadêmico e profissional, por ano de início":
+    - listitem:
+      - article "Ensino Médio":
+        - paragraph: Antes da computação
+        - paragraph:
+          - time: 2016 - 2018
+        - heading "Ensino Médio" [level=3]
+        - paragraph: Colégio Rio Branco
+    - listitem:
+      - article "Cineclube":
+        - paragraph: Antes da computação
+        - paragraph:
+          - time: 2017–2018
+        - heading "Cineclube" [level=3]
+        - paragraph: Conservatório Estadual de Música de Visconde do Rio Branco
+        - paragraph: Captação de imagem e áudio, edição de vídeo e produção em grupo.
+    - listitem:
+      - article "Bacharelado em Ciência da Computação":
+        - paragraph:
+          - time: "2020"
+        - paragraph: Entrada na computação
+        - heading "Bacharelado em Ciência da Computação" [level=3]
+        - paragraph: IF Sudeste MG - Campus Rio Pomba
+        - paragraph: 2020 - 2026
+        - paragraph: Algoritmos, estruturas de dados e desenvolvimento de software.
+        - paragraph: Saída em 2026
+    - listitem:
+      - article "Estagiário / Designer Gráfico":
+        - paragraph:
+          - time: Março 2023 - Março 2025
+        - heading "Estagiário / Designer Gráfico" [level=3]
+        - paragraph: IF Sudeste MG
+        - paragraph: Redes sociais, diagramação e campanhas na comunicação institucional.
+    - listitem:
+      - article "Estagiário em Desenvolvimento":
+        - paragraph:
+          - time: Novembro 2024 - Fevereiro 2025
+        - heading "Estagiário em Desenvolvimento" [level=3]
+        - paragraph: Metryx Tecnologia Ltda.
+        - paragraph: Desenvolvimento frontend, análise de código, correção de bugs e melhorias de interface.
+    - listitem:
+      - article "Suporte e Desenvolvimento":
+        - paragraph:
+          - time: Julho 2025 - Atualmente
+          - text: Em andamento
+        - heading "Suporte e Desenvolvimento" [level=3]
+        - paragraph: Santiago TI
+        - paragraph: Computadores, desenvolvimento de software e sistemas de segurança.
+    - listitem:
+      - article "Estagiário de Marketing":
+        - paragraph:
+          - time: Agosto 2025 (1 mês)
+        - heading "Estagiário de Marketing" [level=3]
+        - paragraph: Prefeitura de Rio Pomba
+        - paragraph: Peças gráficas, edição de vídeos e automações com IA.
+    - listitem:
+      - article "Tecnólogo em Análise e Desenvolvimento de Sistemas":
+        - paragraph: 2026 / Formação e trabalho, em paralelo
+        - paragraph:
+          - time: "2026"
+          - text: Em andamento
+        - heading "Tecnólogo em Análise e Desenvolvimento de Sistemas" [level=3]
+        - paragraph: Univiçosa
+        - paragraph: 2026 - Atualmente
+        - paragraph: IF Sudeste MG / Saída em 2026 Continuidade do percurso acadêmico na Univiçosa.
+    - listitem:
+      - article "Assistente de RH":
+        - paragraph:
+          - time: Fevereiro 2026 - Atualmente
+          - text: Em andamento
+        - heading "Assistente de RH" [level=3]
+        - paragraph: Assurance IT
+        - paragraph: Recrutamento e gestão de vagas. Iniciativa própria de padronização automática de currículos.
+    - listitem:
+      - article "Estagiário de Desenvolvimento":
+        - paragraph:
+          - time: Agosto 2026 - Atualmente
+          - text: Em andamento
+        - heading "Estagiário de Desenvolvimento" [level=3]
+        - paragraph: Bioma Investimentos
+        - paragraph: Desenvolvimento mobile com Flutter integrado a bancos de dados SQL.
+  - paragraph: Em curso
+  - paragraph: O caminho continua.
+  - text: 04 / Fim de Path

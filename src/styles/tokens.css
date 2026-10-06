@@ -1,0 +1,16 @@
+:root {
+  --paper: #eeeae1;
+  --ink: #171714;
+  --ink-muted: #45443e;
+  --ink-subtle: #666258;
+  --red: #b82025;
+  --hairline: #d0cabf;
+
+  --font-display: 'Instrument Serif', 'Times New Roman', serif;
+  --font-sans: 'DM Sans', 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace;
+  --fs-body: 1.0625rem;
+  --intro-gutter: clamp(24px, 4.2vw, 80px);
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  color-scheme: light;
+}

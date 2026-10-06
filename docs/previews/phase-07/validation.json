@@ -1,0 +1,2525 @@
+{
+  "checkedAt": "2026-10-06T12:53:18.932Z",
+  "facts": {
+    "current": [
+      {
+        "id": "studies",
+        "category": "learning",
+        "sourceId": 3,
+        "title": "Tecnólogo em Análise e Desenvolvimento de Sistemas",
+        "titleEN": "Technologist in Systems Analysis and Development",
+        "organization": "Univiçosa",
+        "start": "2026",
+        "current": true,
+        "end": null,
+        "matchesCentral": true
+      },
+      {
+        "id": "practice",
+        "category": "building",
+        "sourceId": 5,
+        "title": "Estagiário de Desenvolvimento",
+        "titleEN": "Development Intern",
+        "organization": "Bioma Investimentos",
+        "start": "2026-08",
+        "current": true,
+        "end": null,
+        "matchesCentral": true
+      }
+    ],
+    "computingEnd": "2026",
+    "audiovisualRetained": true,
+    "prodiesel": {
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "MobX",
+        "flutter_modular",
+        "Dio",
+        "flutter_secure_storage",
+        "flutter_flavorizr",
+        "Python",
+        "FastAPI",
+        "SQLAlchemy",
+        "Alembic",
+        "PostgreSQL",
+        "JWT",
+        "bcrypt",
+        "pytest",
+        "SQL Server",
+        "T-SQL",
+        "PowerShell",
+        "Codemagic",
+        "Gradle",
+        "Android SDK"
+      ],
+      "collaborative": true,
+      "production": {
+        "api": "production",
+        "synchronization": "production",
+        "mobile": "apk-tested-against-production",
+        "storePublication": "pending",
+        "summary": "API e sincronização em produção. APK testado em dispositivo físico conectado à produção; publicação nas lojas pendente.",
+        "summaryEN": "API and synchronization in production. APK tested on a real device against production; store publication pending."
+      }
+    },
+    "craftProdiesel": [
+      "flutter",
+      "dart",
+      "python",
+      "fastapi",
+      "postgres",
+      "sql-server",
+      "t-sql",
+      "jwt",
+      "powershell",
+      "codemagic"
+    ]
+  },
+  "layouts": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 900,
+      "lang": "pt",
+      "content": {
+        "title": "Ainda aprendendo. Ainda construindo. Ainda seguindo.",
+        "items": [
+          {
+            "id": "studies",
+            "title": "Tecnólogo em Análise e Desenvolvimento de Sistemas",
+            "organization": "Univiçosa",
+            "date": "2026",
+            "period": "2026 - Atualmente",
+            "category": "Aprendendo / 01"
+          },
+          {
+            "id": "practice",
+            "title": "Estagiário de Desenvolvimento",
+            "organization": "Bioma Investimentos",
+            "date": "2026-08",
+            "period": "Agosto 2026 - Atualmente",
+            "category": "Construindo / 02"
+          }
+        ],
+        "semanticContentAlwaysVisible": true
+      },
+      "geometry": {
+        "start": {
+          "x": 1450.9000244140625,
+          "y": -33.94736862182617
+        },
+        "expected": {
+          "x": 1450.9,
+          "y": -33.94736842105263
+        },
+        "length": 863.7130126953125,
+        "svgWidth": 1319,
+        "fieldWidth": 1319,
+        "gap": 0,
+        "height": 2280
+      },
+      "connection": {
+        "stages": [
+          {
+            "progress": 0,
+            "state": {
+              "sameElement": true,
+              "position": "absolute",
+              "extraScale": 1,
+              "originalScale": 0.9959,
+              "shift": "none",
+              "active": false,
+              "nowBottom": 21479.25,
+              "connectTop": 21479.25,
+              "documentHeight": 23279,
+              "end": 23279.25
+            },
+            "pixels": {
+              "redFraction": 0.004,
+              "corners": [
+                [
+                  235,
+                  231,
+                  222
+                ],
+                [
+                  234,
+                  230,
+                  222
+                ],
+                [
+                  235,
+                  231,
+                  222
+                ],
+                [
+                  236,
+                  232,
+                  223
+                ]
+              ],
+              "cornersAllRed": false
+            }
+          },
+          {
+            "progress": 0.15,
+            "state": {
+              "sameElement": true,
+              "position": "fixed",
+              "extraScale": 5.46445,
+              "originalScale": 1,
+              "shift": "-47.9391px -42.6px",
+              "active": true,
+              "nowBottom": 21479.25,
+              "connectTop": 21479.25,
+              "documentHeight": 23279,
+              "end": 23279.25
+            },
+            "pixels": {
+              "redFraction": 0.11611111111111111,
+              "corners": [
+                [
+                  235,
+                  231,
+                  222
+                ],
+                [
+                  234,
+                  230,
+                  222
+                ],
+                [
+                  235,
+                  231,
+                  222
+                ],
+                [
+                  236,
+                  232,
+                  223
+                ]
+              ],
+              "cornersAllRed": false
+            }
+          },
+          {
+            "progress": 0.4,
+            "state": {
+              "sameElement": true,
+              "position": "fixed",
+              "extraScale": 12.9052,
+              "originalScale": 1,
+              "shift": "-127.838px -113.6px",
+              "active": true,
+              "nowBottom": 21479.25,
+              "connectTop": 21479.25,
+              "documentHeight": 23279,
+              "end": 23279.25
+            },
+            "pixels": {
+              "redFraction": 0.5365555555555556,
+              "corners": [
+                [
+                  235,
+                  231,
+                  222
+                ],
+                [
+                  234,
+                  230,
+                  222
+                ],
+                [
+                  235,
+                  231,
+                  222
+                ],
+                [
+                  236,
+                  232,
+                  223
+                ]
+              ],
+              "cornersAllRed": false
+            }
+          },
+          {
+            "progress": 1,
+            "state": {
+              "sameElement": true,
+              "position": "fixed",
+              "extraScale": 30.763,
+              "originalScale": 1,
+              "shift": "-319.594px -284px",
+              "active": true,
+              "nowBottom": 21479.25,
+              "connectTop": 21479.25,
+              "documentHeight": 23279,
+              "end": 23279.25
+            },
+            "pixels": {
+              "redFraction": 0.9752222222222222,
+              "corners": [
+                [
+                  182,
+                  33,
+                  38
+                ],
+                [
+                  181,
+                  33,
+                  38
+                ],
+                [
+                  182,
+                  33,
+                  38
+                ],
+                [
+                  183,
+                  34,
+                  39
+                ]
+              ],
+              "cornersAllRed": true
+            }
+          }
+        ],
+        "reversed": {
+          "sameElement": true,
+          "position": "absolute",
+          "extraScale": 1,
+          "originalScale": 0.998,
+          "shift": "none",
+          "active": false,
+          "nowBottom": 21479.25,
+          "connectTop": 21479.25,
+          "documentHeight": 23279,
+          "end": 23279.25
+        },
+        "externalKeyboardNavigation": true,
+        "mailtoVerified": true,
+        "focusStates": true,
+        "localLanguageSwitch": true,
+        "nativeReturnToTop": true,
+        "webglPaused": {
+          "before": {
+            "frame": 126,
+            "loop": "demand"
+          },
+          "after": {
+            "frame": 126,
+            "loop": "demand"
+          }
+        }
+      },
+      "motion": {
+        "lineBefore": {
+          "dash": 1,
+          "scale": 0.08
+        },
+        "lineAfter": {
+          "dash": 0,
+          "scale": 0.08
+        },
+        "lineReverse": {
+          "dash": 1,
+          "scale": 0.08
+        },
+        "redBefore": {
+          "dash": 0,
+          "scale": 0.08
+        },
+        "redAfter": {
+          "dash": 0,
+          "scale": 1
+        },
+        "redReverse": {
+          "dash": 0,
+          "scale": 0.08
+        }
+      },
+      "overflow": {
+        "width": 1440,
+        "scrollWidth": 1440,
+        "offenders": []
+      },
+      "triggerCount": 25,
+      "newTriggers": 1,
+      "pins": 1,
+      "keyboard": true,
+      "fullNarrativeAndBackScroll": true,
+      "localeToggleClean": true,
+      "performance": {
+        "loop": "demand",
+        "geometry": 1,
+        "textures": 0
+      },
+      "errors": []
+    },
+    {
+      "name": "desktop-en",
+      "width": 1440,
+      "height": 900,
+      "lang": "en",
+      "content": {
+        "title": "Still learning. Still building. Still moving.",
+        "items": [
+          {
+            "id": "studies",
+            "title": "Technologist in Systems Analysis and Development",
+            "organization": "Univiçosa",
+            "date": "2026",
+            "period": "2026 - Present",
+            "category": "Learning / 01"
+          },
+          {
+            "id": "practice",
+            "title": "Development Intern",
+            "organization": "Bioma Investimentos",
+            "date": "2026-08",
+            "period": "August 2026 - Present",
+            "category": "Building / 02"
+          }
+        ],
+        "semanticContentAlwaysVisible": true
+      },
+      "geometry": {
+        "start": {
+          "x": 1450.9000244140625,
+          "y": -33.94736862182617
+        },
+        "expected": {
+          "x": 1450.9,
+          "y": -33.94736842105263
+        },
+        "length": 863.7130126953125,
+        "svgWidth": 1319,
+        "fieldWidth": 1319,
+        "gap": 0,
+        "height": 2280
+      },
+      "connection": {
+        "stages": [
+          {
+            "progress": 0,
+            "state": {
+              "sameElement": true,
+              "position": "absolute",
+              "extraScale": 1,
+              "originalScale": 0.9959,
+              "shift": "none",
+              "active": false,
+              "nowBottom": 21434.859375,
+              "connectTop": 21434.859375,
+              "documentHeight": 23235,
+              "end": 23234.859375
+            },
+            "pixels": {
+              "redFraction": 0.004,
+              "corners": [
+                [
+                  235,
+                  231,
+                  222
+                ],
+                [
+                  234,
+                  230,
+                  222
+                ],
+                [
+                  235,
+                  231,
+                  222
+                ],
+                [
+                  236,
+                  232,
+                  223
+                ]
+              ],
+              "cornersAllRed": false
+            }
+          },
+          {
+            "progress": 0.15,
+            "state": {
+              "sameElement": true,
+              "position": "fixed",
+              "extraScale": 5.46445,
+              "originalScale": 1,
+              "shift": "-47.9391px -42.6px",
+              "active": true,
+              "nowBottom": 21434.859375,
+              "connectTop": 21434.859375,
+              "documentHeight": 23235,
+              "end": 23234.859375
+            },
+            "pixels": {
+              "redFraction": 0.11611111111111111,
+              "corners": [
+                [
+                  235,
+                  231,
+                  222
+                ],
+                [
+                  234,
+                  230,
+                  222
+                ],
+                [
+                  235,
+                  231,
+                  222
+                ],
+                [
+                  236,
+                  232,
+                  223
+                ]
+              ],
+              "cornersAllRed": false
+            }
+          },
+          {
+            "progress": 0.4,
+            "state": {
+              "sameElement": true,
+              "position": "fixed",
+              "extraScale": 12.9052,
+              "originalScale": 1,
+              "shift": "-127.838px -113.6px",
+              "active": true,
+              "nowBottom": 21434.859375,
+              "connectTop": 21434.859375,
+              "documentHeight": 23235,
+              "end": 23234.859375
+            },
+            "pixels": {
+              "redFraction": 0.5365555555555556,
+              "corners": [
+                [
+                  235,
+                  231,
+                  222
+                ],
+                [
+                  234,
+                  230,
+                  222
+                ],
+                [
+                  235,
+                  231,
+                  222
+                ],
+                [
+                  236,
+                  232,
+                  223
+                ]
+              ],
+              "cornersAllRed": false
+            }
+          },
+          {
+            "progress": 1,
+            "state": {
+              "sameElement": true,
+              "position": "fixed",
+              "extraScale": 30.763,
+              "originalScale": 1,
+              "shift": "-319.594px -284px",
+              "active": true,
+              "nowBottom": 21434.859375,
+              "connectTop": 21434.859375,
+              "documentHeight": 23235,
+              "end": 23234.859375
+            },
+            "pixels": {
+              "redFraction": 0.9703333333333334,
+              "corners": [
+                [
+                  182,
+                  33,
+                  38
+                ],
+                [
+                  181,
+                  33,
+                  38
+                ],
+                [
+                  182,
+                  33,
+                  38
+                ],
+                [
+                  183,
+                  34,
+                  39
+                ]
+              ],
+              "cornersAllRed": true
+            }
+          }
+        ],
+        "reversed": {
+          "sameElement": true,
+          "position": "absolute",
+          "extraScale": 1,
+          "originalScale": 0.998,
+          "shift": "none",
+          "active": false,
+          "nowBottom": 21434.859375,
+          "connectTop": 21434.859375,
+          "documentHeight": 23235,
+          "end": 23234.859375
+        },
+        "externalKeyboardNavigation": true,
+        "mailtoVerified": true,
+        "focusStates": true,
+        "localLanguageSwitch": true,
+        "nativeReturnToTop": true,
+        "webglPaused": {
+          "before": {
+            "frame": 168,
+            "loop": "demand"
+          },
+          "after": {
+            "frame": 168,
+            "loop": "demand"
+          }
+        }
+      },
+      "motion": {
+        "lineBefore": {
+          "dash": 1,
+          "scale": 0.08
+        },
+        "lineAfter": {
+          "dash": 0,
+          "scale": 0.08
+        },
+        "lineReverse": {
+          "dash": 1,
+          "scale": 0.08
+        },
+        "redBefore": {
+          "dash": 0,
+          "scale": 0.08
+        },
+        "redAfter": {
+          "dash": 0,
+          "scale": 1
+        },
+        "redReverse": {
+          "dash": 0,
+          "scale": 0.08
+        }
+      },
+      "overflow": {
+        "width": 1440,
+        "scrollWidth": 1440,
+        "offenders": []
+      },
+      "triggerCount": 25,
+      "newTriggers": 1,
+      "pins": 1,
+      "keyboard": true,
+      "fullNarrativeAndBackScroll": true,
+      "localeToggleClean": true,
+      "performance": {
+        "loop": "demand",
+        "geometry": 1,
+        "textures": 0
+      },
+      "errors": []
+    },
+    {
+      "name": "tablet",
+      "width": 768,
+      "height": 1024,
+      "lang": "pt",
+      "content": {
+        "title": "Ainda aprendendo. Ainda construindo. Ainda seguindo.",
+        "items": [
+          {
+            "id": "studies",
+            "title": "Tecnólogo em Análise e Desenvolvimento de Sistemas",
+            "organization": "Univiçosa",
+            "date": "2026",
+            "period": "2026 - Atualmente",
+            "category": "Aprendendo / 01"
+          },
+          {
+            "id": "practice",
+            "title": "Estagiário de Desenvolvimento",
+            "organization": "Bioma Investimentos",
+            "date": "2026-08",
+            "period": "Agosto 2026 - Atualmente",
+            "category": "Construindo / 02"
+          }
+        ],
+        "semanticContentAlwaysVisible": true
+      },
+      "geometry": {
+        "start": {
+          "x": 774.4000244140625,
+          "y": -33.94736862182617
+        },
+        "expected": {
+          "x": 774.4000000000001,
+          "y": -33.94736842105263
+        },
+        "length": 599.8781127929688,
+        "svgWidth": 704,
+        "fieldWidth": 704,
+        "gap": 0,
+        "height": 2363
+      },
+      "connection": {
+        "stages": [
+          {
+            "progress": 0,
+            "state": {
+              "sameElement": true,
+              "position": "absolute",
+              "extraScale": 1,
+              "originalScale": 0.9964,
+              "shift": "none",
+              "active": false,
+              "nowBottom": 23536,
+              "connectTop": 23536,
+              "documentHeight": 25708,
+              "end": 25708.46875
+            },
+            "pixels": {
+              "redFraction": 0.0061773255813953485,
+              "corners": [
+                [
+                  235,
+                  231,
+                  222
+                ],
+                [
+                  235,
+                  231,
+                  222
+                ],
+                [
+                  235,
+                  231,
+                  222
+                ],
+                [
+                  236,
+                  232,
+                  223
+                ]
+              ],
+              "cornersAllRed": false
+            }
+          },
+          {
+            "progress": 0.15,
+            "state": {
+              "sameElement": true,
+              "position": "fixed",
+              "extraScale": 4.32284,
+              "originalScale": 1,
+              "shift": "-28.739px -51.8155px",
+              "active": true,
+              "nowBottom": 23536,
+              "connectTop": 23536,
+              "documentHeight": 25708,
+              "end": 25708.46875
+            },
+            "pixels": {
+              "redFraction": 0.11900436046511628,
+              "corners": [
+                [
+                  235,
+                  231,
+                  222
+                ],
+                [
+                  235,
+                  231,
+                  222
+                ],
+                [
+                  235,
+                  231,
+                  222
+                ],
+                [
+                  236,
+                  232,
+                  223
+                ]
+              ],
+              "cornersAllRed": false
+            }
+          },
+          {
+            "progress": 0.4,
+            "state": {
+              "sameElement": true,
+              "position": "fixed",
+              "extraScale": 9.87295,
+              "originalScale": 1,
+              "shift": "-76.7416px -138.363px",
+              "active": true,
+              "nowBottom": 23536,
+              "connectTop": 23536,
+              "documentHeight": 25708,
+              "end": 25708.46875
+            },
+            "pixels": {
+              "redFraction": 0.5196220930232558,
+              "corners": [
+                [
+                  235,
+                  231,
+                  222
+                ],
+                [
+                  235,
+                  231,
+                  222
+                ],
+                [
+                  235,
+                  231,
+                  222
+                ],
+                [
+                  236,
+                  232,
+                  223
+                ]
+              ],
+              "cornersAllRed": false
+            }
+          },
+          {
+            "progress": 1,
+            "state": {
+              "sameElement": true,
+              "position": "fixed",
+              "extraScale": 23.1884,
+              "originalScale": 1,
+              "shift": "-191.906px -346px",
+              "active": true,
+              "nowBottom": 23536,
+              "connectTop": 23536,
+              "documentHeight": 25708,
+              "end": 25708.46875
+            },
+            "pixels": {
+              "redFraction": 0.975109011627907,
+              "corners": [
+                [
+                  182,
+                  33,
+                  38
+                ],
+                [
+                  182,
+                  33,
+                  38
+                ],
+                [
+                  183,
+                  33,
+                  38
+                ],
+                [
+                  183,
+                  34,
+                  39
+                ]
+              ],
+              "cornersAllRed": true
+            }
+          }
+        ],
+        "reversed": {
+          "sameElement": true,
+          "position": "absolute",
+          "extraScale": 1,
+          "originalScale": 0.9982,
+          "shift": "none",
+          "active": false,
+          "nowBottom": 23536,
+          "connectTop": 23536,
+          "documentHeight": 25708,
+          "end": 25708.46875
+        },
+        "externalKeyboardNavigation": true,
+        "mailtoVerified": true,
+        "focusStates": true,
+        "localLanguageSwitch": true,
+        "nativeReturnToTop": true,
+        "webglPaused": {
+          "before": {
+            "frame": 41,
+            "loop": "demand"
+          },
+          "after": {
+            "frame": 41,
+            "loop": "demand"
+          }
+        }
+      },
+      "motion": {
+        "lineBefore": {
+          "dash": 1,
+          "scale": 0.08
+        },
+        "lineAfter": {
+          "dash": 0,
+          "scale": 0.08
+        },
+        "lineReverse": {
+          "dash": 1,
+          "scale": 0.08
+        },
+        "redBefore": {
+          "dash": 0,
+          "scale": 0.08
+        },
+        "redAfter": {
+          "dash": 0,
+          "scale": 1
+        },
+        "redReverse": {
+          "dash": 0,
+          "scale": 0.08
+        }
+      },
+      "overflow": {
+        "width": 768,
+        "scrollWidth": 768,
+        "offenders": []
+      },
+      "triggerCount": 25,
+      "newTriggers": 1,
+      "pins": 1,
+      "keyboard": true,
+      "fullNarrativeAndBackScroll": true,
+      "localeToggleClean": true,
+      "performance": {
+        "loop": "demand",
+        "geometry": 1,
+        "textures": 0
+      },
+      "errors": []
+    },
+    {
+      "name": "tablet-en",
+      "width": 768,
+      "height": 1024,
+      "lang": "en",
+      "content": {
+        "title": "Still learning. Still building. Still moving.",
+        "items": [
+          {
+            "id": "studies",
+            "title": "Technologist in Systems Analysis and Development",
+            "organization": "Univiçosa",
+            "date": "2026",
+            "period": "2026 - Present",
+            "category": "Learning / 01"
+          },
+          {
+            "id": "practice",
+            "title": "Development Intern",
+            "organization": "Bioma Investimentos",
+            "date": "2026-08",
+            "period": "August 2026 - Present",
+            "category": "Building / 02"
+          }
+        ],
+        "semanticContentAlwaysVisible": true
+      },
+      "geometry": {
+        "start": {
+          "x": 774.4000244140625,
+          "y": -33.94736862182617
+        },
+        "expected": {
+          "x": 774.4000000000001,
+          "y": -33.94736842105263
+        },
+        "length": 599.8781127929688,
+        "svgWidth": 704,
+        "fieldWidth": 704,
+        "gap": 0,
+        "height": 2363
+      },
+      "connection": {
+        "stages": [
+          {
+            "progress": 0,
+            "state": {
+              "sameElement": true,
+              "position": "absolute",
+              "extraScale": 1,
+              "originalScale": 0.9964,
+              "shift": "none",
+              "active": false,
+              "nowBottom": 23468.15625,
+              "connectTop": 23468.15625,
+              "documentHeight": 25641,
+              "end": 25640.625
+            },
+            "pixels": {
+              "redFraction": 0.0061773255813953485,
+              "corners": [
+                [
+                  235,
+                  231,
+                  222
+                ],
+                [
+                  235,
+                  231,
+                  222
+                ],
+                [
+                  235,
+                  231,
+                  222
+                ],
+                [
+                  236,
+                  232,
+                  223
+                ]
+              ],
+              "cornersAllRed": false
+            }
+          },
+          {
+            "progress": 0.15,
+            "state": {
+              "sameElement": true,
+              "position": "fixed",
+              "extraScale": 4.32284,
+              "originalScale": 1,
+              "shift": "-28.739px -51.8155px",
+              "active": true,
+              "nowBottom": 23468.15625,
+              "connectTop": 23468.15625,
+              "documentHeight": 25641,
+              "end": 25640.625
+            },
+            "pixels": {
+              "redFraction": 0.11900436046511628,
+              "corners": [
+                [
+                  235,
+                  231,
+                  222
+                ],
+                [
+                  235,
+                  231,
+                  222
+                ],
+                [
+                  235,
+                  231,
+                  222
+                ],
+                [
+                  236,
+                  232,
+                  223
+                ]
+              ],
+              "cornersAllRed": false
+            }
+          },
+          {
+            "progress": 0.4,
+            "state": {
+              "sameElement": true,
+              "position": "fixed",
+              "extraScale": 9.87295,
+              "originalScale": 1,
+              "shift": "-76.7416px -138.363px",
+              "active": true,
+              "nowBottom": 23468.15625,
+              "connectTop": 23468.15625,
+              "documentHeight": 25641,
+              "end": 25640.625
+            },
+            "pixels": {
+              "redFraction": 0.5196220930232558,
+              "corners": [
+                [
+                  235,
+                  231,
+                  222
+                ],
+                [
+                  235,
+                  231,
+                  222
+                ],
+                [
+                  235,
+                  231,
+                  222
+                ],
+                [
+                  236,
+                  232,
+                  223
+                ]
+              ],
+              "cornersAllRed": false
+            }
+          },
+          {
+            "progress": 1,
+            "state": {
+              "sameElement": true,
+              "position": "fixed",
+              "extraScale": 23.1884,
+              "originalScale": 1,
+              "shift": "-191.906px -346px",
+              "active": true,
+              "nowBottom": 23468.15625,
+              "connectTop": 23468.15625,
+              "documentHeight": 25641,
+              "end": 25640.625
+            },
+            "pixels": {
+              "redFraction": 0.9761991279069767,
+              "corners": [
+                [
+                  182,
+                  33,
+                  38
+                ],
+                [
+                  182,
+                  33,
+                  38
+                ],
+                [
+                  183,
+                  33,
+                  38
+                ],
+                [
+                  183,
+                  34,
+                  39
+                ]
+              ],
+              "cornersAllRed": true
+            }
+          }
+        ],
+        "reversed": {
+          "sameElement": true,
+          "position": "absolute",
+          "extraScale": 1,
+          "originalScale": 0.9982,
+          "shift": "none",
+          "active": false,
+          "nowBottom": 23468.15625,
+          "connectTop": 23468.15625,
+          "documentHeight": 25641,
+          "end": 25640.625
+        },
+        "externalKeyboardNavigation": true,
+        "mailtoVerified": true,
+        "focusStates": true,
+        "localLanguageSwitch": true,
+        "nativeReturnToTop": true,
+        "webglPaused": {
+          "before": {
+            "frame": 51,
+            "loop": "demand"
+          },
+          "after": {
+            "frame": 51,
+            "loop": "demand"
+          }
+        }
+      },
+      "motion": {
+        "lineBefore": {
+          "dash": 1,
+          "scale": 0.08
+        },
+        "lineAfter": {
+          "dash": 0,
+          "scale": 0.08
+        },
+        "lineReverse": {
+          "dash": 1,
+          "scale": 0.08
+        },
+        "redBefore": {
+          "dash": 0,
+          "scale": 0.08
+        },
+        "redAfter": {
+          "dash": 0,
+          "scale": 1
+        },
+        "redReverse": {
+          "dash": 0,
+          "scale": 0.08
+        }
+      },
+      "overflow": {
+        "width": 768,
+        "scrollWidth": 768,
+        "offenders": []
+      },
+      "triggerCount": 25,
+      "newTriggers": 1,
+      "pins": 1,
+      "keyboard": true,
+      "fullNarrativeAndBackScroll": true,
+      "localeToggleClean": true,
+      "performance": {
+        "loop": "demand",
+        "geometry": 1,
+        "textures": 0
+      },
+      "errors": []
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "lang": "pt",
+      "content": {
+        "title": "Ainda aprendendo. Ainda construindo. Ainda seguindo.",
+        "items": [
+          {
+            "id": "studies",
+            "title": "Tecnólogo em Análise e Desenvolvimento de Sistemas",
+            "organization": "Univiçosa",
+            "date": "2026",
+            "period": "2026 - Atualmente",
+            "category": "Aprendendo / 01"
+          },
+          {
+            "id": "practice",
+            "title": "Estagiário de Desenvolvimento",
+            "organization": "Bioma Investimentos",
+            "date": "2026-08",
+            "period": "Agosto 2026 - Atualmente",
+            "category": "Construindo / 02"
+          }
+        ],
+        "semanticContentAlwaysVisible": true
+      },
+      "geometry": {
+        "start": {
+          "x": 376.20001220703125,
+          "y": -27.63157844543457
+        },
+        "expected": {
+          "x": 376.20000000000005,
+          "y": -27.63157894736842
+        },
+        "length": 385.9803161621094,
+        "svgWidth": 342,
+        "fieldWidth": 342,
+        "gap": 0,
+        "height": 2105
+      },
+      "connection": {
+        "stages": [
+          {
+            "progress": 0,
+            "state": {
+              "sameElement": true,
+              "position": "absolute",
+              "extraScale": 1,
+              "originalScale": 0.9952,
+              "shift": "none",
+              "active": false,
+              "nowBottom": 19816.5,
+              "connectTop": 19816.5,
+              "documentHeight": 21716,
+              "end": 21715.9375
+            },
+            "pixels": {
+              "redFraction": 0.0076824583866837385,
+              "corners": [
+                [
+                  236,
+                  232,
+                  223
+                ],
+                [
+                  235,
+                  231,
+                  222
+                ],
+                [
+                  236,
+                  232,
+                  223
+                ],
+                [
+                  235,
+                  231,
+                  223
+                ]
+              ],
+              "cornersAllRed": false
+            }
+          },
+          {
+            "progress": 0.15,
+            "state": {
+              "sameElement": true,
+              "position": "fixed",
+              "extraScale": 4.27035,
+              "originalScale": 1,
+              "shift": "-13.2978px -40.977px",
+              "active": true,
+              "nowBottom": 19816.5,
+              "connectTop": 19816.5,
+              "documentHeight": 21716,
+              "end": 21715.9375
+            },
+            "pixels": {
+              "redFraction": 0.1489543320529236,
+              "corners": [
+                [
+                  236,
+                  232,
+                  223
+                ],
+                [
+                  235,
+                  231,
+                  222
+                ],
+                [
+                  236,
+                  232,
+                  223
+                ],
+                [
+                  235,
+                  231,
+                  223
+                ]
+              ],
+              "cornersAllRed": false
+            }
+          },
+          {
+            "progress": 0.4,
+            "state": {
+              "sameElement": true,
+              "position": "fixed",
+              "extraScale": 9.72094,
+              "originalScale": 1,
+              "shift": "-35.4609px -109.272px",
+              "active": true,
+              "nowBottom": 19816.5,
+              "connectTop": 19816.5,
+              "documentHeight": 21716,
+              "end": 21715.9375
+            },
+            "pixels": {
+              "redFraction": 0.596244131455399,
+              "corners": [
+                [
+                  236,
+                  232,
+                  223
+                ],
+                [
+                  235,
+                  231,
+                  222
+                ],
+                [
+                  236,
+                  232,
+                  223
+                ],
+                [
+                  235,
+                  231,
+                  223
+                ]
+              ],
+              "cornersAllRed": false
+            }
+          },
+          {
+            "progress": 1,
+            "state": {
+              "sameElement": true,
+              "position": "fixed",
+              "extraScale": 22.788,
+              "originalScale": 1,
+              "shift": "-88.594px -273px",
+              "active": true,
+              "nowBottom": 19816.5,
+              "connectTop": 19816.5,
+              "documentHeight": 21716,
+              "end": 21715.9375
+            },
+            "pixels": {
+              "redFraction": 0.9769526248399488,
+              "corners": [
+                [
+                  183,
+                  34,
+                  39
+                ],
+                [
+                  182,
+                  33,
+                  38
+                ],
+                [
+                  184,
+                  34,
+                  39
+                ],
+                [
+                  182,
+                  34,
+                  39
+                ]
+              ],
+              "cornersAllRed": true
+            }
+          }
+        ],
+        "reversed": {
+          "sameElement": true,
+          "position": "absolute",
+          "extraScale": 1,
+          "originalScale": 0.9976,
+          "shift": "none",
+          "active": false,
+          "nowBottom": 19816.5,
+          "connectTop": 19816.5,
+          "documentHeight": 21716,
+          "end": 21715.9375
+        },
+        "externalKeyboardNavigation": true,
+        "mailtoVerified": true,
+        "focusStates": true,
+        "localLanguageSwitch": true,
+        "nativeReturnToTop": true,
+        "webglPaused": {
+          "before": {
+            "frame": 50,
+            "loop": "demand"
+          },
+          "after": {
+            "frame": 50,
+            "loop": "demand"
+          }
+        }
+      },
+      "motion": {
+        "lineBefore": {
+          "dash": 1,
+          "scale": 0.08
+        },
+        "lineAfter": {
+          "dash": 0,
+          "scale": 0.08
+        },
+        "lineReverse": {
+          "dash": 1,
+          "scale": 0.08
+        },
+        "redBefore": {
+          "dash": 0,
+          "scale": 0.08
+        },
+        "redAfter": {
+          "dash": 0,
+          "scale": 1
+        },
+        "redReverse": {
+          "dash": 0,
+          "scale": 0.08
+        }
+      },
+      "overflow": {
+        "width": 390,
+        "scrollWidth": 390,
+        "offenders": []
+      },
+      "triggerCount": 25,
+      "newTriggers": 1,
+      "pins": 1,
+      "keyboard": true,
+      "fullNarrativeAndBackScroll": true,
+      "localeToggleClean": true,
+      "performance": {
+        "loop": "demand",
+        "geometry": 1,
+        "textures": 0
+      },
+      "errors": []
+    },
+    {
+      "name": "mobile-en",
+      "width": 390,
+      "height": 844,
+      "lang": "en",
+      "content": {
+        "title": "Still learning. Still building. Still moving.",
+        "items": [
+          {
+            "id": "studies",
+            "title": "Technologist in Systems Analysis and Development",
+            "organization": "Univiçosa",
+            "date": "2026",
+            "period": "2026 - Present",
+            "category": "Learning / 01"
+          },
+          {
+            "id": "practice",
+            "title": "Development Intern",
+            "organization": "Bioma Investimentos",
+            "date": "2026-08",
+            "period": "August 2026 - Present",
+            "category": "Building / 02"
+          }
+        ],
+        "semanticContentAlwaysVisible": true
+      },
+      "geometry": {
+        "start": {
+          "x": 376.20001220703125,
+          "y": -27.63157844543457
+        },
+        "expected": {
+          "x": 376.20000000000005,
+          "y": -27.63157894736842
+        },
+        "length": 385.9803161621094,
+        "svgWidth": 342,
+        "fieldWidth": 342,
+        "gap": 0,
+        "height": 2070
+      },
+      "connection": {
+        "stages": [
+          {
+            "progress": 0,
+            "state": {
+              "sameElement": true,
+              "position": "absolute",
+              "extraScale": 1,
+              "originalScale": 0.9952,
+              "shift": "none",
+              "active": false,
+              "nowBottom": 19770.640625,
+              "connectTop": 19770.640625,
+              "documentHeight": 21670,
+              "end": 21670.078125
+            },
+            "pixels": {
+              "redFraction": 0.0076824583866837385,
+              "corners": [
+                [
+                  236,
+                  232,
+                  223
+                ],
+                [
+                  235,
+                  231,
+                  222
+                ],
+                [
+                  236,
+                  232,
+                  223
+                ],
+                [
+                  235,
+                  231,
+                  223
+                ]
+              ],
+              "cornersAllRed": false
+            }
+          },
+          {
+            "progress": 0.15,
+            "state": {
+              "sameElement": true,
+              "position": "fixed",
+              "extraScale": 4.27035,
+              "originalScale": 1,
+              "shift": "-13.2978px -40.977px",
+              "active": true,
+              "nowBottom": 19770.640625,
+              "connectTop": 19770.640625,
+              "documentHeight": 21670,
+              "end": 21670.078125
+            },
+            "pixels": {
+              "redFraction": 0.1489543320529236,
+              "corners": [
+                [
+                  236,
+                  232,
+                  223
+                ],
+                [
+                  235,
+                  231,
+                  222
+                ],
+                [
+                  236,
+                  232,
+                  223
+                ],
+                [
+                  235,
+                  231,
+                  223
+                ]
+              ],
+              "cornersAllRed": false
+            }
+          },
+          {
+            "progress": 0.4,
+            "state": {
+              "sameElement": true,
+              "position": "fixed",
+              "extraScale": 9.72094,
+              "originalScale": 1,
+              "shift": "-35.4609px -109.272px",
+              "active": true,
+              "nowBottom": 19770.640625,
+              "connectTop": 19770.640625,
+              "documentHeight": 21670,
+              "end": 21670.078125
+            },
+            "pixels": {
+              "redFraction": 0.596244131455399,
+              "corners": [
+                [
+                  236,
+                  232,
+                  223
+                ],
+                [
+                  235,
+                  231,
+                  222
+                ],
+                [
+                  236,
+                  232,
+                  223
+                ],
+                [
+                  235,
+                  231,
+                  223
+                ]
+              ],
+              "cornersAllRed": false
+            }
+          },
+          {
+            "progress": 1,
+            "state": {
+              "sameElement": true,
+              "position": "fixed",
+              "extraScale": 22.788,
+              "originalScale": 1,
+              "shift": "-88.594px -273px",
+              "active": true,
+              "nowBottom": 19770.640625,
+              "connectTop": 19770.640625,
+              "documentHeight": 21670,
+              "end": 21670.078125
+            },
+            "pixels": {
+              "redFraction": 0.9765258215962441,
+              "corners": [
+                [
+                  183,
+                  34,
+                  39
+                ],
+                [
+                  182,
+                  33,
+                  38
+                ],
+                [
+                  184,
+                  34,
+                  39
+                ],
+                [
+                  182,
+                  34,
+                  39
+                ]
+              ],
+              "cornersAllRed": true
+            }
+          }
+        ],
+        "reversed": {
+          "sameElement": true,
+          "position": "absolute",
+          "extraScale": 1,
+          "originalScale": 0.9976,
+          "shift": "none",
+          "active": false,
+          "nowBottom": 19770.640625,
+          "connectTop": 19770.640625,
+          "documentHeight": 21670,
+          "end": 21670.078125
+        },
+        "externalKeyboardNavigation": true,
+        "mailtoVerified": true,
+        "focusStates": true,
+        "localLanguageSwitch": true,
+        "nativeReturnToTop": true,
+        "webglPaused": {
+          "before": {
+            "frame": 47,
+            "loop": "demand"
+          },
+          "after": {
+            "frame": 47,
+            "loop": "demand"
+          }
+        }
+      },
+      "motion": {
+        "lineBefore": {
+          "dash": 1,
+          "scale": 0.08
+        },
+        "lineAfter": {
+          "dash": 0,
+          "scale": 0.08
+        },
+        "lineReverse": {
+          "dash": 1,
+          "scale": 0.08
+        },
+        "redBefore": {
+          "dash": 0,
+          "scale": 0.08
+        },
+        "redAfter": {
+          "dash": 0,
+          "scale": 1
+        },
+        "redReverse": {
+          "dash": 0,
+          "scale": 0.08
+        }
+      },
+      "overflow": {
+        "width": 390,
+        "scrollWidth": 390,
+        "offenders": []
+      },
+      "triggerCount": 25,
+      "newTriggers": 1,
+      "pins": 1,
+      "keyboard": true,
+      "fullNarrativeAndBackScroll": true,
+      "localeToggleClean": true,
+      "performance": {
+        "loop": "demand",
+        "geometry": 1,
+        "textures": 0
+      },
+      "errors": []
+    },
+    {
+      "name": "small-mobile-en",
+      "width": 320,
+      "height": 740,
+      "lang": "en",
+      "content": {
+        "title": "Still learning. Still building. Still moving.",
+        "items": [
+          {
+            "id": "studies",
+            "title": "Technologist in Systems Analysis and Development",
+            "organization": "Univiçosa",
+            "date": "2026",
+            "period": "2026 - Present",
+            "category": "Learning / 01"
+          },
+          {
+            "id": "practice",
+            "title": "Development Intern",
+            "organization": "Bioma Investimentos",
+            "date": "2026-08",
+            "period": "August 2026 - Present",
+            "category": "Building / 02"
+          }
+        ],
+        "semanticContentAlwaysVisible": true
+      },
+      "geometry": {
+        "start": {
+          "x": 299.20001220703125,
+          "y": -27.63157844543457
+        },
+        "expected": {
+          "x": 299.20000000000005,
+          "y": -27.63157894736842
+        },
+        "length": 335.7266540527344,
+        "svgWidth": 272,
+        "fieldWidth": 272,
+        "gap": 0,
+        "height": 2006
+      },
+      "connection": {
+        "stages": [
+          {
+            "progress": 0,
+            "state": {
+              "sameElement": true,
+              "position": "absolute",
+              "extraScale": 1,
+              "originalScale": 0.9949,
+              "shift": "none",
+              "active": false,
+              "nowBottom": 19315.921875,
+              "connectTop": 19315.921875,
+              "documentHeight": 21122,
+              "end": 21121.5625
+            },
+            "pixels": {
+              "redFraction": 0.011350059737156512,
+              "corners": [
+                [
+                  235,
+                  231,
+                  222
+                ],
+                [
+                  235,
+                  231,
+                  222
+                ],
+                [
+                  236,
+                  232,
+                  223
+                ],
+                [
+                  236,
+                  232,
+                  223
+                ]
+              ],
+              "cornersAllRed": false
+            }
+          },
+          {
+            "progress": 0.15,
+            "state": {
+              "sameElement": true,
+              "position": "fixed",
+              "extraScale": 3.81688,
+              "originalScale": 1,
+              "shift": "-11.8314px -33.1832px",
+              "active": true,
+              "nowBottom": 19315.921875,
+              "connectTop": 19315.921875,
+              "documentHeight": 21122,
+              "end": 21121.5625
+            },
+            "pixels": {
+              "redFraction": 0.16129032258064516,
+              "corners": [
+                [
+                  235,
+                  231,
+                  222
+                ],
+                [
+                  235,
+                  231,
+                  222
+                ],
+                [
+                  236,
+                  232,
+                  223
+                ],
+                [
+                  236,
+                  232,
+                  223
+                ]
+              ],
+              "cornersAllRed": false
+            }
+          },
+          {
+            "progress": 0.4,
+            "state": {
+              "sameElement": true,
+              "position": "fixed",
+              "extraScale": 8.50699,
+              "originalScale": 1,
+              "shift": "-31.5306px -88.4332px",
+              "active": true,
+              "nowBottom": 19315.921875,
+              "connectTop": 19315.921875,
+              "documentHeight": 21122,
+              "end": 21121.5625
+            },
+            "pixels": {
+              "redFraction": 0.6129032258064516,
+              "corners": [
+                [
+                  235,
+                  231,
+                  222
+                ],
+                [
+                  235,
+                  231,
+                  222
+                ],
+                [
+                  236,
+                  232,
+                  223
+                ],
+                [
+                  236,
+                  232,
+                  223
+                ]
+              ],
+              "cornersAllRed": false
+            }
+          },
+          {
+            "progress": 1,
+            "state": {
+              "sameElement": true,
+              "position": "fixed",
+              "extraScale": 19.7604,
+              "originalScale": 1,
+              "shift": "-78.797px -221px",
+              "active": true,
+              "nowBottom": 19315.921875,
+              "connectTop": 19315.921875,
+              "documentHeight": 21122,
+              "end": 21121.5625
+            },
+            "pixels": {
+              "redFraction": 0.972520908004779,
+              "corners": [
+                [
+                  182,
+                  33,
+                  38
+                ],
+                [
+                  182,
+                  33,
+                  38
+                ],
+                [
+                  184,
+                  33,
+                  38
+                ],
+                [
+                  183,
+                  34,
+                  39
+                ]
+              ],
+              "cornersAllRed": true
+            }
+          }
+        ],
+        "reversed": {
+          "sameElement": true,
+          "position": "absolute",
+          "extraScale": 1,
+          "originalScale": 0.9975,
+          "shift": "none",
+          "active": false,
+          "nowBottom": 19315.921875,
+          "connectTop": 19315.921875,
+          "documentHeight": 21122,
+          "end": 21121.5625
+        },
+        "externalKeyboardNavigation": true,
+        "mailtoVerified": true,
+        "focusStates": true,
+        "localLanguageSwitch": true,
+        "nativeReturnToTop": true,
+        "webglPaused": {
+          "before": {
+            "frame": 48,
+            "loop": "demand"
+          },
+          "after": {
+            "frame": 48,
+            "loop": "demand"
+          }
+        }
+      },
+      "motion": {
+        "lineBefore": {
+          "dash": 1,
+          "scale": 0.08
+        },
+        "lineAfter": {
+          "dash": 0,
+          "scale": 0.08
+        },
+        "lineReverse": {
+          "dash": 1,
+          "scale": 0.08
+        },
+        "redBefore": {
+          "dash": 0,
+          "scale": 0.08
+        },
+        "redAfter": {
+          "dash": 0,
+          "scale": 1
+        },
+        "redReverse": {
+          "dash": 0,
+          "scale": 0.08
+        }
+      },
+      "overflow": {
+        "width": 320,
+        "scrollWidth": 320,
+        "offenders": []
+      },
+      "triggerCount": 25,
+      "newTriggers": 1,
+      "pins": 1,
+      "keyboard": true,
+      "fullNarrativeAndBackScroll": true,
+      "localeToggleClean": true,
+      "performance": {
+        "loop": "demand",
+        "geometry": 1,
+        "textures": 0
+      },
+      "errors": []
+    },
+    {
+      "name": "landscape-en",
+      "width": 844,
+      "height": 390,
+      "lang": "en",
+      "content": {
+        "title": "Still learning. Still building. Still moving.",
+        "items": [
+          {
+            "id": "studies",
+            "title": "Technologist in Systems Analysis and Development",
+            "organization": "Univiçosa",
+            "date": "2026",
+            "period": "2026 - Present",
+            "category": "Learning / 01"
+          },
+          {
+            "id": "practice",
+            "title": "Development Intern",
+            "organization": "Bioma Investimentos",
+            "date": "2026-08",
+            "period": "August 2026 - Present",
+            "category": "Building / 02"
+          }
+        ],
+        "semanticContentAlwaysVisible": true
+      },
+      "geometry": {
+        "start": {
+          "x": 850.2999877929688,
+          "y": -33.94736862182617
+        },
+        "expected": {
+          "x": 850.3000000000001,
+          "y": -33.94736842105263
+        },
+        "length": 573.7153930664062,
+        "svgWidth": 773,
+        "fieldWidth": 773,
+        "gap": 0,
+        "height": 1952
+      },
+      "connection": {
+        "stages": [
+          {
+            "progress": 0,
+            "state": {
+              "sameElement": true,
+              "position": "absolute",
+              "extraScale": 1,
+              "originalScale": 0.9963,
+              "shift": "none",
+              "active": false,
+              "nowBottom": 18627.953125,
+              "connectTop": 18627.953125,
+              "documentHeight": 20449,
+              "end": 20448.53125
+            },
+            "pixels": {
+              "redFraction": 0.014938113529662825,
+              "corners": [
+                [
+                  235,
+                  231,
+                  222
+                ],
+                [
+                  235,
+                  231,
+                  222
+                ],
+                [
+                  235,
+                  231,
+                  222
+                ],
+                [
+                  236,
+                  232,
+                  223
+                ]
+              ],
+              "cornersAllRed": false
+            }
+          },
+          {
+            "progress": 0.15,
+            "state": {
+              "sameElement": true,
+              "position": "fixed",
+              "extraScale": 3.37982,
+              "originalScale": 1,
+              "shift": "-30.9972px -4.3561px",
+              "active": true,
+              "nowBottom": 18627.953125,
+              "connectTop": 18627.953125,
+              "documentHeight": 20449,
+              "end": 20448.53125
+            },
+            "pixels": {
+              "redFraction": 0.17242851045667948,
+              "corners": [
+                [
+                  235,
+                  231,
+                  222
+                ],
+                [
+                  235,
+                  231,
+                  222
+                ],
+                [
+                  235,
+                  231,
+                  222
+                ],
+                [
+                  236,
+                  232,
+                  223
+                ]
+              ],
+              "cornersAllRed": false
+            }
+          },
+          {
+            "progress": 0.4,
+            "state": {
+              "sameElement": true,
+              "position": "fixed",
+              "extraScale": 7.34065,
+              "originalScale": 1,
+              "shift": "-82.587px -11.6061px",
+              "active": true,
+              "nowBottom": 18627.953125,
+              "connectTop": 18627.953125,
+              "documentHeight": 20449,
+              "end": 20448.53125
+            },
+            "pixels": {
+              "redFraction": 0.6265471617584294,
+              "corners": [
+                [
+                  235,
+                  231,
+                  222
+                ],
+                [
+                  235,
+                  231,
+                  222
+                ],
+                [
+                  235,
+                  231,
+                  222
+                ],
+                [
+                  236,
+                  232,
+                  223
+                ]
+              ],
+              "cornersAllRed": false
+            }
+          },
+          {
+            "progress": 1,
+            "state": {
+              "sameElement": true,
+              "position": "fixed",
+              "extraScale": 16.8433,
+              "originalScale": 1,
+              "shift": "-206.359px -29px",
+              "active": true,
+              "nowBottom": 18627.953125,
+              "connectTop": 18627.953125,
+              "documentHeight": 20449,
+              "end": 20448.53125
+            },
+            "pixels": {
+              "redFraction": 0.988903115663679,
+              "corners": [
+                [
+                  182,
+                  33,
+                  38
+                ],
+                [
+                  182,
+                  33,
+                  38
+                ],
+                [
+                  182,
+                  33,
+                  38
+                ],
+                [
+                  183,
+                  34,
+                  39
+                ]
+              ],
+              "cornersAllRed": true
+            }
+          }
+        ],
+        "reversed": {
+          "sameElement": true,
+          "position": "absolute",
+          "extraScale": 1,
+          "originalScale": 0.9982,
+          "shift": "none",
+          "active": false,
+          "nowBottom": 18627.953125,
+          "connectTop": 18627.953125,
+          "documentHeight": 20449,
+          "end": 20448.53125
+        },
+        "externalKeyboardNavigation": true,
+        "mailtoVerified": true,
+        "focusStates": true,
+        "localLanguageSwitch": true,
+        "nativeReturnToTop": true,
+        "webglPaused": {
+          "before": {
+            "frame": 47,
+            "loop": "demand"
+          },
+          "after": {
+            "frame": 47,
+            "loop": "demand"
+          }
+        }
+      },
+      "motion": {
+        "lineBefore": {
+          "dash": 1,
+          "scale": 0.08
+        },
+        "lineAfter": {
+          "dash": 0,
+          "scale": 0.08
+        },
+        "lineReverse": {
+          "dash": 1,
+          "scale": 0.08
+        },
+        "redBefore": {
+          "dash": 0,
+          "scale": 0.08
+        },
+        "redAfter": {
+          "dash": 0,
+          "scale": 1
+        },
+        "redReverse": {
+          "dash": 0,
+          "scale": 0.08
+        }
+      },
+      "overflow": {
+        "width": 844,
+        "scrollWidth": 844,
+        "offenders": []
+      },
+      "triggerCount": 25,
+      "newTriggers": 1,
+      "pins": 1,
+      "keyboard": true,
+      "fullNarrativeAndBackScroll": true,
+      "localeToggleClean": true,
+      "performance": {
+        "loop": "demand",
+        "geometry": 1,
+        "textures": 0
+      },
+      "errors": []
+    }
+  ],
+  "reducedMotion": [
+    {
+      "name": "desktop",
+      "lang": "pt",
+      "content": {
+        "title": "Ainda aprendendo. Ainda construindo. Ainda seguindo.",
+        "items": [
+          {
+            "id": "studies",
+            "title": "Tecnólogo em Análise e Desenvolvimento de Sistemas",
+            "organization": "Univiçosa",
+            "date": "2026",
+            "period": "2026 - Atualmente",
+            "category": "Aprendendo / 01"
+          },
+          {
+            "id": "practice",
+            "title": "Estagiário de Desenvolvimento",
+            "organization": "Bioma Investimentos",
+            "date": "2026-08",
+            "period": "Agosto 2026 - Atualmente",
+            "category": "Construindo / 02"
+          }
+        ],
+        "semanticContentAlwaysVisible": true
+      },
+      "staticFrame": {
+        "dash": 0,
+        "scale": 1
+      },
+      "triggerCount": 0,
+      "pins": 0,
+      "preferenceToggleClean": true,
+      "overflow": {
+        "width": 1440,
+        "scrollWidth": 1440,
+        "offenders": []
+      }
+    },
+    {
+      "name": "mobile-en",
+      "lang": "en",
+      "content": {
+        "title": "Still learning. Still building. Still moving.",
+        "items": [
+          {
+            "id": "studies",
+            "title": "Technologist in Systems Analysis and Development",
+            "organization": "Univiçosa",
+            "date": "2026",
+            "period": "2026 - Present",
+            "category": "Learning / 01"
+          },
+          {
+            "id": "practice",
+            "title": "Development Intern",
+            "organization": "Bioma Investimentos",
+            "date": "2026-08",
+            "period": "August 2026 - Present",
+            "category": "Building / 02"
+          }
+        ],
+        "semanticContentAlwaysVisible": true
+      },
+      "staticFrame": {
+        "dash": 0,
+        "scale": 1
+      },
+      "triggerCount": 0,
+      "pins": 0,
+      "preferenceToggleClean": true,
+      "overflow": {
+        "width": 390,
+        "scrollWidth": 390,
+        "offenders": []
+      }
+    }
+  ],
+  "production": [
+    {
+      "lang": "pt",
+      "width": 1440,
+      "height": 900,
+      "content": {
+        "title": "Ainda aprendendo. Ainda construindo. Ainda seguindo.",
+        "items": [
+          {
+            "id": "studies",
+            "title": "Tecnólogo em Análise e Desenvolvimento de Sistemas",
+            "organization": "Univiçosa",
+            "date": "2026",
+            "period": "2026 - Atualmente",
+            "category": "Aprendendo / 01"
+          },
+          {
+            "id": "practice",
+            "title": "Estagiário de Desenvolvimento",
+            "organization": "Bioma Investimentos",
+            "date": "2026-08",
+            "period": "Agosto 2026 - Atualmente",
+            "category": "Construindo / 02"
+          }
+        ],
+        "semanticContentAlwaysVisible": true
+      },
+      "overflow": {
+        "width": 1440,
+        "scrollWidth": 1440,
+        "offenders": []
+      },
+      "errors": []
+    },
+    {
+      "lang": "en",
+      "width": 390,
+      "height": 844,
+      "content": {
+        "title": "Still learning. Still building. Still moving.",
+        "items": [
+          {
+            "id": "studies",
+            "title": "Technologist in Systems Analysis and Development",
+            "organization": "Univiçosa",
+            "date": "2026",
+            "period": "2026 - Present",
+            "category": "Learning / 01"
+          },
+          {
+            "id": "practice",
+            "title": "Development Intern",
+            "organization": "Bioma Investimentos",
+            "date": "2026-08",
+            "period": "August 2026 - Present",
+            "category": "Building / 02"
+          }
+        ],
+        "semanticContentAlwaysVisible": true
+      },
+      "overflow": {
+        "width": 390,
+        "scrollWidth": 390,
+        "offenders": []
+      },
+      "errors": []
+    }
+  ],
+  "resize": [
+    {
+      "width": 390,
+      "height": 844,
+      "geometry": {
+        "start": {
+          "x": 376.20001220703125,
+          "y": -27.63157844543457
+        },
+        "expected": {
+          "x": 376.20000000000005,
+          "y": -27.63157894736842
+        },
+        "length": 385.9803161621094,
+        "svgWidth": 342,
+        "fieldWidth": 342,
+        "gap": 0,
+        "height": 2105
+      },
+      "overflow": {
+        "width": 390,
+        "scrollWidth": 390,
+        "offenders": []
+      }
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "geometry": {
+        "start": {
+          "x": 1450.9000244140625,
+          "y": -33.94736862182617
+        },
+        "expected": {
+          "x": 1450.9,
+          "y": -33.94736842105263
+        },
+        "length": 863.7130126953125,
+        "svgWidth": 1319,
+        "fieldWidth": 1319,
+        "gap": 0,
+        "height": 2280
+      },
+      "overflow": {
+        "width": 1440,
+        "scrollWidth": 1440,
+        "offenders": []
+      }
+    }
+  ]
+}

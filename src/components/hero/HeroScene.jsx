@@ -1,39 +1,68 @@
-import { useState, useEffect, useRef } from 'react';
-import { Canvas } from '@react-three/fiber';
-import MaterializingShapes from './MaterializingShapes';
-import useThemeColors from './useThemeColors';
+import { useEffect, useLayoutEffect, useRef, useState } from 'react';
+import { Canvas, useThree } from '@react-three/fiber';
+import InkStroke from './InkStroke';
 
-export default function HeroScene({ theme }) {
-  const colors = useThemeColors(theme);
-  const containerRef = useRef(null);
-  const [isActive, setIsActive] = useState(true);
+function CompositionCamera({ framing }) {
+  const camera = useThree((state) => state.camera);
+  const size = useThree((state) => state.size);
+  const invalidate = useThree((state) => state.invalidate);
+  useLayoutEffect(() => {
+    // Preserve the original art viewport, then extend the frustum to the full
+    // Intro. The gesture keeps its composition without internal canvas edges.
+    camera.setViewOffset(framing.width, framing.height, -framing.left, -framing.top, size.width, size.height);
+    camera.updateProjectionMatrix();
+    invalidate();
+    return () => camera.clearViewOffset();
+  }, [camera, framing, invalidate, size.width, size.height]);
+  return null;
+}
 
-  const reducedMotion = typeof window !== 'undefined'
-    && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-
-  // Fora da viewport o loop de render para: o contexto WebGL sobrevive,
-  // mas deixa de consumir GPU enquanto o resto da página é lido.
+function ContextLifecycle({ onFailure, connectScene }) {
+  const gl = useThree((state) => state.gl);
+  const invalidate = useThree((state) => state.invalidate);
+  useEffect(() => connectScene(invalidate), [connectScene, invalidate]);
   useEffect(() => {
-    const node = containerRef.current;
-    if (!node) return undefined;
+    const canvas = gl.domElement;
+    const onLost = (event) => {
+      event.preventDefault();
+      onFailure();
+    };
+    canvas.addEventListener('webglcontextlost', onLost);
+    return () => {
+      canvas.removeEventListener('webglcontextlost', onLost);
+    };
+  }, [gl, onFailure]);
+  return null;
+}
 
-    const observer = new IntersectionObserver(
-      ([entry]) => setIsActive(entry.isIntersecting),
-      { threshold: 0 }
-    );
-    observer.observe(node);
-    return () => observer.disconnect();
+export default function HeroScene({ interaction, connectScene, framing, reducedMotion, mobile, stretch, onReady, onFailure }) {
+  const container = useRef(null);
+  const [visible, setVisible] = useState(true);
+  const [pageVisible, setPageVisible] = useState(() => !document.hidden);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(([entry]) => setVisible(entry.isIntersecting));
+    observer.observe(container.current);
+    const onVisibility = () => setPageVisible(!document.hidden);
+    document.addEventListener('visibilitychange', onVisibility);
+    return () => {
+      observer.disconnect();
+      document.removeEventListener('visibilitychange', onVisibility);
+    };
   }, []);
 
   return (
-    <div className="hero-scene" ref={containerRef} aria-hidden="true">
+    <div className="intro-canvas" ref={container} aria-hidden="true">
       <Canvas
-        frameloop={isActive && !reducedMotion ? 'always' : 'demand'}
-        dpr={[1, 1.5]}
-        camera={{ position: [0, 0, 7], fov: 45 }}
-        gl={{ antialias: true, alpha: true }}
+        frameloop={visible && pageVisible && !reducedMotion && !mobile ? 'always' : 'demand'}
+        dpr={mobile ? 1 : [1, 1.5]}
+        camera={{ position: [0, 0, 5], fov: 37 }}
+        gl={{ antialias: !mobile, alpha: true, powerPreference: 'low-power' }}
+        fallback={null}
       >
-        <MaterializingShapes colors={colors} reducedMotion={reducedMotion} />
+        <ContextLifecycle onFailure={onFailure} connectScene={connectScene} />
+        <CompositionCamera framing={framing} />
+        <InkStroke interaction={interaction} reducedMotion={reducedMotion} mobile={mobile} stretch={stretch} onReady={onReady} />
       </Canvas>
     </div>
   );

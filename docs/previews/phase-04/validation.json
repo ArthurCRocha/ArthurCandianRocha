@@ -1,0 +1,313 @@
+{
+  "checkedAt": "2026-10-06T03:05:12.444Z",
+  "facts": [
+    {
+      "id": "prodisel",
+      "sourceId": 3,
+      "centralRecordMatches": true,
+      "year": "2026",
+      "stack": [
+        "React",
+        "JavaScript",
+        "API Mockada",
+        "UI/UX Design"
+      ],
+      "sourceDescription": "Liderei o desenvolvimento da Fase 1 do Prodiesel, uma plataforma web para digitalizar um processo operacional que hoje depende de planilhas e controle manual. Arquitetura web-first com API mockada na fase inicial, permitindo iterar sobre a experiência antes de travar contratos de integração. Entreguei o MVP completo, com todos os módulos mapeados e uma demo funcional para validação de negócio.",
+      "sourceDescriptionEN": "Led the development of Prodiesel's Phase 1, a web platform to digitize an operational process that currently relies on spreadsheets and manual control. Web-first architecture with a mocked API in the initial phase, delivering a complete MVP with a working demo for business validation.",
+      "sections": [
+        {
+          "label": "context",
+          "text": "Uma plataforma web para digitalizar um processo operacional baseado em planilhas e controle manual.",
+          "textEN": "A web platform to digitize an operational process based on spreadsheets and manual control."
+        },
+        {
+          "label": "approach",
+          "text": "Arquitetura web-first, com API mockada na fase inicial.",
+          "textEN": "Web-first architecture, with a mocked API in the initial phase."
+        }
+      ],
+      "role": "Condução do desenvolvimento da Fase 1",
+      "roleEN": "Led development of Phase 1",
+      "status": "MVP completo e demo funcional",
+      "statusEN": "Complete MVP and working demo",
+      "media": [],
+      "links": [],
+      "unknownFields": []
+    },
+    {
+      "id": "cv-standardization",
+      "sourceId": 4,
+      "centralRecordMatches": true,
+      "year": "2026",
+      "stack": [
+        "Python",
+        "Gemini API",
+        "LLM",
+        "Automação"
+      ],
+      "sourceDescription": "Desenvolvi por iniciativa própria uma ferramenta em Python que automatiza a padronização de currículos recebidos pelo RH da Assurance IT, processo até então feito manualmente. Utiliza a API do Gemini (LLM) para extrair os dados dos currículos e aplicá-los em um template fixo. Já testada com casos reais, reduzindo consideravelmente o tempo gasto no processo.",
+      "sourceDescriptionEN": "Self-initiated Python tool that automates résumé standardization for Assurance IT's HR team, a process previously done manually. Uses the Gemini API (LLM) to extract résumé data and apply it to a fixed template. Already tested with real cases, considerably reducing the time spent on the process.",
+      "sections": [
+        {
+          "label": "context",
+          "text": "Uma ferramenta para automatizar a padronização dos currículos recebidos pelo RH da Assurance IT. O processo era feito manualmente.",
+          "textEN": "A tool to automate the standardization of résumés received by Assurance IT’s HR team. The process was previously manual."
+        },
+        {
+          "label": "approach",
+          "text": "Python e API do Gemini para extrair os dados e aplicá-los em um template fixo.",
+          "textEN": "Python and the Gemini API extract the data and apply it to a fixed template."
+        }
+      ],
+      "role": "Iniciativa e desenvolvimento próprios",
+      "roleEN": "Self-initiated development",
+      "status": "Testada com casos reais",
+      "statusEN": "Tested with real cases",
+      "media": [],
+      "links": [],
+      "unknownFields": []
+    }
+  ],
+  "layouts": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 900,
+      "lang": "pt",
+      "documentCount": 4,
+      "alignmentReversible": true,
+      "alignedFrontSheetVisible": true,
+      "keyboardContextLinks": true,
+      "overflow": {
+        "width": 1440,
+        "scroll": 1440,
+        "offenders": []
+      },
+      "triggerCount": 10,
+      "pinCount": 1,
+      "backScroll": true,
+      "performance": {
+        "loop": "demand",
+        "geometry": 1,
+        "textures": 0
+      },
+      "errors": []
+    },
+    {
+      "name": "desktop-en",
+      "width": 1440,
+      "height": 900,
+      "lang": "en",
+      "documentCount": 4,
+      "alignmentReversible": true,
+      "alignedFrontSheetVisible": true,
+      "keyboardContextLinks": true,
+      "overflow": {
+        "width": 1440,
+        "scroll": 1440,
+        "offenders": []
+      },
+      "triggerCount": 10,
+      "pinCount": 1,
+      "backScroll": true,
+      "performance": {
+        "loop": "demand",
+        "geometry": 1,
+        "textures": 0
+      },
+      "errors": []
+    },
+    {
+      "name": "laptop",
+      "width": 1024,
+      "height": 768,
+      "lang": "en",
+      "documentCount": 4,
+      "alignmentReversible": true,
+      "alignedFrontSheetVisible": true,
+      "keyboardContextLinks": true,
+      "overflow": {
+        "width": 1024,
+        "scroll": 1024,
+        "offenders": []
+      },
+      "triggerCount": 10,
+      "pinCount": 1,
+      "backScroll": true,
+      "performance": {
+        "loop": "demand",
+        "geometry": 1,
+        "textures": 0
+      },
+      "errors": []
+    },
+    {
+      "name": "tablet",
+      "width": 768,
+      "height": 1024,
+      "lang": "pt",
+      "documentCount": 3,
+      "alignmentReversible": true,
+      "alignedFrontSheetVisible": true,
+      "keyboardContextLinks": true,
+      "overflow": {
+        "width": 768,
+        "scroll": 768,
+        "offenders": []
+      },
+      "triggerCount": 10,
+      "pinCount": 1,
+      "backScroll": true,
+      "performance": {
+        "loop": "demand",
+        "geometry": 1,
+        "textures": 0
+      },
+      "errors": []
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "lang": "pt",
+      "documentCount": 3,
+      "alignmentReversible": true,
+      "alignedFrontSheetVisible": true,
+      "keyboardContextLinks": true,
+      "overflow": {
+        "width": 390,
+        "scroll": 390,
+        "offenders": []
+      },
+      "triggerCount": 10,
+      "pinCount": 1,
+      "backScroll": true,
+      "performance": {
+        "loop": "demand",
+        "geometry": 1,
+        "textures": 0
+      },
+      "errors": []
+    },
+    {
+      "name": "small-mobile",
+      "width": 320,
+      "height": 740,
+      "lang": "en",
+      "documentCount": 3,
+      "alignmentReversible": true,
+      "alignedFrontSheetVisible": true,
+      "keyboardContextLinks": true,
+      "overflow": {
+        "width": 320,
+        "scroll": 320,
+        "offenders": []
+      },
+      "triggerCount": 10,
+      "pinCount": 1,
+      "backScroll": true,
+      "performance": {
+        "loop": "demand",
+        "geometry": 1,
+        "textures": 0
+      },
+      "errors": []
+    },
+    {
+      "name": "touch-landscape",
+      "width": 844,
+      "height": 390,
+      "lang": "en",
+      "documentCount": 3,
+      "alignmentReversible": true,
+      "alignedFrontSheetVisible": true,
+      "keyboardContextLinks": true,
+      "overflow": {
+        "width": 844,
+        "scroll": 844,
+        "offenders": []
+      },
+      "triggerCount": 10,
+      "pinCount": 1,
+      "backScroll": true,
+      "performance": {
+        "loop": "demand",
+        "geometry": 1,
+        "textures": 0
+      },
+      "errors": []
+    }
+  ],
+  "motion": {
+    "reducedTriggerCount": 0,
+    "reducedPins": 0,
+    "staticAlignedDocuments": true,
+    "keyboardReading": true,
+    "preferenceToggleClean": true
+  },
+  "production": {
+    "pt": {
+      "projects": 2,
+      "keyboardLinks": true,
+      "noExternalLinksToInvent": true,
+      "errors": []
+    },
+    "en": {
+      "projects": 2,
+      "keyboardLinks": true,
+      "noExternalLinksToInvent": true,
+      "errors": []
+    }
+  },
+  "projectNameCorrection": {
+    "checkedAt": "2026-10-06T03:12:15.675Z",
+    "scope": "User-confirmed project spelling correction to Prodiesel; preceding layout and motion measurements remain unchanged.",
+    "checked": [
+      {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900,
+        "lang": "pt",
+        "displayName": "Prodiesel",
+        "craftReferenceUpdated": true,
+        "titleFits": true
+      },
+      {
+        "name": "desktop-en",
+        "width": 1440,
+        "height": 900,
+        "lang": "en",
+        "displayName": "Prodiesel",
+        "craftReferenceUpdated": true,
+        "titleFits": true
+      },
+      {
+        "name": "tablet",
+        "width": 768,
+        "height": 1024,
+        "lang": "pt",
+        "displayName": "Prodiesel",
+        "craftReferenceUpdated": true,
+        "titleFits": true
+      },
+      {
+        "name": "mobile",
+        "width": 390,
+        "height": 844,
+        "lang": "pt",
+        "displayName": "Prodiesel",
+        "craftReferenceUpdated": true,
+        "titleFits": true
+      },
+      {
+        "name": "small-mobile-en",
+        "width": 320,
+        "height": 740,
+        "lang": "en",
+        "displayName": "Prodiesel",
+        "craftReferenceUpdated": true,
+        "titleFits": true
+      }
+    ]
+  }
+}

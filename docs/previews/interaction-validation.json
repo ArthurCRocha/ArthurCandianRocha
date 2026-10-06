@@ -1,0 +1,22 @@
+{
+  "languagePersistence": true,
+  "reducedMotionStatic": true,
+  "skipLink": true,
+  "dialogs": 0,
+  "anchorTargets": [
+    {
+      "href": "#intro-content",
+      "target": true
+    },
+    {
+      "href": "#hero",
+      "target": true
+    }
+  ],
+  "noLegacyUI": true,
+  "noExistingContentAnchor": true,
+  "noLegacyCSS": true,
+  "noHorizontalOverflow": true,
+  "noWebGLFallback": true,
+  "errors": []
+}

@@ -1,0 +1,644 @@
+{
+  "layout": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 900,
+      "lang": "pt",
+      "overflow": false,
+      "canvases": 1,
+      "chapter": "01 / ORIGEM",
+      "future": 0,
+      "details": true,
+      "innerDetails": true,
+      "degree": "Prática / desenvolvimentoMetryx TecnologiaEstagiário em DesenvolvimentoNovembro 2024 - Fevereiro 2025Formação / em andamentoUniviçosaTecnólogo em Análise e Desenvolvimento de Sistemas2026 - Atualmente",
+      "sectionCount": 2,
+      "flowHeight": 4771,
+      "errors": []
+    },
+    {
+      "name": "large-desktop",
+      "width": 1920,
+      "height": 1080,
+      "lang": "pt",
+      "overflow": false,
+      "canvases": 1,
+      "chapter": "01 / ORIGEM",
+      "future": 0,
+      "details": true,
+      "innerDetails": true,
+      "degree": "Prática / desenvolvimentoMetryx TecnologiaEstagiário em DesenvolvimentoNovembro 2024 - Fevereiro 2025Formação / em andamentoUniviçosaTecnólogo em Análise e Desenvolvimento de Sistemas2026 - Atualmente",
+      "sectionCount": 2,
+      "flowHeight": 5681,
+      "errors": []
+    },
+    {
+      "name": "laptop",
+      "width": 1366,
+      "height": 768,
+      "lang": "pt",
+      "overflow": false,
+      "canvases": 1,
+      "chapter": "01 / ORIGEM",
+      "future": 0,
+      "details": true,
+      "innerDetails": true,
+      "degree": "Prática / desenvolvimentoMetryx TecnologiaEstagiário em DesenvolvimentoNovembro 2024 - Fevereiro 2025Formação / em andamentoUniviçosaTecnólogo em Análise e Desenvolvimento de Sistemas2026 - Atualmente",
+      "sectionCount": 2,
+      "flowHeight": 4220,
+      "errors": []
+    },
+    {
+      "name": "tablet",
+      "width": 768,
+      "height": 1024,
+      "lang": "pt",
+      "overflow": false,
+      "canvases": 1,
+      "chapter": "01 / ORIGEM",
+      "future": 0,
+      "details": true,
+      "innerDetails": true,
+      "degree": "Prática / desenvolvimentoMetryx TecnologiaEstagiário em DesenvolvimentoNovembro 2024 - Fevereiro 2025Formação / em andamentoUniviçosaTecnólogo em Análise e Desenvolvimento de Sistemas2026 - Atualmente",
+      "sectionCount": 2,
+      "flowHeight": 5376,
+      "errors": []
+    },
+    {
+      "name": "wide-tablet",
+      "width": 1024,
+      "height": 768,
+      "lang": "pt",
+      "overflow": false,
+      "canvases": 1,
+      "chapter": "01 / ORIGEM",
+      "future": 0,
+      "details": true,
+      "innerDetails": true,
+      "degree": "Prática / desenvolvimentoMetryx TecnologiaEstagiário em DesenvolvimentoNovembro 2024 - Fevereiro 2025Formação / em andamentoUniviçosaTecnólogo em Análise e Desenvolvimento de Sistemas2026 - Atualmente",
+      "sectionCount": 2,
+      "flowHeight": 4088,
+      "errors": []
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "lang": "pt",
+      "overflow": false,
+      "canvases": 1,
+      "chapter": "01 / ORIGEM",
+      "future": 0,
+      "details": true,
+      "innerDetails": true,
+      "degree": "Prática / desenvolvimentoMetryx TecnologiaEstagiário em DesenvolvimentoNovembro 2024 - Fevereiro 2025Formação / em andamentoUniviçosaTecnólogo em Análise e Desenvolvimento de Sistemas2026 - Atualmente",
+      "sectionCount": 2,
+      "flowHeight": 3631,
+      "errors": []
+    },
+    {
+      "name": "small-mobile",
+      "width": 320,
+      "height": 740,
+      "lang": "pt",
+      "overflow": false,
+      "canvases": 1,
+      "chapter": "01 / ORIGEM",
+      "future": 0,
+      "details": true,
+      "innerDetails": true,
+      "degree": "Prática / desenvolvimentoMetryx TecnologiaEstagiário em DesenvolvimentoNovembro 2024 - Fevereiro 2025Formação / em andamentoUniviçosaTecnólogo em Análise e Desenvolvimento de Sistemas2026 - Atualmente",
+      "sectionCount": 2,
+      "flowHeight": 3422,
+      "errors": []
+    },
+    {
+      "name": "landscape",
+      "width": 844,
+      "height": 390,
+      "lang": "pt",
+      "overflow": false,
+      "canvases": 1,
+      "chapter": "01 / ORIGEM",
+      "future": 0,
+      "details": true,
+      "innerDetails": true,
+      "degree": "Prática / desenvolvimentoMetryx TecnologiaEstagiário em DesenvolvimentoNovembro 2024 - Fevereiro 2025Formação / em andamentoUniviçosaTecnólogo em Análise e Desenvolvimento de Sistemas2026 - Atualmente",
+      "sectionCount": 2,
+      "flowHeight": 3038,
+      "errors": []
+    },
+    {
+      "name": "en-desktop",
+      "width": 1440,
+      "height": 900,
+      "lang": "en",
+      "overflow": false,
+      "canvases": 1,
+      "chapter": "01 / ORIGIN",
+      "future": 0,
+      "details": true,
+      "innerDetails": true,
+      "degree": "Practice / developmentMetryx TecnologiaDevelopment InternNovember 2024 - February 2025Education / in progressUniviçosaTechnologist in Systems Analysis and Development2026 - Present",
+      "sectionCount": 2,
+      "flowHeight": 4801,
+      "errors": []
+    },
+    {
+      "name": "en-mobile",
+      "width": 390,
+      "height": 844,
+      "lang": "en",
+      "overflow": false,
+      "canvases": 1,
+      "chapter": "01 / ORIGIN",
+      "future": 0,
+      "details": true,
+      "innerDetails": true,
+      "degree": "Practice / developmentMetryx TecnologiaDevelopment InternNovember 2024 - February 2025Education / in progressUniviçosaTechnologist in Systems Analysis and Development2026 - Present",
+      "sectionCount": 2,
+      "flowHeight": 3705,
+      "errors": []
+    },
+    {
+      "name": "production",
+      "width": 1440,
+      "height": 900,
+      "lang": "pt",
+      "overflow": false,
+      "canvases": 1,
+      "chapter": "01 / ORIGEM",
+      "future": 0,
+      "details": true,
+      "innerDetails": true,
+      "degree": "Prática / desenvolvimentoMetryx TecnologiaEstagiário em DesenvolvimentoNovembro 2024 - Fevereiro 2025Formação / em andamentoUniviçosaTecnólogo em Análise e Desenvolvimento de Sistemas2026 - Atualmente",
+      "sectionCount": 2,
+      "flowHeight": 4771,
+      "errors": []
+    }
+  ],
+  "behavior": {
+    "initial": {
+      "scroll": 0,
+      "camera": [
+        0,
+        0,
+        5
+      ],
+      "view": {
+        "enabled": true,
+        "fullWidth": 1008,
+        "fullHeight": 764,
+        "offsetX": -446,
+        "offsetY": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "loop": "always",
+      "frames": 0,
+      "time": 2.231699999988078,
+      "draw": {
+        "frame": 133,
+        "calls": 1,
+        "triangles": 16600,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 1,
+        "textures": 0
+      },
+      "programs": 1,
+      "triggerCount": 4,
+      "pinCount": 1,
+      "details": [
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "nameOpacity": "1",
+      "entryOpacity": "0"
+    },
+    "bridge": {
+      "scroll": 594,
+      "camera": [
+        0,
+        0,
+        3.2424096874651913
+      ],
+      "view": {
+        "enabled": true,
+        "fullWidth": 1008,
+        "fullHeight": 764,
+        "offsetX": -446,
+        "offsetY": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "loop": "always",
+      "frames": 117,
+      "time": 4.558100000023839,
+      "draw": {
+        "frame": 250,
+        "calls": 1,
+        "triangles": 16600,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 1,
+        "textures": 0
+      },
+      "programs": 1,
+      "triggerCount": 4,
+      "pinCount": 1,
+      "details": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "nameOpacity": "0.32",
+      "entryOpacity": "0"
+    },
+    "entry": {
+      "scroll": 1080,
+      "camera": [
+        0,
+        0,
+        2.909961664817687
+      ],
+      "view": {
+        "enabled": true,
+        "fullWidth": 1008,
+        "fullHeight": 764,
+        "offsetX": -446,
+        "offsetY": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "loop": "always",
+      "frames": 230,
+      "time": 6.4574999999999925,
+      "draw": {
+        "frame": 363,
+        "calls": 1,
+        "triangles": 16600,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 1,
+        "textures": 0
+      },
+      "programs": 1,
+      "triggerCount": 4,
+      "pinCount": 1,
+      "details": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "nameOpacity": "0",
+      "entryOpacity": "1"
+    },
+    "offscreen": {
+      "scroll": 2480,
+      "camera": [
+        0,
+        0,
+        2.9017479509355417
+      ],
+      "view": {
+        "enabled": true,
+        "fullWidth": 1008,
+        "fullHeight": 764,
+        "offsetX": -446,
+        "offsetY": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "loop": "demand",
+      "frames": 263,
+      "time": 7.037600000023833,
+      "draw": {
+        "frame": 396,
+        "calls": 1,
+        "triangles": 16600,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 1,
+        "textures": 0
+      },
+      "programs": 1,
+      "triggerCount": 4,
+      "pinCount": 1,
+      "details": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "nameOpacity": "0",
+      "entryOpacity": "1"
+    },
+    "offscreenAfter": {
+      "scroll": 2480,
+      "camera": [
+        0,
+        0,
+        2.9017479509355417
+      ],
+      "view": {
+        "enabled": true,
+        "fullWidth": 1008,
+        "fullHeight": 764,
+        "offsetX": -446,
+        "offsetY": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "loop": "demand",
+      "frames": 263,
+      "time": 7.037600000023833,
+      "draw": {
+        "frame": 396,
+        "calls": 1,
+        "triangles": 16600,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 1,
+        "textures": 0
+      },
+      "programs": 1,
+      "triggerCount": 4,
+      "pinCount": 1,
+      "details": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "nameOpacity": "0",
+      "entryOpacity": "1"
+    },
+    "back": {
+      "scroll": 0,
+      "camera": [
+        0,
+        0,
+        4.997588706717811
+      ],
+      "view": {
+        "enabled": true,
+        "fullWidth": 1008,
+        "fullHeight": 764,
+        "offsetX": -446,
+        "offsetY": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "loop": "always",
+      "frames": 0,
+      "time": 1.930699999988078,
+      "draw": {
+        "frame": 108,
+        "calls": 1,
+        "triangles": 16600,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 1,
+        "textures": 0
+      },
+      "programs": 1,
+      "triggerCount": 4,
+      "pinCount": 1,
+      "details": [
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "nameOpacity": "1",
+      "entryOpacity": "0"
+    },
+    "reduced": {
+      "triggers": 0,
+      "pins": 0,
+      "details": [
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "clip": "none"
+    },
+    "reducedBefore": {
+      "scroll": 0,
+      "camera": [
+        0,
+        0,
+        5
+      ],
+      "view": {
+        "enabled": true,
+        "fullWidth": 1008,
+        "fullHeight": 764,
+        "offsetX": -446,
+        "offsetY": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "loop": "demand",
+      "frames": 0,
+      "time": 0,
+      "draw": {
+        "frame": 145,
+        "calls": 1,
+        "triangles": 16600,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 1,
+        "textures": 0
+      },
+      "programs": 1,
+      "triggerCount": 0,
+      "pinCount": 0,
+      "details": [
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "nameOpacity": "1",
+      "entryOpacity": "1"
+    },
+    "reducedAfter": {
+      "scroll": 0,
+      "camera": [
+        0,
+        0,
+        5
+      ],
+      "view": {
+        "enabled": true,
+        "fullWidth": 1008,
+        "fullHeight": 764,
+        "offsetX": -446,
+        "offsetY": 0,
+        "width": 1440,
+        "height": 900
+      },
+      "loop": "demand",
+      "frames": 0,
+      "time": 0,
+      "draw": {
+        "frame": 145,
+        "calls": 1,
+        "triangles": 16600,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 1,
+        "textures": 0
+      },
+      "programs": 1,
+      "triggerCount": 0,
+      "pinCount": 0,
+      "details": [
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "nameOpacity": "1",
+      "entryOpacity": "1"
+    },
+    "mobileIdle": {
+      "scroll": 0,
+      "camera": [
+        0,
+        0,
+        4.9999977
+      ],
+      "view": {
+        "enabled": true,
+        "fullWidth": 289,
+        "fullHeight": 289,
+        "offsetX": -94,
+        "offsetY": -59,
+        "width": 390,
+        "height": 844
+      },
+      "loop": "demand",
+      "frames": 0,
+      "time": 2.0419999999999994,
+      "draw": {
+        "frame": 271,
+        "calls": 1,
+        "triangles": 16600,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 1,
+        "textures": 0
+      },
+      "programs": 1,
+      "triggerCount": 4,
+      "pinCount": 1,
+      "details": [
+        "1",
+        "1",
+        "1",
+        "1"
+      ],
+      "nameOpacity": "1",
+      "entryOpacity": "0"
+    },
+    "mobileBridge": {
+      "scroll": 371,
+      "camera": [
+        0,
+        0,
+        4.02757725
+      ],
+      "view": {
+        "enabled": true,
+        "fullWidth": 289,
+        "fullHeight": 289,
+        "offsetX": -94,
+        "offsetY": -59,
+        "width": 390,
+        "height": 844
+      },
+      "loop": "demand",
+      "frames": 0,
+      "time": 2.0419999999999994,
+      "draw": {
+        "frame": 282,
+        "calls": 1,
+        "triangles": 16600,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 1,
+        "textures": 0
+      },
+      "programs": 1,
+      "triggerCount": 4,
+      "pinCount": 1,
+      "details": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "nameOpacity": "0.3215",
+      "entryOpacity": "0"
+    },
+    "cleanup": {
+      "geometryDisposals": 1,
+      "materialDisposals": 1,
+      "memory": {
+        "geometries": 0,
+        "textures": 0
+      },
+      "roots": 0,
+      "canvases": 0,
+      "fallback": "1"
+    },
+    "nativeScroll": true,
+    "refreshRestoresScroll": true,
+    "languagePersistence": true,
+    "fallbackNarrative": true
+  },
+  "productionBehavior": {
+    "restored": 2480,
+    "backScroll": true,
+    "contextLossFallback": true,
+    "originHeadingAccessible": true,
+    "errors": []
+  },
+  "factualCopyRevalidation": {
+    "checkedAt": "2026-10-06T02:00:05.234Z",
+    "report": "factual-validation.json",
+    "note": "Only degree text snapshots above were refreshed from PT/EN production rendering. Layout and animation measurements remain from the preceding Phase 02 validation."
+  }
+}

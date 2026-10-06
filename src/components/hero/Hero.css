@@ -1,0 +1,133 @@
+.intro {
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  min-height: max(720px, 100svh);
+  overflow: clip;
+  background: var(--paper);
+}
+.intro-chapter,
+.intro-role,
+.intro-bottom {
+  font: 400 11px / 1.65 var(--font-mono);
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+.intro-chapter { position: absolute; top: 20%; left: var(--intro-gutter); color: var(--ink-subtle); }
+.intro-chapter::before { content: ''; display: inline-block; width: 22px; height: 1px; margin: 0 12px 3px 0; background: var(--red); }
+.intro-heading { position: relative; z-index: 3; margin: 0 var(--intro-gutter); padding-top: max(210px, 28svh); width: fit-content; }
+.intro-name { font: 400 clamp(110px, 16.7vw, 290px) / 0.81 var(--font-display); letter-spacing: -0.045em; }
+.intro-name-line { display: block; width: fit-content; padding: 0.08em 0.09em 0.1em 0; }
+.intro-name-last { margin: -0.045em 0 0 10.5vw; }
+.intro-name-period { color: var(--red); }
+.intro-role { margin: 25px 0 0 10.7vw; font-size: clamp(11px, 0.85vw, 13px); letter-spacing: 0.09em; }
+.intro-role p:first-child { font-weight: 500; }
+.intro-secondary { margin-top: 3px; color: var(--ink-subtle); }
+.intro-secondary > span { color: var(--red); display: inline-block; margin-right: 6px; }
+.intro-sun {
+  position: absolute;
+  z-index: 0;
+  width: clamp(230px, 29vw, 490px);
+  aspect-ratio: 1;
+  top: 19%;
+  right: 13%;
+  color: var(--red);
+}
+.intro-pigment { display: block; width: 100%; height: 100%; overflow: visible; }
+.intro-art { position: absolute; z-index: 1; top: 12%; right: 3.5%; width: 51%; aspect-ratio: 1; color: var(--ink); pointer-events: none; }
+.intro-scene { position: absolute; z-index: 1; inset: 0; pointer-events: none; }
+.intro-canvas, .intro-ink-fallback { position: absolute; inset: 0; width: 100%; height: 100%; }
+.intro-canvas { opacity: 0; transition: opacity 0.6s var(--ease); }
+.intro-ink-fallback { opacity: 1; transition: opacity 0.6s var(--ease); }
+.intro-scene.is-ready .intro-canvas { opacity: 1; }
+.intro-art.is-ready .intro-ink-fallback { opacity: 0; }
+.intro-note {
+  position: absolute;
+  z-index: 3;
+  bottom: 13%;
+  left: 43%;
+  white-space: pre-line;
+  font: 400 clamp(18px, 1.5vw, 24px) / 1.25 var(--font-display);
+  letter-spacing: -0.01em;
+  color: var(--ink-muted);
+}
+.intro-bottom { position: absolute; z-index: 3; bottom: 26px; left: var(--intro-gutter); right: var(--intro-gutter); padding-top: 22px; border-top: 1px solid var(--hairline); }
+.intro-bottom-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; align-items: center; }
+.intro-location { display: flex; align-items: flex-start; gap: 10px; font-size: 10px; letter-spacing: 0.05em; color: var(--ink-subtle); }
+.intro-location-dot { width: 5px; height: 5px; flex-shrink: 0; border-radius: 50%; margin-top: 6px; background: var(--red); }
+.intro-scroll { justify-self: center; display: flex; align-items: center; gap: 20px; min-height: 44px; color: var(--ink); text-decoration: none; font-size: 10px; }
+.intro-scroll-arrow { color: var(--red); font-size: 23px; }
+.intro-links { justify-self: end; display: flex; align-items: center; gap: 24px; }
+.intro-links a { padding-block: 12px; color: var(--ink); text-decoration: none; }
+.intro-links a span { color: var(--red); margin-left: 3px; }
+.intro-links a:hover { color: var(--red); }
+
+/* The wider brush continues beyond the frame; the pigment enters the name's field. */
+@media (min-width: 1101px) {
+  .intro-sun { right: 17%; width: clamp(230px, 34vw, 520px); }
+  .intro-art { top: 0; right: -1%; width: 70%; aspect-ratio: 1.32; }
+  .intro-note { left: 38%; }
+  /* A fine paper reserve keeps the letter legible where the dry tip crosses it. */
+  .intro-name-last { -webkit-text-stroke: 1.5px var(--paper); paint-order: stroke fill; }
+}
+
+@media (min-width: 1800px) {
+  .intro-heading { padding-top: 27svh; }
+  .intro-art { width: 70%; right: 1%; top: -3%; }
+  .intro-sun { right: 28%; }
+}
+@media (min-width: 1101px) and (max-height: 850px) {
+  .intro-heading { padding-top: max(180px, 25svh); }
+  .intro-name { font-size: min(16.7vw, 26svh); }
+  .intro-art { width: min(70%, 100svh); top: 0; right: 6%; }
+  .intro-sun { right: 22%; }
+  .intro-note { bottom: 15%; }
+}
+@media (max-width: 1100px) and (min-width: 701px) {
+  .intro { min-height: max(680px, 100svh); }
+  .intro-name { font-size: 17.5vw; }
+  .intro-heading { padding-top: 33svh; }
+  .intro-art { top: 19%; width: 58%; right: 0; }
+  .intro-sun { top: 23%; right: 11%; width: 31vw; }
+  .intro-note { left: auto; right: 11%; bottom: 21%; }
+}
+@media (min-width: 701px) and (max-width: 1100px) and (max-height: 850px) {
+  .intro-art { width: 50%; }
+  .intro-note { left: 43%; right: auto; bottom: 13%; }
+}
+@media (max-width: 700px) {
+  .intro { min-height: max(760px, 100svh); }
+  .intro-chapter { top: 15%; font-size: 10px; }
+  .intro-heading { padding-top: max(280px, 40svh); margin-inline: 24px; }
+  .intro-name { font-size: clamp(91px, min(22.2vw, 16svh), 155px); line-height: 0.86; letter-spacing: -0.048em; }
+  .intro-name-last { margin-left: 10vw; }
+  .intro-role { margin-left: 10vw; margin-top: 18px; font-size: 10px; letter-spacing: 0.04em; }
+  .intro-sun { width: clamp(164px, 44vw, 260px); top: 19%; right: 20%; }
+  .intro-art { width: 74%; max-width: 440px; top: 7%; right: 2%; }
+  .intro-note { left: 24px; right: auto; bottom: 15%; font-size: 18px; }
+  .intro-bottom { bottom: 18px; padding-top: 16px; }
+  .intro-bottom-grid { grid-template-columns: 1fr auto; }
+  .intro-location { font-size: 9px; }
+  .intro-scroll { justify-self: end; gap: 12px; font-size: 9px; }
+  .intro-links { display: none; }
+}
+@media (max-width: 360px) {
+  .intro-name { font-size: 25vw; }
+  .intro-name-last { margin-left: 7vw; }
+  .intro-role { margin-left: 7vw; }
+  .intro-scroll { gap: 8px; font-size: 8px; }
+  .intro-location { font-size: 8px; }
+}
+@media (min-width: 501px) and (max-width: 700px) {
+  .intro-sun { width: min(220px, 26svh); top: 16%; right: 19%; }
+  .intro-art { width: min(320px, 35svh); top: 3%; right: 12%; }
+}
+@media (max-height: 660px) and (min-width: 701px) {
+  .intro { min-height: 660px; }
+  .intro-heading { padding-top: 175px; }
+  .intro-name { font-size: min(15vw, 150px); }
+  .intro-note { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .intro-canvas, .intro-ink-fallback { transition: none; }
+}

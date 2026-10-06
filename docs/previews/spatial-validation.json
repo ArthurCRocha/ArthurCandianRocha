@@ -1,0 +1,471 @@
+{
+  "environment": "Chrome headless, local dev, 1440x900; GPU/software renderer depends on host",
+  "initial": {
+    "frameCount": 0,
+    "loop": "always",
+    "memory": {
+      "geometries": 1,
+      "textures": 0
+    },
+    "draw": {
+      "frame": 145,
+      "calls": 1,
+      "triangles": 16600,
+      "points": 0,
+      "lines": 0
+    },
+    "programs": 1,
+    "dpr": 1,
+    "camera": [
+      0,
+      0,
+      5
+    ],
+    "time": 2.41380000001192,
+    "positions": {
+      "intro-art": {
+        "x": 446.390625,
+        "y": 0,
+        "transform": "none"
+      },
+      "intro-sun": {
+        "x": 705.609375,
+        "y": 171,
+        "transform": "none"
+      },
+      "intro-heading": {
+        "x": 60.46875,
+        "y": 0,
+        "transform": "none"
+      },
+      "intro-name-first": {
+        "x": 60.46875,
+        "y": 252,
+        "transform": "none"
+      },
+      "intro-name-last": {
+        "x": 211.65625,
+        "y": 479.25,
+        "transform": "none"
+      }
+    }
+  },
+  "active": {
+    "frameCount": 120,
+    "loop": "always",
+    "memory": {
+      "geometries": 1,
+      "textures": 0
+    },
+    "draw": {
+      "frame": 265,
+      "calls": 1,
+      "triangles": 16600,
+      "points": 0,
+      "lines": 0
+    },
+    "programs": 1,
+    "dpr": 1,
+    "camera": [
+      0,
+      0,
+      5
+    ],
+    "time": 4.415400000005957,
+    "positions": {
+      "intro-art": {
+        "x": 446.390625,
+        "y": 0,
+        "transform": "none"
+      },
+      "intro-sun": {
+        "x": 705.609375,
+        "y": 171,
+        "transform": "none"
+      },
+      "intro-heading": {
+        "x": 60.46875,
+        "y": 0,
+        "transform": "none"
+      },
+      "intro-name-first": {
+        "x": 60.46875,
+        "y": 252,
+        "transform": "none"
+      },
+      "intro-name-last": {
+        "x": 211.65625,
+        "y": 479.25,
+        "transform": "none"
+      }
+    }
+  },
+  "framesOverTwoSeconds": 120,
+  "displacements": {
+    "intro-art": 3.94439697265625,
+    "intro-sun": 1.57781982421875,
+    "intro-heading": 0.5424003601074219
+  },
+  "pointer": {
+    "frameCount": 241,
+    "loop": "always",
+    "memory": {
+      "geometries": 1,
+      "textures": 0
+    },
+    "draw": {
+      "frame": 386,
+      "calls": 1,
+      "triangles": 16600,
+      "points": 0,
+      "lines": 0
+    },
+    "programs": 1,
+    "dpr": 1,
+    "camera": [
+      0.021117358335860224,
+      0,
+      5
+    ],
+    "time": 6.430300000011912,
+    "positions": {
+      "intro-art": {
+        "x": 450.33502197265625,
+        "y": 0,
+        "transform": "matrix(1, 0, 0, 1, 3.9444, 0)"
+      },
+      "intro-sun": {
+        "x": 707.1871948242188,
+        "y": 171,
+        "transform": "matrix(1, 0, 0, 1, 1.5778, 0)"
+      },
+      "intro-heading": {
+        "x": 61.01115036010742,
+        "y": 0,
+        "transform": "matrix(1, 0, 0, 1, 0.5424, 0)"
+      },
+      "intro-name-first": {
+        "x": 61.01115036010742,
+        "y": 252,
+        "transform": "none"
+      },
+      "intro-name-last": {
+        "x": 212.1986541748047,
+        "y": 479.25,
+        "transform": "none"
+      }
+    }
+  },
+  "scroll": {
+    "frameCount": 384,
+    "loop": "always",
+    "memory": {
+      "geometries": 1,
+      "textures": 0
+    },
+    "draw": {
+      "frame": 529,
+      "calls": 1,
+      "triangles": 16600,
+      "points": 0,
+      "lines": 0
+    },
+    "programs": 1,
+    "dpr": 1,
+    "camera": [
+      0.00027899410462566465,
+      0,
+      4.944896309918347
+    ],
+    "time": 8.833999999999993,
+    "positions": {
+      "intro-art": {
+        "x": 446.390625,
+        "y": -136.4361572265625,
+        "transform": "matrix(1, 0, 0, 1, 0, 3.56384)"
+      },
+      "intro-sun": {
+        "x": 703.332763671875,
+        "y": 32.53144836425781,
+        "transform": "matrix(1.0093, 0, 0, 1.0093, 0, 3.80806)"
+      },
+      "intro-heading": {
+        "x": 60.46875,
+        "y": -140,
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      "intro-name-first": {
+        "x": 57.30824279785156,
+        "y": 112,
+        "transform": "matrix(1, 0, 0, 1, -3.16051, 0)"
+      },
+      "intro-name-last": {
+        "x": 214.49465942382812,
+        "y": 339.25,
+        "transform": "matrix(1, 0, 0, 1, 2.83841, 0)"
+      }
+    }
+  },
+  "reducedBefore": {
+    "frameCount": 401,
+    "loop": "demand",
+    "memory": {
+      "geometries": 1,
+      "textures": 0
+    },
+    "draw": {
+      "frame": 546,
+      "calls": 1,
+      "triangles": 16600,
+      "points": 0,
+      "lines": 0
+    },
+    "programs": 1,
+    "dpr": 1,
+    "camera": [
+      0.0001731244415411377,
+      0,
+      4.959847746292709
+    ],
+    "time": 9.099100000023837,
+    "positions": {
+      "intro-art": {
+        "x": 450.08892822265625,
+        "y": 0,
+        "transform": "matrix(1, 0, 0, 1, 3.6983, 0)"
+      },
+      "intro-sun": {
+        "x": 707.0886840820312,
+        "y": 171,
+        "transform": "matrix(1, 0, 0, 1, 1.4793, 0)"
+      },
+      "intro-heading": {
+        "x": 60.46875,
+        "y": 0,
+        "transform": "none"
+      },
+      "intro-name-first": {
+        "x": 60.46875,
+        "y": 252,
+        "transform": "none"
+      },
+      "intro-name-last": {
+        "x": 211.65625,
+        "y": 479.25,
+        "transform": "none"
+      }
+    }
+  },
+  "reducedAfter": {
+    "frameCount": 401,
+    "loop": "demand",
+    "memory": {
+      "geometries": 1,
+      "textures": 0
+    },
+    "draw": {
+      "frame": 546,
+      "calls": 1,
+      "triangles": 16600,
+      "points": 0,
+      "lines": 0
+    },
+    "programs": 1,
+    "dpr": 1,
+    "camera": [
+      0.0001731244415411377,
+      0,
+      4.959847746292709
+    ],
+    "time": 9.099100000023837,
+    "positions": {
+      "intro-art": {
+        "x": 450.08892822265625,
+        "y": 0,
+        "transform": "matrix(1, 0, 0, 1, 3.6983, 0)"
+      },
+      "intro-sun": {
+        "x": 707.0886840820312,
+        "y": 171,
+        "transform": "matrix(1, 0, 0, 1, 1.4793, 0)"
+      },
+      "intro-heading": {
+        "x": 60.46875,
+        "y": 0,
+        "transform": "none"
+      },
+      "intro-name-first": {
+        "x": 60.46875,
+        "y": 252,
+        "transform": "none"
+      },
+      "intro-name-last": {
+        "x": 211.65625,
+        "y": 479.25,
+        "transform": "none"
+      }
+    }
+  },
+  "offscreenBefore": {
+    "frameCount": 485,
+    "loop": "demand",
+    "memory": {
+      "geometries": 1,
+      "textures": 0
+    },
+    "draw": {
+      "frame": 630,
+      "calls": 1,
+      "triangles": 16600,
+      "points": 0,
+      "lines": 0
+    },
+    "programs": 1,
+    "dpr": 1,
+    "camera": [
+      0.000012887407233608365,
+      0,
+      4.997011060712938
+    ],
+    "time": 10.542300000041726,
+    "positions": {
+      "intro-art": {
+        "x": 450.08892822265625,
+        "y": 1350,
+        "transform": "matrix(1, 0, 0, 1, 3.6983, 0)"
+      },
+      "intro-sun": {
+        "x": 707.0886840820312,
+        "y": 171,
+        "transform": "matrix(1, 0, 0, 1, 1.4793, 0)"
+      },
+      "intro-heading": {
+        "x": 60.46875,
+        "y": 0,
+        "transform": "none"
+      },
+      "intro-name-first": {
+        "x": 60.46875,
+        "y": 252,
+        "transform": "none"
+      },
+      "intro-name-last": {
+        "x": 211.65625,
+        "y": 479.25,
+        "transform": "none"
+      }
+    }
+  },
+  "offscreenAfter": {
+    "frameCount": 485,
+    "loop": "demand",
+    "memory": {
+      "geometries": 1,
+      "textures": 0
+    },
+    "draw": {
+      "frame": 630,
+      "calls": 1,
+      "triangles": 16600,
+      "points": 0,
+      "lines": 0
+    },
+    "programs": 1,
+    "dpr": 1,
+    "camera": [
+      0.000012887407233608365,
+      0,
+      4.997011060712938
+    ],
+    "time": 10.542300000041726,
+    "positions": {
+      "intro-art": {
+        "x": 450.08892822265625,
+        "y": 1350,
+        "transform": "matrix(1, 0, 0, 1, 3.6983, 0)"
+      },
+      "intro-sun": {
+        "x": 707.0886840820312,
+        "y": 171,
+        "transform": "matrix(1, 0, 0, 1, 1.4793, 0)"
+      },
+      "intro-heading": {
+        "x": 60.46875,
+        "y": 0,
+        "transform": "none"
+      },
+      "intro-name-first": {
+        "x": 60.46875,
+        "y": 252,
+        "transform": "none"
+      },
+      "intro-name-last": {
+        "x": 211.65625,
+        "y": 479.25,
+        "transform": "none"
+      }
+    }
+  },
+  "resumed": {
+    "frameCount": 508,
+    "loop": "always",
+    "memory": {
+      "geometries": 1,
+      "textures": 0
+    },
+    "draw": {
+      "frame": 653,
+      "calls": 1,
+      "triangles": 16600,
+      "points": 0,
+      "lines": 0
+    },
+    "programs": 1,
+    "dpr": 1,
+    "camera": [
+      0.0000065017453169540865,
+      0,
+      4.99849206891192
+    ],
+    "time": 10.922400000035767,
+    "positions": {
+      "intro-art": {
+        "x": 450.08892822265625,
+        "y": 0,
+        "transform": "matrix(1, 0, 0, 1, 3.6983, 0)"
+      },
+      "intro-sun": {
+        "x": 707.0886840820312,
+        "y": 171,
+        "transform": "matrix(1, 0, 0, 1, 1.4793, 0)"
+      },
+      "intro-heading": {
+        "x": 60.46875,
+        "y": 0,
+        "transform": "none"
+      },
+      "intro-name-first": {
+        "x": 60.46875,
+        "y": 252,
+        "transform": "none"
+      },
+      "intro-name-last": {
+        "x": 211.65625,
+        "y": 479.25,
+        "transform": "none"
+      }
+    }
+  },
+  "cleanup": {
+    "geometryDisposals": 1,
+    "materialDisposals": 1,
+    "memory": {
+      "geometries": 0,
+      "textures": 0
+    },
+    "roots": 0,
+    "canvasCount": 0,
+    "fallbackOpacity": "1",
+    "frames": 509
+  }
+}

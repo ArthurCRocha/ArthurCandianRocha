@@ -1,0 +1,88 @@
+- region "Not a straight line.":
+  - paragraph: 04 / PATH
+  - heading "Not a straight line." [level=2]
+  - paragraph: From images to systems. Education and work meet along the way.
+  - list "Academic and professional path, by starting year":
+    - listitem:
+      - article "High School":
+        - paragraph: Before computing
+        - paragraph:
+          - time: 2016 - 2018
+        - heading "High School" [level=3]
+        - paragraph: Colégio Rio Branco
+    - listitem:
+      - article "Cineclube":
+        - paragraph: Before computing
+        - paragraph:
+          - time: 2017–2018
+        - heading "Cineclube" [level=3]
+        - paragraph: Conservatório Estadual de Música de Visconde do Rio Branco
+        - paragraph: Image and audio capture, video editing and group production.
+    - listitem:
+      - article "Bachelor's Degree in Computer Science":
+        - paragraph:
+          - time: "2020"
+        - paragraph: Entering computing
+        - heading "Bachelor's Degree in Computer Science" [level=3]
+        - paragraph: IF Sudeste MG - Campus Rio Pomba
+        - paragraph: 2020 - 2026
+        - paragraph: Algorithms, data structures and software development.
+        - paragraph: Left in 2026
+    - listitem:
+      - article "Intern / Graphic Designer":
+        - paragraph:
+          - time: March 2023 - March 2025
+        - heading "Intern / Graphic Designer" [level=3]
+        - paragraph: IF Sudeste MG
+        - paragraph: Social media, document layout and campaigns in institutional communications.
+    - listitem:
+      - article "Development Intern":
+        - paragraph:
+          - time: November 2024 - February 2025
+        - heading "Development Intern" [level=3]
+        - paragraph: Metryx Tecnologia Ltda.
+        - paragraph: Frontend development, code analysis, bug fixes and interface improvements.
+    - listitem:
+      - article "Support & Development":
+        - paragraph:
+          - time: July 2025 - Present
+          - text: In progress
+        - heading "Support & Development" [level=3]
+        - paragraph: Santiago TI
+        - paragraph: Computers, software development and security systems.
+    - listitem:
+      - article "Marketing Intern":
+        - paragraph:
+          - time: August 2025 (1 month)
+        - heading "Marketing Intern" [level=3]
+        - paragraph: Prefeitura de Rio Pomba
+        - paragraph: Graphic materials, video editing and AI automation.
+    - listitem:
+      - article "Technologist in Systems Analysis and Development":
+        - paragraph: 2026 / Education and work, in parallel
+        - paragraph:
+          - time: "2026"
+          - text: In progress
+        - heading "Technologist in Systems Analysis and Development" [level=3]
+        - paragraph: Univiçosa
+        - paragraph: 2026 - Present
+        - paragraph: IF Sudeste MG / Left in 2026 Continuing the academic path at Univiçosa.
+    - listitem:
+      - article "HR Assistant":
+        - paragraph:
+          - time: February 2026 - Present
+          - text: In progress
+        - heading "HR Assistant" [level=3]
+        - paragraph: Assurance IT
+        - paragraph: Recruitment and job posting management. A self-initiated résumé standardization tool.
+    - listitem:
+      - article "Development Intern":
+        - paragraph:
+          - time: August 2026 - Present
+          - text: In progress
+        - heading "Development Intern" [level=3]
+        - paragraph: Bioma Investimentos
+        - paragraph: Mobile development with Flutter integrated with SQL databases.
+  - paragraph: Ongoing
+  - paragraph: The path continues.
+  - text: 04 / End of Path

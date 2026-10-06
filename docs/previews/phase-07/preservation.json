@@ -1,0 +1,182 @@
+[
+  {
+    "file": "src/components/craft/Craft.css",
+    "before": "b142a1bf021ca67a30fe2f5e81b39633eb93768e1e5a2cf4215e94c627afa2ee",
+    "after": "b142a1bf021ca67a30fe2f5e81b39633eb93768e1e5a2cf4215e94c627afa2ee",
+    "unchanged": true
+  },
+  {
+    "file": "src/components/craft/Craft.jsx",
+    "before": "6481caa031cd3cb47519c5d9a82799d8d5f6a8c27e65958513397aa0fd2508ab",
+    "after": "6481caa031cd3cb47519c5d9a82799d8d5f6a8c27e65958513397aa0fd2508ab",
+    "unchanged": true
+  },
+  {
+    "file": "src/components/hero/Hero.css",
+    "before": "09d1e8b966d0a579d531b9e4693d78fa475711e61d67e7ac1910021f8c46032c",
+    "after": "09d1e8b966d0a579d531b9e4693d78fa475711e61d67e7ac1910021f8c46032c",
+    "unchanged": true
+  },
+  {
+    "file": "src/components/hero/Hero.jsx",
+    "before": "171695bb859cd88f22879eddabd3fdb8eac8a5118885e7e5850020995fcf407f",
+    "after": "171695bb859cd88f22879eddabd3fdb8eac8a5118885e7e5850020995fcf407f",
+    "unchanged": true
+  },
+  {
+    "file": "src/components/hero/HeroScene.jsx",
+    "before": "e59a02ff9128c0b4112feb22228b5d7b698abd549ad03d6cd0aed2e50aa8103f",
+    "after": "e59a02ff9128c0b4112feb22228b5d7b698abd549ad03d6cd0aed2e50aa8103f",
+    "unchanged": true
+  },
+  {
+    "file": "src/components/hero/InkStroke.jsx",
+    "before": "4132acdcc783c31ad66f9f3c9236a6aa20088058c238853914b51fc935a405ab",
+    "after": "4132acdcc783c31ad66f9f3c9236a6aa20088058c238853914b51fc935a405ab",
+    "unchanged": true
+  },
+  {
+    "file": "src/components/hero/PigmentSun.jsx",
+    "before": "9df288f5fffffb0e180f3458660664be48fdf7d09e605cdb76b2d97e1f17686b",
+    "after": "9df288f5fffffb0e180f3458660664be48fdf7d09e605cdb76b2d97e1f17686b",
+    "unchanged": true
+  },
+  {
+    "file": "src/components/hero/SceneBoundary.jsx",
+    "before": "35ded501fb8483b0c71a885f41d7cbd5287cf34f940ea098b0e69693085e68a8",
+    "after": "35ded501fb8483b0c71a885f41d7cbd5287cf34f940ea098b0e69693085e68a8",
+    "unchanged": true
+  },
+  {
+    "file": "src/components/hero/inkGeometry.js",
+    "before": "af91cbaa0008065d527f14ff72e9dcc1e8ed1ce96ba131e342342825dfd9d62b",
+    "after": "af91cbaa0008065d527f14ff72e9dcc1e8ed1ce96ba131e342342825dfd9d62b",
+    "unchanged": true
+  },
+  {
+    "file": "src/components/now/Now.css",
+    "before": "83ad3bd16f5240b4c5708fb72e229dbfed710a0b7209e167c6e25faa70729c1a",
+    "after": "83ad3bd16f5240b4c5708fb72e229dbfed710a0b7209e167c6e25faa70729c1a",
+    "unchanged": true
+  },
+  {
+    "file": "src/components/now/Now.jsx",
+    "before": "d11e553a4be1e7221644a787633bd5d3386b0e66d0674366b65f4ad6daf265f9",
+    "after": "d11e553a4be1e7221644a787633bd5d3386b0e66d0674366b65f4ad6daf265f9",
+    "unchanged": true
+  },
+  {
+    "file": "src/components/now/useNowMotion.js",
+    "before": "7e71d1ecf1789ae5c06341e46a87a4378a00236d32804b272fe6b1a5012a72d9",
+    "after": "7e71d1ecf1789ae5c06341e46a87a4378a00236d32804b272fe6b1a5012a72d9",
+    "unchanged": true
+  },
+  {
+    "file": "src/components/origin/IntroOrigin.jsx",
+    "before": "b6a7e2a3f82bd484e0ca61942fec43c45b696a2de73853e1732bc3faece349f0",
+    "after": "b6a7e2a3f82bd484e0ca61942fec43c45b696a2de73853e1732bc3faece349f0",
+    "unchanged": true
+  },
+  {
+    "file": "src/components/origin/Origin.css",
+    "before": "801c69ea2dbd28e4fff47f8ac0fe4669f5086f5bc70611423041825485558402",
+    "after": "801c69ea2dbd28e4fff47f8ac0fe4669f5086f5bc70611423041825485558402",
+    "unchanged": true
+  },
+  {
+    "file": "src/components/origin/Origin.jsx",
+    "before": "174aa12c794a0b0c1984f08f2eb819d0dcc34168b9e5b47c71ce3a365a9e0938",
+    "after": "174aa12c794a0b0c1984f08f2eb819d0dcc34168b9e5b47c71ce3a365a9e0938",
+    "unchanged": true
+  },
+  {
+    "file": "src/components/path/Path.css",
+    "before": "35247a6c836d70b509a70a613f1c1c15a061138b73e46132b68a33ff547394f9",
+    "after": "35247a6c836d70b509a70a613f1c1c15a061138b73e46132b68a33ff547394f9",
+    "unchanged": true
+  },
+  {
+    "file": "src/components/path/Path.jsx",
+    "before": "8ca88d1bb8d4d872cfd4967ee6176e22de34a130464b474492299fa66bc50d9c",
+    "after": "8ca88d1bb8d4d872cfd4967ee6176e22de34a130464b474492299fa66bc50d9c",
+    "unchanged": true
+  },
+  {
+    "file": "src/components/path/usePathMotion.js",
+    "before": "961d714fc743206587935cea94694ffe687ce0e96e9f5ffd2d5dbacf5b387598",
+    "after": "961d714fc743206587935cea94694ffe687ce0e96e9f5ffd2d5dbacf5b387598",
+    "unchanged": true
+  },
+  {
+    "file": "src/components/selected-work/SelectedWork.css",
+    "before": "39cf0870ad21162be488b6cac8ba1ef178773237d8e85adf7d6d678d135c1e0f",
+    "after": "39cf0870ad21162be488b6cac8ba1ef178773237d8e85adf7d6d678d135c1e0f",
+    "unchanged": true
+  },
+  {
+    "file": "src/components/selected-work/SelectedWork.jsx",
+    "before": "f6da760698108474d9fdbf827f93c1cbf6f1266707b7c3733481366248a22a52",
+    "after": "f6da760698108474d9fdbf827f93c1cbf6f1266707b7c3733481366248a22a52",
+    "unchanged": true
+  },
+  {
+    "file": "src/components/selected-work/useSelectedWorkMotion.js",
+    "before": "9f9ee6efc08725fee33c2c7f0ea84de31b6b6d590b588024d63f133011c3bfe1",
+    "after": "9f9ee6efc08725fee33c2c7f0ea84de31b6b6d590b588024d63f133011c3bfe1",
+    "unchanged": true
+  },
+  {
+    "file": "src/data/craftData.js",
+    "before": "0f1fdd5cae8985fb49bf8ae4713b0589fc8253c44d80bbe603848b8a83dfdbde",
+    "after": "0f1fdd5cae8985fb49bf8ae4713b0589fc8253c44d80bbe603848b8a83dfdbde",
+    "unchanged": true
+  },
+  {
+    "file": "src/data/nowData.js",
+    "before": "13c1d2a4c0720b53b79f275d92a9cddb4b31a2335cd0391610e82e1200e31288",
+    "after": "13c1d2a4c0720b53b79f275d92a9cddb4b31a2335cd0391610e82e1200e31288",
+    "unchanged": true
+  },
+  {
+    "file": "src/data/originData.js",
+    "before": "f486d8ca4b7851ea6dcfae9b7da2d97cfd04066a5f5a7f2c875321db5d38ffac",
+    "after": "f486d8ca4b7851ea6dcfae9b7da2d97cfd04066a5f5a7f2c875321db5d38ffac",
+    "unchanged": true
+  },
+  {
+    "file": "src/data/pathData.js",
+    "before": "9458cd843c3a908b332772413d0c91063d6739e1b58c2f13e20098105f5876c2",
+    "after": "9458cd843c3a908b332772413d0c91063d6739e1b58c2f13e20098105f5876c2",
+    "unchanged": true
+  },
+  {
+    "file": "src/data/portfolioData.js",
+    "before": "c52c15f021401f7655894e4526c2b9d18f310d992afdbc6bf76758c0901f1357",
+    "after": "c52c15f021401f7655894e4526c2b9d18f310d992afdbc6bf76758c0901f1357",
+    "unchanged": true
+  },
+  {
+    "file": "src/data/selectedWorkData.js",
+    "before": "b5f9b719f8f2468ba87058e5a10d2a4779fdedd544e99a1cd1d7a09326b9c387",
+    "after": "b5f9b719f8f2468ba87058e5a10d2a4779fdedd544e99a1cd1d7a09326b9c387",
+    "unchanged": true
+  },
+  {
+    "file": "src/styles/tokens.css",
+    "before": "f8ba835e7a3eb8b178c0392326a910e10b1bb2ea912f871408fd4fc3ca4720ca",
+    "after": "f8ba835e7a3eb8b178c0392326a910e10b1bb2ea912f871408fd4fc3ca4720ca",
+    "unchanged": true
+  },
+  {
+    "file": "src/components/Nav.jsx",
+    "before": "a4c95254c216dcfb292af2c1a51ac1826d168284519ec98130f3a052e4a83e6f",
+    "after": "a4c95254c216dcfb292af2c1a51ac1826d168284519ec98130f3a052e4a83e6f",
+    "unchanged": true
+  },
+  {
+    "file": "src/components/Nav.css",
+    "before": "f9307960dd552156d3d8ee88c6286f1460d3808f3587b4d2d482690fc58e2ff4",
+    "after": "f9307960dd552156d3d8ee88c6286f1460d3808f3587b4d2d482690fc58e2ff4",
+    "unchanged": true
+  }
+]

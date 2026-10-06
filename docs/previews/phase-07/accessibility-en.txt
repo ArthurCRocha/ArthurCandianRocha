@@ -1,0 +1,26 @@
+- contentinfo "Let's build something.":
+  - paragraph: 06 / CONNECT
+  - navigation "Final chapter language":
+    - button "Mudar para português": EN
+  - heading "Let's build something." [level=2]
+  - navigation "Professional contacts":
+    - list:
+      - listitem:
+        - paragraph: Email
+        - link "Send email to arthurcandian@gmail.com":
+          - /url: mailto:arthurcandian@gmail.com
+          - text: arthurcandian@gmail.com
+      - listitem:
+        - paragraph: LinkedIn
+        - link "LinkedIn — opens in a new tab":
+          - /url: https://www.linkedin.com/in/arthur-candian-rocha-3b346124a
+          - text: LinkedIn
+      - listitem:
+        - paragraph: GitHub
+        - link "GitHub — opens in a new tab":
+          - /url: https://github.com/ArthurCRocha
+          - text: GitHub
+  - paragraph: To be continued.
+  - paragraph: © 2026 Arthur Rocha
+  - link "00 / Intro":
+    - /url: "#intro-content"

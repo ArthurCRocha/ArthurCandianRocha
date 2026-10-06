@@ -1,0 +1,284 @@
+[
+  {
+    "name": "desktop",
+    "width": 1440,
+    "height": 900,
+    "overflow": false,
+    "oldUI": 0,
+    "oldAnchor": false,
+    "dialogs": 0,
+    "webgl": true,
+    "heading": "Arthur Rocha",
+    "mainChildren": [
+      "intro",
+      "intro-continuation"
+    ],
+    "legacyCSS": false,
+    "endingHeight": 144,
+    "docHeight": 1044,
+    "languagePersistence": true,
+    "reducedMotionStatic": true,
+    "skipLink": true,
+    "links": [
+      {
+        "href": "#intro-content",
+        "target": true
+      },
+      {
+        "href": "#hero",
+        "target": true
+      }
+    ],
+    "legacyAssetRequests": 0,
+    "errors": []
+  },
+  {
+    "name": "large-desktop",
+    "width": 1920,
+    "height": 1080,
+    "overflow": false,
+    "oldUI": 0,
+    "oldAnchor": false,
+    "dialogs": 0,
+    "webgl": true,
+    "heading": "Arthur Rocha",
+    "mainChildren": [
+      "intro",
+      "intro-continuation"
+    ],
+    "legacyCSS": false,
+    "endingHeight": 173,
+    "docHeight": 1253,
+    "links": [
+      {
+        "href": "#intro-content",
+        "target": true
+      },
+      {
+        "href": "#hero",
+        "target": true
+      }
+    ],
+    "legacyAssetRequests": 0,
+    "errors": []
+  },
+  {
+    "name": "laptop",
+    "width": 1366,
+    "height": 768,
+    "overflow": false,
+    "oldUI": 0,
+    "oldAnchor": false,
+    "dialogs": 0,
+    "webgl": true,
+    "heading": "Arthur Rocha",
+    "mainChildren": [
+      "intro",
+      "intro-continuation"
+    ],
+    "legacyCSS": false,
+    "endingHeight": 123,
+    "docHeight": 891,
+    "links": [
+      {
+        "href": "#intro-content",
+        "target": true
+      },
+      {
+        "href": "#hero",
+        "target": true
+      }
+    ],
+    "legacyAssetRequests": 0,
+    "errors": []
+  },
+  {
+    "name": "tablet",
+    "width": 768,
+    "height": 1024,
+    "overflow": false,
+    "oldUI": 0,
+    "oldAnchor": false,
+    "dialogs": 0,
+    "webgl": true,
+    "heading": "Arthur Rocha",
+    "mainChildren": [
+      "intro",
+      "intro-continuation"
+    ],
+    "legacyCSS": false,
+    "endingHeight": 164,
+    "docHeight": 1188,
+    "links": [
+      {
+        "href": "#intro-content",
+        "target": true
+      },
+      {
+        "href": "#hero",
+        "target": true
+      }
+    ],
+    "legacyAssetRequests": 0,
+    "errors": []
+  },
+  {
+    "name": "wide-tablet",
+    "width": 1024,
+    "height": 768,
+    "overflow": false,
+    "oldUI": 0,
+    "oldAnchor": false,
+    "dialogs": 0,
+    "webgl": true,
+    "heading": "Arthur Rocha",
+    "mainChildren": [
+      "intro",
+      "intro-continuation"
+    ],
+    "legacyCSS": false,
+    "endingHeight": 123,
+    "docHeight": 891,
+    "links": [
+      {
+        "href": "#intro-content",
+        "target": true
+      },
+      {
+        "href": "#hero",
+        "target": true
+      }
+    ],
+    "legacyAssetRequests": 0,
+    "errors": []
+  },
+  {
+    "name": "mobile",
+    "width": 390,
+    "height": 844,
+    "overflow": false,
+    "oldUI": 0,
+    "oldAnchor": false,
+    "dialogs": 0,
+    "webgl": true,
+    "heading": "Arthur Rocha",
+    "mainChildren": [
+      "intro",
+      "intro-continuation"
+    ],
+    "legacyCSS": false,
+    "endingHeight": 135,
+    "docHeight": 979,
+    "links": [
+      {
+        "href": "#intro-content",
+        "target": true
+      },
+      {
+        "href": "#hero",
+        "target": true
+      }
+    ],
+    "legacyAssetRequests": 0,
+    "errors": []
+  },
+  {
+    "name": "small-mobile",
+    "width": 320,
+    "height": 740,
+    "overflow": false,
+    "oldUI": 0,
+    "oldAnchor": false,
+    "dialogs": 0,
+    "webgl": true,
+    "heading": "Arthur Rocha",
+    "mainChildren": [
+      "intro",
+      "intro-continuation"
+    ],
+    "legacyCSS": false,
+    "endingHeight": 118,
+    "docHeight": 878,
+    "links": [
+      {
+        "href": "#intro-content",
+        "target": true
+      },
+      {
+        "href": "#hero",
+        "target": true
+      }
+    ],
+    "legacyAssetRequests": 0,
+    "errors": []
+  },
+  {
+    "name": "landscape",
+    "width": 844,
+    "height": 390,
+    "overflow": false,
+    "oldUI": 0,
+    "oldAnchor": false,
+    "dialogs": 0,
+    "webgl": true,
+    "heading": "Arthur Rocha",
+    "mainChildren": [
+      "intro",
+      "intro-continuation"
+    ],
+    "legacyCSS": false,
+    "endingHeight": 96,
+    "docHeight": 756,
+    "links": [
+      {
+        "href": "#intro-content",
+        "target": true
+      },
+      {
+        "href": "#hero",
+        "target": true
+      }
+    ],
+    "legacyAssetRequests": 0,
+    "errors": []
+  },
+  {
+    "name": "production",
+    "width": 1440,
+    "height": 900,
+    "overflow": false,
+    "oldUI": 0,
+    "oldAnchor": false,
+    "dialogs": 0,
+    "webgl": true,
+    "heading": "Arthur Rocha",
+    "mainChildren": [
+      "intro",
+      "intro-continuation"
+    ],
+    "legacyCSS": false,
+    "endingHeight": 144,
+    "docHeight": 1044,
+    "links": [
+      {
+        "href": "#intro-content",
+        "target": true
+      },
+      {
+        "href": "#hero",
+        "target": true
+      }
+    ],
+    "legacyAssetRequests": 0,
+    "errors": []
+  },
+  {
+    "name": "production-wide",
+    "width": 1920,
+    "height": 1080,
+    "overflow": false,
+    "webgl": true,
+    "sunRight": "537.594px",
+    "errors": []
+  }
+]

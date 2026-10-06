@@ -1,0 +1,785 @@
+{
+  "checkedAt": "2026-10-06T02:40:48.871Z",
+  "layout": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 900,
+      "lang": "pt",
+      "compact": false,
+      "overflow": {
+        "width": 1440,
+        "scrollWidth": 1440,
+        "offenders": []
+      },
+      "canvasCount": 1,
+      "sectionCount": 3,
+      "triggerCount": 5,
+      "heroTravel": 1080,
+      "backScroll": true,
+      "errors": []
+    },
+    {
+      "name": "laptop",
+      "width": 1024,
+      "height": 768,
+      "lang": "en",
+      "compact": false,
+      "overflow": {
+        "width": 1024,
+        "scrollWidth": 1024,
+        "offenders": []
+      },
+      "canvasCount": 1,
+      "sectionCount": 3,
+      "triggerCount": 5,
+      "heroTravel": 922,
+      "backScroll": true,
+      "errors": []
+    },
+    {
+      "name": "tablet",
+      "width": 768,
+      "height": 1024,
+      "lang": "en",
+      "compact": true,
+      "overflow": {
+        "width": 768,
+        "scrollWidth": 768,
+        "offenders": []
+      },
+      "canvasCount": 1,
+      "sectionCount": 3,
+      "triggerCount": 5,
+      "heroTravel": 819,
+      "backScroll": true,
+      "errors": []
+    },
+    {
+      "name": "mobile",
+      "width": 390,
+      "height": 844,
+      "lang": "pt",
+      "compact": true,
+      "overflow": {
+        "width": 390,
+        "scrollWidth": 390,
+        "offenders": []
+      },
+      "canvasCount": 1,
+      "sectionCount": 3,
+      "triggerCount": 5,
+      "heroTravel": 675,
+      "backScroll": true,
+      "errors": []
+    },
+    {
+      "name": "small-mobile",
+      "width": 320,
+      "height": 740,
+      "lang": "en",
+      "compact": true,
+      "overflow": {
+        "width": 320,
+        "scrollWidth": 320,
+        "offenders": []
+      },
+      "canvasCount": 1,
+      "sectionCount": 3,
+      "triggerCount": 5,
+      "heroTravel": 608,
+      "backScroll": true,
+      "errors": []
+    },
+    {
+      "name": "touch-landscape",
+      "width": 1024,
+      "height": 768,
+      "lang": "pt",
+      "compact": true,
+      "overflow": {
+        "width": 1024,
+        "scrollWidth": 1024,
+        "offenders": []
+      },
+      "canvasCount": 1,
+      "sectionCount": 3,
+      "triggerCount": 5,
+      "heroTravel": 614,
+      "backScroll": true,
+      "errors": []
+    }
+  ],
+  "interactions": [
+    {
+      "name": "desktop",
+      "mode": "sticky",
+      "hover": true,
+      "keyboardEquivalent": true,
+      "focusOutline": "solid",
+      "noInventedAssociation": true
+    },
+    {
+      "name": "laptop",
+      "mode": "sticky",
+      "hover": true,
+      "keyboardEquivalent": true,
+      "focusOutline": "solid",
+      "noInventedAssociation": true
+    },
+    {
+      "name": "tablet",
+      "mode": "inline",
+      "tapToggle": true,
+      "keyboardDisclosure": true,
+      "noInventedAssociation": true
+    },
+    {
+      "name": "mobile",
+      "mode": "inline",
+      "tapToggle": true,
+      "keyboardDisclosure": true,
+      "noInventedAssociation": true
+    },
+    {
+      "name": "small-mobile",
+      "mode": "inline",
+      "tapToggle": true,
+      "keyboardDisclosure": true,
+      "noInventedAssociation": true
+    },
+    {
+      "name": "touch-landscape",
+      "mode": "inline",
+      "tapToggle": true,
+      "keyboardDisclosure": true,
+      "noInventedAssociation": true
+    }
+  ],
+  "motion": {
+    "reduced": {
+      "triggerCount": 0,
+      "pins": 0,
+      "gridComplete": true,
+      "disclosureWorks": true
+    },
+    "preferenceToggleClean": true
+  },
+  "facts": {
+    "categories": [
+      {
+        "id": "interfaces",
+        "names": [
+          "React.js",
+          "Angular.js",
+          "JavaScript",
+          "TypeScript",
+          "HTML5",
+          "CSS3",
+          "Tailwind CSS",
+          "Flutter",
+          "Dart"
+        ]
+      },
+      {
+        "id": "backend",
+        "names": [
+          "Java",
+          "Python",
+          "Node.js",
+          "Express",
+          "PHP",
+          "C++",
+          "Groovy"
+        ]
+      },
+      {
+        "id": "data",
+        "names": [
+          "SQL",
+          "PostgreSQL",
+          "MySQL",
+          "Redis"
+        ]
+      },
+      {
+        "id": "design",
+        "names": [
+          "Photoshop",
+          "Figma",
+          "Canva",
+          "Illustrator",
+          "InDesign",
+          "Premiere",
+          "CapCut",
+          "Sony Vegas"
+        ]
+      },
+      {
+        "id": "tools",
+        "names": [
+          "Git / GitHub",
+          "Docker",
+          "Gemini API",
+          "Socket.io",
+          "JWT"
+        ]
+      }
+    ],
+    "technologies": [
+      {
+        "id": "react",
+        "name": "React.js",
+        "supported": true,
+        "references": [
+          {
+            "kind": "project",
+            "id": 3,
+            "name": "Prodiesel — Plataforma de Gestão",
+            "explicit": true
+          }
+        ]
+      },
+      {
+        "id": "angular",
+        "name": "Angular.js",
+        "supported": true,
+        "references": [
+          {
+            "kind": "experience",
+            "id": 4,
+            "name": "Metryx Tecnologia",
+            "explicit": true
+          }
+        ]
+      },
+      {
+        "id": "javascript",
+        "name": "JavaScript",
+        "supported": true,
+        "references": [
+          {
+            "kind": "project",
+            "id": 3,
+            "name": "Prodiesel — Plataforma de Gestão",
+            "explicit": true
+          },
+          {
+            "kind": "project",
+            "id": 10,
+            "name": "Gerenciador de Mercado",
+            "explicit": true
+          },
+          {
+            "kind": "experience",
+            "id": 4,
+            "name": "Metryx Tecnologia",
+            "explicit": true
+          },
+          {
+            "kind": "project",
+            "id": 2,
+            "name": "Atividade de aprendzagem com JavaScript",
+            "explicit": true
+          },
+          {
+            "kind": "project",
+            "id": 1,
+            "name": "Sistema de Gestão Acadêmica - TCC",
+            "explicit": true
+          }
+        ]
+      },
+      {
+        "id": "typescript",
+        "name": "TypeScript",
+        "supported": true,
+        "references": [
+          {
+            "kind": "experience",
+            "id": 4,
+            "name": "Metryx Tecnologia",
+            "explicit": true
+          }
+        ]
+      },
+      {
+        "id": "html",
+        "name": "HTML5",
+        "supported": true,
+        "references": [
+          {
+            "kind": "experience",
+            "id": 4,
+            "name": "Metryx Tecnologia",
+            "explicit": true
+          },
+          {
+            "kind": "project",
+            "id": 2,
+            "name": "Atividade de aprendzagem com JavaScript",
+            "explicit": true
+          }
+        ]
+      },
+      {
+        "id": "css",
+        "name": "CSS3",
+        "supported": true,
+        "references": [
+          {
+            "kind": "experience",
+            "id": 4,
+            "name": "Metryx Tecnologia",
+            "explicit": true
+          },
+          {
+            "kind": "project",
+            "id": 2,
+            "name": "Atividade de aprendzagem com JavaScript",
+            "explicit": true
+          },
+          {
+            "kind": "project",
+            "id": 1,
+            "name": "Sistema de Gestão Acadêmica - TCC",
+            "explicit": true
+          }
+        ]
+      },
+      {
+        "id": "tailwind",
+        "name": "Tailwind CSS",
+        "supported": true,
+        "references": []
+      },
+      {
+        "id": "flutter",
+        "name": "Flutter",
+        "supported": true,
+        "references": [
+          {
+            "kind": "experience",
+            "id": 5,
+            "name": "Bioma Investimentos",
+            "explicit": true
+          },
+          {
+            "kind": "project",
+            "id": 13,
+            "name": "Estudos de Flutter",
+            "explicit": true
+          }
+        ]
+      },
+      {
+        "id": "dart",
+        "name": "Dart",
+        "supported": true,
+        "references": [
+          {
+            "kind": "experience",
+            "id": 5,
+            "name": "Bioma Investimentos",
+            "explicit": true
+          },
+          {
+            "kind": "project",
+            "id": 13,
+            "name": "Estudos de Flutter",
+            "explicit": true
+          }
+        ]
+      },
+      {
+        "id": "java",
+        "name": "Java",
+        "supported": true,
+        "references": []
+      },
+      {
+        "id": "python",
+        "name": "Python",
+        "supported": true,
+        "references": [
+          {
+            "kind": "project",
+            "id": 4,
+            "name": "Padronizador de Currículos com IA",
+            "explicit": true
+          }
+        ]
+      },
+      {
+        "id": "node",
+        "name": "Node.js",
+        "supported": true,
+        "references": [
+          {
+            "kind": "project",
+            "id": 10,
+            "name": "Gerenciador de Mercado",
+            "explicit": true
+          },
+          {
+            "kind": "project",
+            "id": 11,
+            "name": "Chatbot para WhatsApp",
+            "explicit": true
+          }
+        ]
+      },
+      {
+        "id": "express",
+        "name": "Express",
+        "supported": true,
+        "references": []
+      },
+      {
+        "id": "php",
+        "name": "PHP",
+        "supported": true,
+        "references": [
+          {
+            "kind": "project",
+            "id": 12,
+            "name": "Sistema de Cartório",
+            "explicit": true
+          }
+        ]
+      },
+      {
+        "id": "cpp",
+        "name": "C++",
+        "supported": true,
+        "references": []
+      },
+      {
+        "id": "groovy",
+        "name": "Groovy",
+        "supported": true,
+        "references": []
+      },
+      {
+        "id": "sql",
+        "name": "SQL",
+        "supported": true,
+        "references": [
+          {
+            "kind": "experience",
+            "id": 5,
+            "name": "Bioma Investimentos",
+            "explicit": true
+          },
+          {
+            "kind": "project",
+            "id": 10,
+            "name": "Gerenciador de Mercado",
+            "explicit": true
+          }
+        ]
+      },
+      {
+        "id": "postgres",
+        "name": "PostgreSQL",
+        "supported": true,
+        "references": []
+      },
+      {
+        "id": "mysql",
+        "name": "MySQL",
+        "supported": true,
+        "references": [
+          {
+            "kind": "project",
+            "id": 12,
+            "name": "Sistema de Cartório",
+            "explicit": true
+          }
+        ]
+      },
+      {
+        "id": "redis",
+        "name": "Redis",
+        "supported": true,
+        "references": []
+      },
+      {
+        "id": "photoshop",
+        "name": "Photoshop",
+        "supported": true,
+        "references": [
+          {
+            "kind": "experience",
+            "id": 2,
+            "name": "Prefeitura Rio Pomba",
+            "explicit": true
+          },
+          {
+            "kind": "project",
+            "id": 8,
+            "name": "Designs para Prefeitura de Rio Pomba",
+            "explicit": true
+          },
+          {
+            "kind": "experience",
+            "id": 3,
+            "name": "IF Sudeste MG",
+            "explicit": true
+          },
+          {
+            "kind": "project",
+            "id": 9,
+            "name": "Artes para o IF Sudeste MG",
+            "explicit": true
+          }
+        ]
+      },
+      {
+        "id": "figma",
+        "name": "Figma",
+        "supported": true,
+        "references": [
+          {
+            "kind": "project",
+            "id": 6,
+            "name": "Projetos Avulsos",
+            "explicit": true
+          },
+          {
+            "kind": "project",
+            "id": 7,
+            "name": "Ebook Digital - Higiene do Sono",
+            "explicit": true
+          }
+        ]
+      },
+      {
+        "id": "canva",
+        "name": "Canva",
+        "supported": true,
+        "references": [
+          {
+            "kind": "experience",
+            "id": 2,
+            "name": "Prefeitura Rio Pomba",
+            "explicit": true
+          },
+          {
+            "kind": "project",
+            "id": 8,
+            "name": "Designs para Prefeitura de Rio Pomba",
+            "explicit": true
+          },
+          {
+            "kind": "project",
+            "id": 6,
+            "name": "Projetos Avulsos",
+            "explicit": true
+          },
+          {
+            "kind": "project",
+            "id": 7,
+            "name": "Ebook Digital - Higiene do Sono",
+            "explicit": true
+          },
+          {
+            "kind": "experience",
+            "id": 3,
+            "name": "IF Sudeste MG",
+            "explicit": true
+          },
+          {
+            "kind": "project",
+            "id": 9,
+            "name": "Artes para o IF Sudeste MG",
+            "explicit": true
+          }
+        ]
+      },
+      {
+        "id": "illustrator",
+        "name": "Illustrator",
+        "supported": true,
+        "references": [
+          {
+            "kind": "experience",
+            "id": 3,
+            "name": "IF Sudeste MG",
+            "explicit": true
+          },
+          {
+            "kind": "project",
+            "id": 9,
+            "name": "Artes para o IF Sudeste MG",
+            "explicit": true
+          }
+        ]
+      },
+      {
+        "id": "indesign",
+        "name": "InDesign",
+        "supported": true,
+        "references": [
+          {
+            "kind": "experience",
+            "id": 3,
+            "name": "IF Sudeste MG",
+            "explicit": true
+          }
+        ]
+      },
+      {
+        "id": "premiere",
+        "name": "Premiere",
+        "supported": true,
+        "references": [
+          {
+            "kind": "experience",
+            "id": 2,
+            "name": "Prefeitura Rio Pomba",
+            "explicit": true
+          }
+        ]
+      },
+      {
+        "id": "capcut",
+        "name": "CapCut",
+        "supported": true,
+        "references": [
+          {
+            "kind": "experience",
+            "id": 2,
+            "name": "Prefeitura Rio Pomba",
+            "explicit": true
+          }
+        ]
+      },
+      {
+        "id": "vegas",
+        "name": "Sony Vegas",
+        "supported": true,
+        "references": [
+          {
+            "kind": "project",
+            "id": 14,
+            "name": "Cineclube — Conservatório Estadual de Música de Visconde do Rio Branco",
+            "explicit": true
+          }
+        ]
+      },
+      {
+        "id": "git",
+        "name": "Git / GitHub",
+        "supported": true,
+        "references": []
+      },
+      {
+        "id": "docker",
+        "name": "Docker",
+        "supported": true,
+        "references": []
+      },
+      {
+        "id": "gemini",
+        "name": "Gemini API",
+        "supported": true,
+        "references": [
+          {
+            "kind": "project",
+            "id": 4,
+            "name": "Padronizador de Currículos com IA",
+            "explicit": true
+          }
+        ]
+      },
+      {
+        "id": "socket",
+        "name": "Socket.io",
+        "supported": true,
+        "references": []
+      },
+      {
+        "id": "jwt",
+        "name": "JWT",
+        "supported": true,
+        "references": []
+      }
+    ],
+    "education": [
+      {
+        "id": 1,
+        "startDate": "2020-01",
+        "endDate": "2026"
+      },
+      {
+        "id": 3,
+        "startDate": "2026",
+        "endDate": null
+      },
+      {
+        "id": 2,
+        "startDate": "2016-01",
+        "endDate": "2018-12"
+      }
+    ]
+  },
+  "production": {
+    "pt": true,
+    "en": true,
+    "languageSwitch": true,
+    "languagePersists": true,
+    "errors": []
+  },
+  "projectNameCorrection": {
+    "checkedAt": "2026-10-06T03:12:15.675Z",
+    "scope": "User-confirmed project spelling correction to Prodiesel; preceding layout and motion measurements remain unchanged.",
+    "checked": [
+      {
+        "name": "desktop",
+        "width": 1440,
+        "height": 900,
+        "lang": "pt",
+        "displayName": "Prodiesel",
+        "craftReferenceUpdated": true,
+        "titleFits": true
+      },
+      {
+        "name": "desktop-en",
+        "width": 1440,
+        "height": 900,
+        "lang": "en",
+        "displayName": "Prodiesel",
+        "craftReferenceUpdated": true,
+        "titleFits": true
+      },
+      {
+        "name": "tablet",
+        "width": 768,
+        "height": 1024,
+        "lang": "pt",
+        "displayName": "Prodiesel",
+        "craftReferenceUpdated": true,
+        "titleFits": true
+      },
+      {
+        "name": "mobile",
+        "width": 390,
+        "height": 844,
+        "lang": "pt",
+        "displayName": "Prodiesel",
+        "craftReferenceUpdated": true,
+        "titleFits": true
+      },
+      {
+        "name": "small-mobile-en",
+        "width": 320,
+        "height": 740,
+        "lang": "en",
+        "displayName": "Prodiesel",
+        "craftReferenceUpdated": true,
+        "titleFits": true
+      }
+    ]
+  }
+}

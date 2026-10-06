@@ -1,0 +1,26 @@
+- contentinfo "Vamos construir algo.":
+  - paragraph: 06 / CONNECT
+  - navigation "Idioma do capítulo final":
+    - button "Switch to English": PT
+  - heading "Vamos construir algo." [level=2]
+  - navigation "Contatos profissionais":
+    - list:
+      - listitem:
+        - paragraph: Email
+        - link "Enviar email para arthurcandian@gmail.com":
+          - /url: mailto:arthurcandian@gmail.com
+          - text: arthurcandian@gmail.com
+      - listitem:
+        - paragraph: LinkedIn
+        - link "LinkedIn — abre em uma nova aba":
+          - /url: https://www.linkedin.com/in/arthur-candian-rocha-3b346124a
+          - text: LinkedIn
+      - listitem:
+        - paragraph: GitHub
+        - link "GitHub — abre em uma nova aba":
+          - /url: https://github.com/ArthurCRocha
+          - text: GitHub
+  - paragraph: Continua.
+  - paragraph: © 2026 Arthur Rocha
+  - link "00 / Intro":
+    - /url: "#intro-content"

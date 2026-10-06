@@ -2,46 +2,38 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Arthur Rocha - Web Developer & Digital Designer especializado em experiências digitais refinadas, animação e design interativo." />
-    <meta name="keywords" content="web developer, digital designer, portfolio, frontend developer, UI/UX" />
+    <meta name="description" content="Arthur Rocha — desenvolvedor Full Stack com experiência em design gráfico. Portfólio de desenvolvimento de software e design digital." />
+    <meta name="keywords" content="full stack developer, digital design, portfolio, Arthur Rocha" />
     <meta name="author" content="Arthur Rocha" />
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Arthur Rocha - Web Developer & Digital Designer" />
-    <meta property="og:description" content="Especializado em experiências web digitais refinadas com foco em conteúdo animado, responsivo e interativo." />
+    <meta property="og:title" content="Arthur Rocha — Full Stack Developer × Digital Design" />
+    <meta property="og:description" content="Desenvolvimento de software e design digital. O portfólio de Arthur Rocha." />
     
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:title" content="Arthur Rocha - Web Developer & Digital Designer" />
+    <meta property="twitter:title" content="Arthur Rocha — Full Stack Developer × Digital Design" />
     
     <!-- Google Fonts - Premium Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=DM+Sans:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
-    <!-- Cor da barra do navegador acompanha o tema -->
-    <meta name="theme-color" content="#f1f4fa" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#090b10" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#eeeae1" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:image" content="/og-cover.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Arthur Rocha — Full Stack Developer × Digital Design" />
+    <meta property="twitter:description" content="Desenvolvimento de software e design digital. O portfólio de Arthur Rocha." />
+    <meta property="twitter:image" content="/og-cover.png" />
 
-    <!-- Aplica o tema antes da primeira pintura, senao pisca branco -->
-    <script>
-      (function () {
-        try {
-          var saved = localStorage.getItem('theme');
-          var dark = saved
-            ? saved === 'dark'
-            : window.matchMedia('(prefers-color-scheme: dark)').matches;
-          if (dark) document.documentElement.setAttribute('data-theme', 'dark');
-        } catch (e) { /* sem localStorage: segue no tema claro */ }
-      })();
-    </script>
-    
-    <title>Arthur Rocha — Web Developer & Digital Designer</title>
+    <title>Arthur Rocha — Full Stack Developer × Digital Design</title>
   </head>
   <body>
     <div id="root"></div>

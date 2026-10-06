@@ -1,0 +1,46 @@
+[
+  {
+    "lang": "pt",
+    "width": 1440,
+    "height": 900,
+    "seedCleanup": {
+      "position": "absolute",
+      "active": false,
+      "scale": "",
+      "shift": "",
+      "lift": ""
+    },
+    "triggerCount": 0,
+    "languageSwitch": true,
+    "nativeTabOrder": [
+      "mailto:arthurcandian@gmail.com",
+      "https://www.linkedin.com/in/arthur-candian-rocha-3b346124a",
+      "https://github.com/ArthurCRocha",
+      "#intro-content"
+    ],
+    "returnToTop": true,
+    "smoothScrollDisabled": true
+  },
+  {
+    "lang": "en",
+    "width": 390,
+    "height": 844,
+    "seedCleanup": {
+      "position": "absolute",
+      "active": false,
+      "scale": "",
+      "shift": "",
+      "lift": ""
+    },
+    "triggerCount": 0,
+    "languageSwitch": true,
+    "nativeTabOrder": [
+      "mailto:arthurcandian@gmail.com",
+      "https://www.linkedin.com/in/arthur-candian-rocha-3b346124a",
+      "https://github.com/ArthurCRocha",
+      "#intro-content"
+    ],
+    "returnToTop": true,
+    "smoothScrollDisabled": true
+  }
+]

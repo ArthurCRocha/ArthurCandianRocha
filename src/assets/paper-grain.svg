@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1200" viewBox="0 0 1600 1200">
+  <filter id="paper" color-interpolation-filters="sRGB">
+    <feTurbulence type="fractalNoise" baseFrequency=".61" numOctaves="2" seed="19" result="grain"/>
+    <feTurbulence type="fractalNoise" baseFrequency=".032 .38" numOctaves="1" seed="5" result="fibers"/>
+    <feComposite in="grain" in2="fibers" operator="arithmetic" k2=".82" k3=".18"/>
+    <feColorMatrix type="saturate" values="0"/>
+  </filter>
+  <path d="M0 0h1600v1200H0z" filter="url(#paper)"/>
+</svg>

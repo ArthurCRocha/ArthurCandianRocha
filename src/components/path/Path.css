@@ -1,0 +1,152 @@
+.path { position: relative; overflow-x: clip; }
+.path-meta { font: 400 10px / 1.7 var(--font-mono); letter-spacing: .045em; text-transform: uppercase; color: var(--ink-subtle); }
+.path-entry { position: relative; min-height: max(720px, 90svh); margin-inline: var(--intro-gutter); padding-top: 12svh; }
+.path-entry-line { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; fill: none; pointer-events: none; }
+.path-entry-line path, .path-line path, .path-continuation path { vector-effect: non-scaling-stroke; stroke: var(--ink); stroke-width: .85; stroke-dasharray: 1; }
+.path-entry-stroke { opacity: .3; }
+.path-entry-echo { opacity: .18; }
+.path-chapter { position: relative; color: var(--ink); }
+.path-chapter::before { content: ''; display: inline-block; width: 22px; height: 1px; background: var(--red); margin-right: 15px; vertical-align: middle; }
+.path-entry h2 { position: relative; width: fit-content; margin-top: 6svh; font: 400 clamp(74px, 8.1vw, 136px) / .98 var(--font-display); letter-spacing: -.035em; }
+.path-entry h2 span { display: block; }
+.path-entry h2 span:nth-child(2) { margin-left: 7vw; }
+.path-entry h2 span:last-child { margin-left: 17vw; }
+.path-entry-note { position: relative; margin: 7svh 8% 0 auto; max-width: 310px; padding-bottom: 60px; font-size: 16px; line-height: 1.65; color: var(--ink-muted); }
+.path-field { position: relative; margin-inline: var(--intro-gutter); }
+.path-line { position: absolute; inset: 0; width: 100%; height: 100%; fill: none; pointer-events: none; }
+.path-stroke { opacity: .35; }
+.path-stroke-organic { stroke-width: 1.2 !important; opacity: .3; }
+.path-stroke-echo { stroke-width: .6 !important; opacity: .18; }
+.path-moments { position: relative; display: grid; grid-template-columns: repeat(12, minmax(0, 1fr)); list-style: none; }
+.path-moment { position: relative; grid-column: 1 / -1; display: grid; grid-template-columns: subgrid; min-width: 0; }
+.path-moment-body { position: relative; z-index: 1; align-self: start; min-width: 0; }
+.path-moment-body > * { position: relative; }
+.path-moment h3 { margin: 25px 0 13px; max-width: 620px; font: 400 clamp(32px, 3.4vw, 54px) / 1.12 var(--font-display); letter-spacing: -.02em; text-wrap: balance; }
+.path-organization { font: 400 12px / 1.6 var(--font-mono); color: var(--ink-muted); }
+.path-summary { max-width: 365px; margin-top: 25px; font-size: 16px; line-height: 1.7; color: var(--ink-muted); }
+.path-background-label { margin-bottom: 16px; font-size: 8px; }
+.path-date { width: fit-content; color: var(--ink); }
+.path-date-emphasis { font: 400 clamp(130px, 15vw, 230px) / .95 var(--font-display); letter-spacing: -.045em; }
+.path-period { margin-top: 16px; font-size: 9px; }
+.path-current { display: inline-block; width: 5px; height: 5px; margin-left: 13px; vertical-align: middle; background: var(--red); }
+.path-beginning { margin-top: 20px; color: var(--red); }
+.path-academic-state { margin-top: 15px; font-size: 9px; }
+.path-anchor { position: absolute; width: 0; height: 0; left: 35%; top: 80px; }
+.path-guides { position: absolute; inset: 0 0 auto; top: 12%; height: 60%; display: flex; justify-content: space-between; pointer-events: none; transform-origin: center; opacity: .5; }
+.path-guides i { width: 1px; background: var(--hairline); }
+.path-guides i:first-child { margin-left: 8.33%; }
+.path-guides i:last-child { margin-right: 16.67%; }
+.path-background { min-height: 470px; display: block; padding-top: 135px; }
+.path-background h3 { font-size: 28px; margin-top: 15px; }
+.path-background .path-organization { font-size: 10px; }
+.path-background .path-summary { font-size: 14px; max-width: 290px; margin-top: 20px; }
+.path-moment-school { grid-column: 2 / 6; grid-row: 1; }
+.path-moment-school .path-anchor { left: 110%; top: 90px; }
+.path-moment-audiovisual { grid-column: 8 / 12; grid-row: 1; padding-top: 185px; }
+.path-moment-audiovisual .path-anchor { left: 113%; top: 140px; }
+.path-moment-computing { min-height: max(760px, 95svh); padding-top: 120px; }
+.path-moment-computing .path-moment-body { grid-column: 2 / 8; }
+.path-moment-computing .path-anchor { left: 81%; top: 160px; }
+.path-moment-design { min-height: max(650px, 82svh); padding-top: 130px; }
+.path-moment-design .path-moment-body { grid-column: 6 / 11; }
+.path-moment-design .path-anchor { left: 24%; top: 190px; }
+.path-moment-development { min-height: 620px; padding-top: 120px; }
+.path-moment-development .path-moment-body { grid-column: 2 / 8; }
+.path-moment-development .path-anchor { left: 83%; top: 150px; }
+.path-moment-support { min-height: 480px; padding-top: 80px; }
+.path-moment-support .path-moment-body { grid-column: 7 / 12; }
+.path-moment-support .path-anchor { left: 28%; top: 145px; }
+.path-moment-support h3, .path-moment-marketing h3 { font-size: clamp(32px, 3vw, 45px); }
+.path-moment-marketing { min-height: 520px; padding-top: 120px; }
+.path-moment-marketing .path-moment-body { grid-column: 3 / 8; }
+.path-moment-marketing .path-anchor { left: 81%; top: 180px; }
+.path-moment-studies { min-height: max(830px, 106svh); padding-top: 100px; }
+.path-moment-studies .path-moment-body { grid-column: 2 / 9; }
+.path-moment-studies .path-anchor { left: 87%; top: 230px; }
+.path-moment-studies .path-date-emphasis { font-size: clamp(80px, 9vw, 135px); margin-top: 65px; }
+.path-parallel { color: var(--red); max-width: 330px; }
+.path-transition { display: flex; flex-direction: column; gap: 14px; max-width: 380px; margin-top: 36px; font-size: 16px; line-height: 1.65; color: var(--ink-muted); }
+.path-transition .path-meta { font-size: 9px; }
+.path-moment-operations { min-height: 610px; padding-top: 100px; }
+.path-moment-operations .path-moment-body { grid-column: 6 / 11; }
+.path-moment-operations .path-anchor { left: 24%; top: 140px; }
+.path-moment-mobile { min-height: max(620px, 80svh); padding-top: 130px; }
+.path-moment-mobile .path-moment-body { grid-column: 3 / 9; }
+.path-moment-mobile .path-anchor { left: 81%; top: 185px; }
+.path-continuation { position: relative; min-height: 430px; margin-inline: var(--intro-gutter); padding-top: 200px; }
+.path-continuation svg { position: absolute; inset: 0; width: 100%; height: 100%; fill: none; pointer-events: none; }
+.path-exit-stroke { opacity: .35; }
+.path-forward { position: relative; color: var(--red); }
+.path-forward span { margin-right: 20px; }
+.path-closing { position: relative; width: fit-content; margin: 22px 0 0 8.33%; font: 400 38px / 1.2 var(--font-display); }
+.path-end { position: absolute; right: 0; bottom: 36px; font-size: 9px; }
+
+@media (min-width: 701px) and (max-width: 1100px) {
+  .path-entry { min-height: max(780px, 86svh); }
+  .path-entry h2 { font-size: 9.6vw; }
+  .path-entry-note { margin-right: 0; }
+  .path-background { min-height: 520px; }
+  .path-moment-school { grid-column: 1 / 6; }
+  .path-moment-audiovisual { grid-column: 7 / 12; }
+  .path-moment-audiovisual .path-anchor { left: 114%; }
+  .path-moment h3 { font-size: 38px; }
+  .path-background h3 { font-size: 28px; }
+  .path-moment-support .path-moment-body { grid-column: 6 / 12; }
+  .path-moment-computing .path-moment-body, .path-moment-development .path-moment-body { grid-column: 1 / 8; }
+  .path-moment-design .path-moment-body, .path-moment-operations .path-moment-body { grid-column: 5 / 12; }
+  .path-moment-studies { min-height: 840px; }
+  .path-moment-studies .path-moment-body { grid-column: 1 / 10; }
+  .path-moment-studies .path-anchor { left: 96%; }
+}
+@media (max-width: 700px) {
+  .path-meta { font-size: 9px; }
+  .path-entry { min-height: max(640px, 88svh); padding-top: 10svh; }
+  .path-entry h2 { font-size: clamp(49px, 14.8vw, 95px); margin-top: 7svh; }
+  .path-entry h2 span:nth-child(2) { margin-left: 4vw; }
+  .path-entry h2 span:last-child { margin-left: 7vw; }
+  .path-entry-note { font-size: 14px; max-width: 240px; margin: 8svh 0 0 10%; padding-bottom: 80px; }
+  .path-chapter::before { width: 15px; margin-right: 10px; }
+  .path-moments { display: block; }
+  .path-moment { display: block; min-height: 510px; padding-top: 100px; }
+  .path-moment-body { width: 86%; margin-left: 0; }
+  .path-moment h3 { font-size: 33px; margin-top: 23px; }
+  .path-organization { font-size: 10px; }
+  .path-summary { font-size: 14px; line-height: 1.75; margin-top: 23px; }
+  .path-moment .path-anchor { left: 95%; top: 110px; }
+  .path-date-emphasis { font-size: clamp(100px, 30vw, 185px); }
+  .path-background { min-height: 300px; padding-top: 90px; }
+  .path-background h3 { font-size: 27px; margin-top: 15px; }
+  .path-background-label { font-size: 7px; }
+  .path-moment-school .path-anchor { left: 94%; top: 105px; }
+  .path-moment-audiovisual { min-height: 410px; padding-top: 110px; }
+  .path-moment-audiovisual .path-moment-body { width: 77%; margin-left: 21%; }
+  .path-moment-audiovisual .path-anchor { left: 5%; top: 150px; }
+  .path-moment-computing { min-height: 640px; padding-top: 110px; }
+  .path-moment-computing .path-moment-body { width: 87%; }
+  .path-moment-design { min-height: 570px; padding-top: 130px; }
+  .path-moment-design .path-moment-body { width: 78%; margin-left: 21%; }
+  .path-moment-design .path-anchor { left: 5%; top: 180px; }
+  .path-moment-development { min-height: 540px; }
+  .path-moment-support { min-height: 490px; padding-top: 105px; }
+  .path-moment-support .path-moment-body { width: 77%; margin-left: 21%; }
+  .path-moment-support .path-anchor { left: 5%; top: 155px; }
+  .path-moment-marketing { min-height: 500px; padding-top: 110px; }
+  .path-moment-marketing h3 { font-size: 32px; }
+  .path-moment-studies { min-height: 770px; padding-top: 85px; }
+  .path-moment-studies .path-moment-body { width: 89%; }
+  .path-moment-studies .path-date-emphasis { font-size: 80px; margin-top: 45px; }
+  .path-moment-studies h3 { font-size: 35px; }
+  .path-transition { font-size: 14px; gap: 13px; margin-top: 30px; }
+  .path-transition .path-meta, .path-period, .path-academic-state { font-size: 8px; }
+  .path-moment-operations { min-height: 570px; padding-top: 110px; }
+  .path-moment-operations .path-moment-body { width: 78%; margin-left: 21%; }
+  .path-moment-operations .path-anchor { left: 5%; top: 165px; }
+  .path-moment-mobile { min-height: 610px; padding-top: 140px; }
+  .path-moment-mobile h3 { font-size: 38px; }
+  .path-guides { top: 7%; height: 72%; }
+  .path-guides i:first-child { margin-left: 0; }
+  .path-guides i:last-child { margin-right: 2%; }
+  .path-continuation { min-height: 350px; padding-top: 160px; }
+  .path-closing { font-size: 31px; margin-left: 0; }
+  .path-end { font-size: 8px; bottom: 28px; }
+}
